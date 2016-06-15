@@ -13,7 +13,7 @@ npm install --save s9s-cloudlink-api
 
 ## Examples
 ```javascript
-const CloudlinkApi = require('../api');
+const CloudlinkApi = require('s9s-cloudlink-api');
 const api = new CloudlinkApi({
     cloud: 'aws',
     server: {
