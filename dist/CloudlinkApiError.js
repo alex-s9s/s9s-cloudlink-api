@@ -12,6 +12,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 /**
  * CloudlinkApiError class
+ * used to throw/catch custom errors
+ * @class CloudlinkApiError
  * @extends {Error}
  */
 

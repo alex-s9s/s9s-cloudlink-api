@@ -2,6 +2,7 @@
   "name": "s9s-cloudlink-api",
   "version": "0.0.1",
   "main": "api.js",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:simon-s9/s9s-cloudlink-api.git"

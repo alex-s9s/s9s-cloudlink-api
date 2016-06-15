@@ -93,11 +93,11 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         /**
          * Adds a new instance (Virtual machine)
          * @returns {Promise}
-         * @param {Array} names
-         * @param {string} region
-         * @param {string} image
-         * @param {string} size
-         * @param {string} sshKey
+         * @param {Array} names New instance/s names
+         * @param {string} region Region to create the instance/s at
+         * @param {string} image Image/ami to create the instance/s from
+         * @param {string} size Diskspace size
+         * @param {string} sshKey SSH key to deploy to the new instance/s
          */
 
     }, {
@@ -114,7 +114,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
         /**
          * Returns the status of an instance (Virtual machine)
-         * @param {string|number} instanceId
+         * @param {string|number} instanceId The id of an instance
          * @returns {Promise}
          */
 

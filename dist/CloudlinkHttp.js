@@ -33,9 +33,9 @@ var CloudlinkHttp = function () {
 
         /**
          * Make an http request to the service
-         * @param config
-         * @param method
-         * @param params
+         * @param {{}} config Cloudlink configuration object
+         * @param {string} method Method name to call
+         * @param {{}} params Request parameters
          * @returns {Promise}
          */
         value: function request(config, method, params) {
@@ -61,10 +61,11 @@ var CloudlinkHttp = function () {
                 },
 
                 /**
+                 * Handle response
                  * @param {{
-                *  setEncoding:function,
-                *  on:function
-                * }} response
+                 *  setEncoding:function,
+                 *  on:function
+                 * }} response
                  */
                 function (response) {
                     var data = '';
