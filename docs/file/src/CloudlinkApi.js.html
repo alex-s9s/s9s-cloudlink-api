@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/CloudlinkApi.js | API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/CloudlinkApi.js~CloudlinkApi.html">CloudlinkApi</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/CloudlinkApi.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const Promise = require(&apos;promise&apos;);
+
+/**
+ * List of supported cloud providers
+ * @type {string[]}
+ */
+const supportedClouds = [
+    &apos;aws&apos;,
+    &apos;digitalocean&apos;
+];
+
+/**
+ * CloudlinkApiError class
+ * @extends {Error}
+ */
+class CloudlinkApiError extends Error {
+}
+
+/**
+ * Make an http request to the service
+ * @param config
+ * @param method
+ * @param params
+ * @returns {Promise}
+ */
+const httpRequest = (config, method, params) =&gt; {
+    let http = null;
+    let postData = params || {};
+    if (config.server.secure) {
+        http = require(&apos;https&apos;);
+    } else {
+        http = require(&apos;http&apos;);
+    }
+    postData.auth = config.auth || {};
+    postData = JSON.stringify(postData);
+    return new Promise((resolve, reject) =&gt; {
+        const request = http.request(
+            {
+                hostname: config.server.host,
+                port: config.server.port,
+                path: `/${config.cloud}/${method}`,
+                method: &apos;POST&apos;,
+                headers: {
+                    &apos;Content-Type&apos;: &apos;application/json&apos;,
+                    &apos;Content-Length&apos;: postData.length
+                }
+            },
+
+            /**
+             * @param {{
+             *  setEncoding:function,
+             *  on:function
+             * }} response
+             */
+            (response) =&gt; {
+                let data = &apos;&apos;;
+                response.setEncoding(&apos;utf8&apos;);
+                response.on(&apos;data&apos;, (chunk) =&gt; {
+                    data += chunk;
+                });
+                response.on(&apos;end&apos;, () =&gt; {
+                    data = JSON.parse(data);
+                    if (data.status) {
+                        resolve(
+                            data.data
+                        );
+                    } else {
+                        reject(
+                            new CloudlinkApiError(
+                                data.error || &apos;Unknown error&apos;
+                            )
+                        );
+                    }
+                });
+            }
+        );
+        request.on(&apos;error&apos;, reject);
+        request.write(postData);
+        request.end();
+    });
+};
+
+/**
+ * CloudlinkApi class
+ * @property {{
+ *  auth: object,
+ *  cloud: string,
+ *  server: {host:string,port:number,secure:boolean}
+ * }} config
+ */
+export class CloudlinkApi {
+
+    /**
+     * CloudlinkApi constructor
+     * @param {{}} config Configurations object (must include &quot;auth&quot; and &quot;server&quot; properties)
+     * @throws {CloudlinkApiError}
+     */
+    constructor(config) {
+
+        /* eslint max-statements: [&quot;error&quot;, 20] */
+
+        this.config = config || {};
+        if (!this.config.cloud) {
+            throw new CloudlinkApiError(
+                &apos;Missing &quot;cloud&quot; definition in config&apos;
+            );
+        }
+        if (supportedClouds.indexOf(this.config.cloud) === -1) {
+            throw new CloudlinkApiError(
+                `&quot;${this.config.cloud}&quot; is not a supported cloud provider`
+            );
+        }
+        if (!this.config.server) {
+            throw new CloudlinkApiError(
+                &apos;Missing &quot;server&quot; object in config&apos;
+            );
+        }
+        if (!this.config.server.host) {
+            throw new CloudlinkApiError(
+                &apos;Messing &quot;server.host&quot; in config&apos;
+            );
+        }
+        if (!this.config.server.port) {
+            this.config.server.port = 80;
+        }
+        if (!this.config.server.secure) {
+            this.config.server.secure = false;
+        }
+        if (!this.config.auth) {
+            throw new CloudlinkApiError(
+                &apos;Missing &quot;auth&quot; object in config&apos;
+            );
+        }
+    }
+
+    /**
+     * Returns a list of instances (Virtual machines)
+     * @returns {Promise}
+     */
+    listInstances() {
+        return httpRequest(this.config, &apos;listInstances&apos;, {});
+    }
+
+    /**
+     * @returns {Promise}
+     */
+    listRegions() {
+        return httpRequest(this.config, &apos;listRegions&apos;, {});
+    }
+
+    /**
+     * @returns {Promise}
+     */
+    listSizes() {
+        return httpRequest(this.config, &apos;listSizes&apos;, {});
+    }
+
+    /**
+     * @param {{}} filters
+     * @returns {Promise}
+     */
+    listDistributions({filters = {}} = {}) {
+        return httpRequest(this.config, &apos;listDistributions&apos;, {
+            filters
+        });
+    }
+
+    /**
+     * @returns {Promise}
+     */
+    listVolumes() {
+        return httpRequest(this.config, &apos;listVolumes&apos;, {});
+    }
+
+    /**
+     * @returns {Promise}
+     */
+    listKeys() {
+        return httpRequest(this.config, &apos;listKeys&apos;, {});
+    }
+
+    /**
+     * @param {{}} filters
+     * @param {Array} ids
+     * @returns {Promise}
+     */
+    listVpcs({filters = {}, ids = []} = {}) {
+        return httpRequest(this.config, &apos;listVpcs&apos;, {
+            filters,
+            ids
+        });
+    }
+
+    /**
+     * @returns {Promise}
+     */
+    listSubNets() {
+        return httpRequest(this.config, &apos;listSubNets&apos;, {});
+    }
+
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.7)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

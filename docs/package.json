@@ -1,0 +1,20 @@
+{
+  "name": "s9s-cloudlink-api",
+  "version": "0.0.1",
+  "main": "api.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:simon-s9/s9s-cloudlink-api.git"
+  },
+  "dependencies": {
+    "promise": "^7.1.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-esdoc": "^0.2.0",
+    "gulp-eslint": "^2.0.0"
+  }
+}
