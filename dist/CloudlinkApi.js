@@ -53,6 +53,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         _classCallCheck(this, CloudlinkApi);
 
         /* eslint max-statements: ["error", 20] */
+        // noinspection JSValidateTypes
 
         this.config = config || {};
         if (!this.config.cloud) {
@@ -150,7 +151,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
         /**
          * Returns a list of distributions available on cloud provider
-         * @param {{}} filters
+         * @param {{}} filters Filters object
          * @returns {Promise}
          */
 
@@ -188,8 +189,8 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
         /**
          * Registers a new public key on cloud provider
-         * @param {string} name
-         * @param {string} publicKey
+         * @param {string} name Name of the new key
+         * @param {string} publicKey Public key contents
          * @returns {Promise}
          */
 
@@ -204,7 +205,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
         /**
          * Deletes a key from cloud provider
-         * @param {string|number} id
+         * @param {string|number} id Key name/id
          * @returns {Promise}
          */
 
@@ -218,8 +219,8 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
         /**
          * Returns a list of VPCs (Virtual private network)
-         * @param {{}} filters
-         * @param {Array} ids
+         * @param {{}} filters Filters object
+         * @param {Array} ids Ids list
          * @returns {Promise}
          */
 
@@ -237,8 +238,8 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
         /**
          * Creates a new VPC (Virtual private network)
-         * @param cidr
-         * @param tenancy
+         * @param cidr CIDR block, network range
+         * @param tenancy Tenancy default/dedicated/host
          * @returns {Promise}
          */
 
@@ -264,8 +265,8 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
         /**
          * Creates a new subnet within a VPC
-         * @param cidr
-         * @param vpcId
+         * @param cidr CIDR block, network range
+         * @param vpcId VPC id
          * @returns {Promise}
          */
 

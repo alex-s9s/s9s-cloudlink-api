@@ -39,13 +39,38 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="s9s-cloudlink-api">s9s-cloudlink-api</h1>
-<p>An API to make requests to <a href="https://github.com/simon-s9/s9s-cloudlink">s9s-cloudlink</a>.</p>
-<p><a href="https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/master/docs/index.html">Documentation</a></p>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="cloudlink-api">CloudLink API</h1>
+<p>An API to make requests to <a href="https://github.com/simon-s9/s9s-cloudlink">CloudLink</a> service.</p>
+<ul>
+<li><a href="https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/master/docs/index.html">Documentation</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#examples">Examples</a></li>
+</ul>
 <h2 id="installation">Installation</h2>
 <pre><code><code class="source-code prettyprint">npm install --save s9s-cloudlink-api</code>
 </code></pre><h2 id="examples">Examples</h2>
-<pre><code class="lang-javascript"><code class="source-code prettyprint"></code>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">const CloudlinkApi = require(&apos;s9s-cloudlink-api&apos;);
+const api = new CloudlinkApi({
+    cloud: &apos;aws&apos;,
+    server: {
+        host: &apos;127.0.0.1&apos;,
+        port: 3000
+    },
+    auth: {
+        accessKeyId: &apos;...&apos;,
+        secretAccessKey: &apos;...&apos;,
+        region: &apos;eu-central-1&apos;
+    }
+});
+
+api
+    .listInstances()
+    .then((instances) =&gt; {
+        console.log(&apos;resolve&apos;, instances);
+    })
+    .catch((error) =&gt; {
+        console.log(&apos;reject&apos;, error);
+    });</code>
 </code></pre>
 </div>
 </div>

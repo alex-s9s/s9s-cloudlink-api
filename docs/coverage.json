@@ -7,7 +7,7 @@
       "expectCount": 18,
       "actualCount": 17,
       "undocumentLines": [
-        34
+        35
       ]
     },
     "src/CloudlinkApiError.js": {
