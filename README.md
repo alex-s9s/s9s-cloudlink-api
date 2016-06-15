@@ -1,9 +1,10 @@
 # CloudLink API
-[![Build Status](https://travis-ci.org/simon-s9/s9s-cloudlink-api.svg?branch=master)](https://travis-ci.org/simon-s9/s9s-cloudlink-api)
-[![Docs coverage](https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.0/docs/badge.svg)](https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.0/docs/index.html)
-[![Current version](https://img.shields.io/badge/Version-v1.0.0-brightgreen.svg)](https://github.com/simon-s9/s9s-cloudlink-api/releases)
 
 An API to make requests to [CloudLink](https://github.com/simon-s9/s9s-cloudlink) service.
+
+  [![Version][npm-image]][npm-url]
+  [![Build][travis-image]][travis-url]
+  [![Documentation][document-image]][document-url]
 
 * [Documentation](https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.0/docs/index.html)
 * [Installation](#installation)
@@ -49,3 +50,10 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[npm-image]: https://img.shields.io/npm/v/s9s-cloudlink-api.svg?label=version
+[npm-url]: https://npmjs.org/package/s9s-cloudlink-api
+[travis-image]: https://travis-ci.org/simon-s9/s9s-cloudlink-api.svg?branch=master
+[travis-url]: https://travis-ci.org/simon-s9/s9s-cloudlink-api
+[document-image]: https://rawgit.com/simon-s9/s9s-cloudlink-api/master/docs/badge.svg
+[document-url]: https://github.com/simon-s9/s9s-cloudlink-api/releases
