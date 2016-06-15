@@ -6,6 +6,18 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "s9s-cloudlink-api/src/cloudlinkapierror.js~cloudlinkapierror",
+    "class/src/CloudlinkApiError.js~CloudlinkApiError.html",
+    "<span>CloudlinkApiError</span> <span class=\"search-result-import-path\">s9s-cloudlink-api/src/CloudlinkApiError.js</span>",
+    "class"
+  ],
+  [
+    "s9s-cloudlink-api/src/cloudlinkhttp.js~cloudlinkhttp",
+    "class/src/CloudlinkHttp.js~CloudlinkHttp.html",
+    "<span>CloudlinkHttp</span> <span class=\"search-result-import-path\">s9s-cloudlink-api/src/CloudlinkHttp.js</span>",
+    "class"
+  ],
+  [
     "builtinexternal/ecmascriptexternal.js~array",
     "external/index.html",
     "BuiltinExternal/ECMAScriptExternal.js~Array",
@@ -435,6 +447,30 @@ window.esdocSearchIndex = [
     "src/cloudlinkapi.js~cloudlinkapi#listvpcs",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-listVpcs",
     "src/CloudlinkApi.js~CloudlinkApi#listVpcs",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi.supportedclouds",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#static-get-supportedClouds",
+    "src/CloudlinkApi.js~CloudlinkApi.supportedClouds",
+    "member"
+  ],
+  [
+    "src/cloudlinkapierror.js",
+    "file/src/CloudlinkApiError.js.html",
+    "src/CloudlinkApiError.js",
+    "file"
+  ],
+  [
+    "src/cloudlinkhttp.js",
+    "file/src/CloudlinkHttp.js.html",
+    "src/CloudlinkHttp.js",
+    "file"
+  ],
+  [
+    "src/cloudlinkhttp.js~cloudlinkhttp.request",
+    "class/src/CloudlinkHttp.js~CloudlinkHttp.html#static-method-request",
+    "src/CloudlinkHttp.js~CloudlinkHttp.request",
     "method"
   ]
 ]

@@ -1,84 +1,5 @@
-const Promise = require('promise');
-
-/**
- * List of supported cloud providers
- * @type {string[]}
- */
-const supportedClouds = [
-    'aws',
-    'digitalocean'
-];
-
-/**
- * CloudlinkApiError class
- * @extends {Error}
- */
-class CloudlinkApiError extends Error {
-}
-
-/**
- * Make an http request to the service
- * @param config
- * @param method
- * @param params
- * @returns {Promise}
- */
-const httpRequest = (config, method, params) => {
-    let http = null;
-    let postData = params || {};
-    if (config.server.secure) {
-        http = require('https');
-    } else {
-        http = require('http');
-    }
-    postData.auth = config.auth || {};
-    postData = JSON.stringify(postData);
-    return new Promise((resolve, reject) => {
-        const request = http.request(
-            {
-                hostname: config.server.host,
-                port: config.server.port,
-                path: `/${config.cloud}/${method}`,
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Content-Length': postData.length
-                }
-            },
-
-            /**
-             * @param {{
-             *  setEncoding:function,
-             *  on:function
-             * }} response
-             */
-            (response) => {
-                let data = '';
-                response.setEncoding('utf8');
-                response.on('data', (chunk) => {
-                    data += chunk;
-                });
-                response.on('end', () => {
-                    data = JSON.parse(data);
-                    if (data.status) {
-                        resolve(
-                            data.data
-                        );
-                    } else {
-                        reject(
-                            new CloudlinkApiError(
-                                data.error || 'Unknown error'
-                            )
-                        );
-                    }
-                });
-            }
-        );
-        request.on('error', reject);
-        request.write(postData);
-        request.end();
-    });
-};
+import CloudlinkApiError from './CloudlinkApiError';
+import CloudlinkHttp from './CloudlinkHttp';
 
 /**
  * CloudlinkApi class
@@ -89,6 +10,17 @@ const httpRequest = (config, method, params) => {
  * }} config
  */
 export class CloudlinkApi {
+
+    /**
+     * A list of supported cloud (Cloud providers) codes
+     * @returns {string[]}
+     */
+    static get supportedClouds() {
+        return [
+            'aws',
+            'digitalocean'
+        ];
+    }
 
     /**
      * CloudlinkApi constructor
@@ -105,7 +37,7 @@ export class CloudlinkApi {
                 'Missing "cloud" definition in config'
             );
         }
-        if (supportedClouds.indexOf(this.config.cloud) === -1) {
+        if (CloudlinkApi.supportedClouds.indexOf(this.config.cloud) === -1) {
             throw new CloudlinkApiError(
                 `"${this.config.cloud}" is not a supported cloud provider`
             );
@@ -138,7 +70,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     listInstances() {
-        return httpRequest(this.config, 'listInstances', {});
+        return CloudlinkHttp.request(this.config, 'listInstances', {});
     }
 
     /**
@@ -151,7 +83,7 @@ export class CloudlinkApi {
      * @param {string} sshKey
      */
     addInstance(names, region, image, size, sshKey) {
-        return httpRequest(this.config, 'addInstance', {
+        return CloudlinkHttp.request(this.config, 'addInstance', {
             names,
             region,
             image,
@@ -166,7 +98,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     getInstanceStatus(instanceId) {
-        return httpRequest(this.config, 'getInstanceStatus', {
+        return CloudlinkHttp.request(this.config, 'getInstanceStatus', {
             instanceId
         });
     }
@@ -176,7 +108,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     listRegions() {
-        return httpRequest(this.config, 'listRegions', {});
+        return CloudlinkHttp.request(this.config, 'listRegions', {});
     }
 
     /**
@@ -184,7 +116,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     listSizes() {
-        return httpRequest(this.config, 'listSizes', {});
+        return CloudlinkHttp.request(this.config, 'listSizes', {});
     }
 
     /**
@@ -193,7 +125,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     listDistributions(filters = {}) {
-        return httpRequest(this.config, 'listDistributions', {
+        return CloudlinkHttp.request(this.config, 'listDistributions', {
             filters
         });
     }
@@ -203,7 +135,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     listVolumes() {
-        return httpRequest(this.config, 'listVolumes', {});
+        return CloudlinkHttp.request(this.config, 'listVolumes', {});
     }
 
     /**
@@ -211,7 +143,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     listKeys() {
-        return httpRequest(this.config, 'listKeys', {});
+        return CloudlinkHttp.request(this.config, 'listKeys', {});
     }
 
     /**
@@ -221,7 +153,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     addKey(name, publicKey) {
-        return httpRequest(this.config, 'addKey', {
+        return CloudlinkHttp.request(this.config, 'addKey', {
             name,
             publicKey
         });
@@ -233,7 +165,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     deleteKey(id) {
-        return httpRequest(this.config, 'deleteKey', {
+        return CloudlinkHttp.request(this.config, 'deleteKey', {
             id
         });
     }
@@ -245,7 +177,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     listVpcs(filters = {}, ids = []) {
-        return httpRequest(this.config, 'listVpcs', {
+        return CloudlinkHttp.request(this.config, 'listVpcs', {
             filters,
             ids
         });
@@ -258,7 +190,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     addVpc(cidr, tenancy) {
-        return httpRequest(this.config, 'addVpc', {
+        return CloudlinkHttp.request(this.config, 'addVpc', {
             cidr,
             tenancy
         });
@@ -269,7 +201,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     listSubNets() {
-        return httpRequest(this.config, 'listSubNets', {});
+        return CloudlinkHttp.request(this.config, 'listSubNets', {});
     }
 
     /**
@@ -279,7 +211,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     addSubNet(cidr, vpcId) {
-        return httpRequest(this.config, 'addSubNet', {
+        return CloudlinkHttp.request(this.config, 'addSubNet', {
             cidr,
             vpcId
         });
