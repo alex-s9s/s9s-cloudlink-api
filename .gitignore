@@ -1,0 +1,20 @@
+### Node template
+# Logs
+logs
+*.log
+npm-debug.log*
+node_modules
+.npm
+.node_repl_history
+
+### InteliJ
+.idea
+
+### Work in progress
+wip
+
+### Docs
+docs
+
+### Other
+.DS_Store
