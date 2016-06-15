@@ -142,6 +142,37 @@ export class CloudlinkApi {
     }
 
     /**
+     * Adds a new instance (Virtual machine)
+     * @returns {Promise}
+     * @param {Array} names
+     * @param {string} region
+     * @param {string} image
+     * @param {string} size
+     * @param {string} sshKey
+     */
+    addInstance(names, region, image, size, sshKey) {
+        return httpRequest(this.config, 'addInstance', {
+            names,
+            region,
+            image,
+            size,
+            sshKey
+        });
+    }
+
+    /**
+     * Returns the status of an instance (Virtual machine)
+     * @param {string|number} instanceId
+     * @returns {Promise}
+     */
+    getInstanceStatus(instanceId) {
+        return httpRequest(this.config, 'getInstanceStatus', {
+            instanceId
+        });
+    }
+
+    /**
+     * Returns a list of regions available on cloud provider
      * @returns {Promise}
      */
     listRegions() {
@@ -149,6 +180,7 @@ export class CloudlinkApi {
     }
 
     /**
+     * Returns a list of sizes available on cloud provider
      * @returns {Promise}
      */
     listSizes() {
@@ -156,16 +188,18 @@ export class CloudlinkApi {
     }
 
     /**
+     * Returns a list of distributions available on cloud provider
      * @param {{}} filters
      * @returns {Promise}
      */
-    listDistributions({filters = {}} = {}) {
+    listDistributions(filters = {}) {
         return httpRequest(this.config, 'listDistributions', {
             filters
         });
     }
 
     /**
+     * Returns a list of volumes (Virtual/disks)
      * @returns {Promise}
      */
     listVolumes() {
@@ -173,6 +207,7 @@ export class CloudlinkApi {
     }
 
     /**
+     * Returns a list of SSH keys registered on cloud provider
      * @returns {Promise}
      */
     listKeys() {
@@ -180,11 +215,36 @@ export class CloudlinkApi {
     }
 
     /**
+     * Registers a new public key on cloud provider
+     * @param {string} name
+     * @param {string} publicKey
+     * @returns {Promise}
+     */
+    addKey(name, publicKey) {
+        return httpRequest(this.config, 'addKey', {
+            name,
+            publicKey
+        });
+    }
+
+    /**
+     * Deletes a key from cloud provider
+     * @param {string|number} id
+     * @returns {Promise}
+     */
+    deleteKey(id) {
+        return httpRequest(this.config, 'deleteKey', {
+            id
+        });
+    }
+
+    /**
+     * Returns a list of VPCs (Virtual private network)
      * @param {{}} filters
      * @param {Array} ids
      * @returns {Promise}
      */
-    listVpcs({filters = {}, ids = []} = {}) {
+    listVpcs(filters = {}, ids = []) {
         return httpRequest(this.config, 'listVpcs', {
             filters,
             ids
@@ -192,10 +252,37 @@ export class CloudlinkApi {
     }
 
     /**
+     * Creates a new VPC (Virtual private network)
+     * @param cidr
+     * @param tenancy
+     * @returns {Promise}
+     */
+    addVpc(cidr, tenancy) {
+        return httpRequest(this.config, 'addVpc', {
+            cidr,
+            tenancy
+        });
+    }
+
+    /**
+     * Returns a list of subnets
      * @returns {Promise}
      */
     listSubNets() {
         return httpRequest(this.config, 'listSubNets', {});
+    }
+
+    /**
+     * Creates a new subnet within a VPC
+     * @param cidr
+     * @param vpcId
+     * @returns {Promise}
+     */
+    addSubNet(cidr, vpcId) {
+        return httpRequest(this.config, 'addSubNet', {
+            cidr,
+            vpcId
+        });
     }
 
 }

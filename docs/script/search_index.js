@@ -342,6 +342,30 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/cloudlinkapi.js~cloudlinkapi#addinstance",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addInstance",
+    "src/CloudlinkApi.js~CloudlinkApi#addInstance",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi#addkey",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addKey",
+    "src/CloudlinkApi.js~CloudlinkApi#addKey",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi#addsubnet",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addSubNet",
+    "src/CloudlinkApi.js~CloudlinkApi#addSubNet",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi#addvpc",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addVpc",
+    "src/CloudlinkApi.js~CloudlinkApi#addVpc",
+    "method"
+  ],
+  [
     "src/cloudlinkapi.js~cloudlinkapi#config",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-member-config",
     "src/CloudlinkApi.js~CloudlinkApi#config",
@@ -351,6 +375,18 @@ window.esdocSearchIndex = [
     "src/cloudlinkapi.js~cloudlinkapi#constructor",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-constructor-constructor",
     "src/CloudlinkApi.js~CloudlinkApi#constructor",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi#deletekey",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-deleteKey",
+    "src/CloudlinkApi.js~CloudlinkApi#deleteKey",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi#getinstancestatus",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-getInstanceStatus",
+    "src/CloudlinkApi.js~CloudlinkApi#getInstanceStatus",
     "method"
   ],
   [

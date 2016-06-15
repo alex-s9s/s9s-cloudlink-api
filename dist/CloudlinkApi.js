@@ -154,6 +154,43 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Adds a new instance (Virtual machine)
+         * @returns {Promise}
+         * @param {Array} names
+         * @param {string} region
+         * @param {string} image
+         * @param {string} size
+         * @param {string} sshKey
+         */
+
+    }, {
+        key: 'addInstance',
+        value: function addInstance(names, region, image, size, sshKey) {
+            return httpRequest(this.config, 'addInstance', {
+                names: names,
+                region: region,
+                image: image,
+                size: size,
+                sshKey: sshKey
+            });
+        }
+
+        /**
+         * Returns the status of an instance (Virtual machine)
+         * @param {string|number} instanceId
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'getInstanceStatus',
+        value: function getInstanceStatus(instanceId) {
+            return httpRequest(this.config, 'getInstanceStatus', {
+                instanceId: instanceId
+            });
+        }
+
+        /**
+         * Returns a list of regions available on cloud provider
          * @returns {Promise}
          */
 
@@ -164,6 +201,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Returns a list of sizes available on cloud provider
          * @returns {Promise}
          */
 
@@ -174,6 +212,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Returns a list of distributions available on cloud provider
          * @param {{}} filters
          * @returns {Promise}
          */
@@ -181,10 +220,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
     }, {
         key: 'listDistributions',
         value: function listDistributions() {
-            var _ref = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-
-            var _ref$filters = _ref.filters;
-            var filters = _ref$filters === undefined ? {} : _ref$filters;
+            var filters = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
 
             return httpRequest(this.config, 'listDistributions', {
                 filters: filters
@@ -192,6 +228,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Returns a list of volumes (Virtual/disks)
          * @returns {Promise}
          */
 
@@ -202,6 +239,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Returns a list of SSH keys registered on cloud provider
          * @returns {Promise}
          */
 
@@ -212,6 +250,37 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Registers a new public key on cloud provider
+         * @param {string} name
+         * @param {string} publicKey
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'addKey',
+        value: function addKey(name, publicKey) {
+            return httpRequest(this.config, 'addKey', {
+                name: name,
+                publicKey: publicKey
+            });
+        }
+
+        /**
+         * Deletes a key from cloud provider
+         * @param {string|number} id
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'deleteKey',
+        value: function deleteKey(id) {
+            return httpRequest(this.config, 'deleteKey', {
+                id: id
+            });
+        }
+
+        /**
+         * Returns a list of VPCs (Virtual private network)
          * @param {{}} filters
          * @param {Array} ids
          * @returns {Promise}
@@ -220,12 +289,8 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
     }, {
         key: 'listVpcs',
         value: function listVpcs() {
-            var _ref2 = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-
-            var _ref2$filters = _ref2.filters;
-            var filters = _ref2$filters === undefined ? {} : _ref2$filters;
-            var _ref2$ids = _ref2.ids;
-            var ids = _ref2$ids === undefined ? [] : _ref2$ids;
+            var filters = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+            var ids = arguments.length <= 1 || arguments[1] === undefined ? [] : arguments[1];
 
             return httpRequest(this.config, 'listVpcs', {
                 filters: filters,
@@ -234,6 +299,23 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Creates a new VPC (Virtual private network)
+         * @param cidr
+         * @param tenancy
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'addVpc',
+        value: function addVpc(cidr, tenancy) {
+            return httpRequest(this.config, 'addVpc', {
+                cidr: cidr,
+                tenancy: tenancy
+            });
+        }
+
+        /**
+         * Returns a list of subnets
          * @returns {Promise}
          */
 
@@ -241,6 +323,22 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         key: 'listSubNets',
         value: function listSubNets() {
             return httpRequest(this.config, 'listSubNets', {});
+        }
+
+        /**
+         * Creates a new subnet within a VPC
+         * @param cidr
+         * @param vpcId
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'addSubNet',
+        value: function addSubNet(cidr, vpcId) {
+            return httpRequest(this.config, 'addSubNet', {
+                cidr: cidr,
+                vpcId: vpcId
+            });
         }
     }]);
 
