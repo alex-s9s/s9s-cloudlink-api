@@ -1,4 +1,5 @@
 # CloudLink API
+[![Build Status](https://travis-ci.org/simon-s9/s9s-cloudlink-api.svg?branch=master)](https://travis-ci.org/simon-s9/s9s-cloudlink-api)
 
 An API to make requests to [CloudLink](https://github.com/simon-s9/s9s-cloudlink) service.
 
