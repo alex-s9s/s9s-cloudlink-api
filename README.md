@@ -3,7 +3,7 @@
 
 An API to make requests to [CloudLink](https://github.com/simon-s9/s9s-cloudlink) service.
 
-* [Documentation](https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/master/docs/index.html)
+* [Documentation](https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/186ef31/docs/index.html)
 * [Installation](#installation)
 * [Examples](#examples)
 
