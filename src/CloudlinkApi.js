@@ -81,15 +81,15 @@ export class CloudlinkApi {
      * @param {string} region Region to create the instance/s at
      * @param {string} image Image/ami to create the instance/s from
      * @param {string} size Diskspace size
-     * @param {string} sshKey SSH key to deploy to the new instance/s
+     * @param {string} sshKeys SSH key to deploy to the new instance/s
      */
-    addInstance(names, region, image, size, sshKey) {
+    addInstance(names, region, image, size, sshKeys) {
         return CloudlinkHttp.request(this.config, 'addInstance', {
             names,
             region,
             image,
             size,
-            sshKey
+            sshKeys
         });
     }
 

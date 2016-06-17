@@ -1,6 +1,6 @@
 {
   "name": "s9s-cloudlink-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "api.js",
   "license": "MIT",
   "author": {
