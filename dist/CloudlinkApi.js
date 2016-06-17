@@ -98,18 +98,18 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
          * @param {string} region Region to create the instance/s at
          * @param {string} image Image/ami to create the instance/s from
          * @param {string} size Diskspace size
-         * @param {string} sshKey SSH key to deploy to the new instance/s
+         * @param {string} sshKeys SSH key to deploy to the new instance/s
          */
 
     }, {
         key: 'addInstance',
-        value: function addInstance(names, region, image, size, sshKey) {
+        value: function addInstance(names, region, image, size, sshKeys) {
             return _CloudlinkHttp2.default.request(this.config, 'addInstance', {
                 names: names,
                 region: region,
                 image: image,
                 size: size,
-                sshKey: sshKey
+                sshKeys: sshKeys
             });
         }
 
