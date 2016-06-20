@@ -81,6 +81,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
     /**
      * Returns a list of instances (Virtual machines)
+     * @param {Array} [ids]
      * @returns {Promise}
      */
 
@@ -88,7 +89,9 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
     _createClass(CloudlinkApi, [{
         key: 'listInstances',
         value: function listInstances() {
-            return _CloudlinkHttp2.default.request(this.config, 'listInstances', {});
+            var ids = arguments.length <= 0 || arguments[0] === undefined ? [] : arguments[0];
+
+            return _CloudlinkHttp2.default.request(this.config, 'listInstances', { ids: ids });
         }
 
         /**

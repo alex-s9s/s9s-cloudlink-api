@@ -68,10 +68,11 @@ export class CloudlinkApi {
 
     /**
      * Returns a list of instances (Virtual machines)
+     * @param {Array} [ids]
      * @returns {Promise}
      */
-    listInstances() {
-        return CloudlinkHttp.request(this.config, 'listInstances', {});
+    listInstances(ids = []) {
+        return CloudlinkHttp.request(this.config, 'listInstances', {ids});
     }
 
     /**
