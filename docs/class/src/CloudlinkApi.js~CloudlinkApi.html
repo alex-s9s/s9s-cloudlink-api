@@ -192,7 +192,7 @@
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addInstance">addInstance</a></span></span><span data-ice="signature">(names: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>, region: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, image: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, size: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, sshKeys: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
+           <span data-ice="name"><span><a href="class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addInstance">addInstance</a></span></span><span data-ice="signature">(names: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>, region: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, image: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, disk: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, size: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, sshKeys: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, subnet: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
         </p>
       </div>
       <div>
@@ -730,11 +730,11 @@
     
     
     
-    <span data-ice="name">addInstance</span><span data-ice="signature">(names: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>, region: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, image: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, size: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, sshKeys: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
+    <span data-ice="name">addInstance</span><span data-ice="signature">(names: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>, region: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, image: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, disk: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, size: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, sshKeys: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, subnet: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber87">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber89">source</a></span></span>
     </span>
   </h3>
 
@@ -776,6 +776,13 @@
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">disk</td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Disk size in GB</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">size</td>
       <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
       <td data-ice="appendix"></td>
@@ -787,6 +794,13 @@
       <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>SSH key to deploy to the new instance/s</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">subnet</td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>Subnet id</p>
 </td>
     </tr>
 </tbody>
@@ -830,7 +844,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber157">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber161">source</a></span></span>
     </span>
   </h3>
 
@@ -905,7 +919,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber215">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber219">source</a></span></span>
     </span>
   </h3>
 
@@ -980,7 +994,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber194">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber198">source</a></span></span>
     </span>
   </h3>
 
@@ -1055,7 +1069,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber169">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber173">source</a></span></span>
     </span>
   </h3>
 
@@ -1123,7 +1137,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber102">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber106">source</a></span></span>
     </span>
   </h3>
 
@@ -1191,7 +1205,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber129">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber133">source</a></span></span>
     </span>
   </h3>
 
@@ -1326,7 +1340,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber147">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber151">source</a></span></span>
     </span>
   </h3>
 
@@ -1377,7 +1391,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber112">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber116">source</a></span></span>
     </span>
   </h3>
 
@@ -1428,7 +1442,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber120">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber124">source</a></span></span>
     </span>
   </h3>
 
@@ -1479,7 +1493,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber205">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber209">source</a></span></span>
     </span>
   </h3>
 
@@ -1530,7 +1544,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber139">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber143">source</a></span></span>
     </span>
   </h3>
 
@@ -1581,7 +1595,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber181">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/CloudlinkApi.js.html#lineNumber185">source</a></span></span>
     </span>
   </h3>
 
