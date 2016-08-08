@@ -99,6 +99,17 @@ export class CloudlinkApi {
     }
 
     /**
+     * Deletes an instance/list of instances
+     * @param instanceIds
+     * @returns {Promise}
+     */
+    deleteInstance(instanceIds) {
+        return CloudlinkHttp.request(this.config, 'deleteInstance', {
+            instanceIds
+        });
+    }
+
+    /**
      * Returns the status of an instance (Virtual machine)
      * @param {string|number} instanceId The id of an instance
      * @returns {Promise}
@@ -204,10 +215,15 @@ export class CloudlinkApi {
 
     /**
      * Returns a list of subnets
+     * @param ids
+     * @param filters
      * @returns {Promise}
      */
-    listSubNets() {
-        return CloudlinkHttp.request(this.config, 'listSubNets', {});
+    listSubNets(ids = [], filters = []) {
+        return CloudlinkHttp.request(this.config, 'listSubNets', {
+            ids,
+            filters
+        });
     }
 
     /**

@@ -6,7 +6,7 @@ An API to make requests to [CloudLink](https://github.com/simon-s9/s9s-cloudlink
   [![Build][travis-image]][travis-url]
   [![Documentation][document-image]][document-url]
 
-* [Documentation](https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.5/docs/index.html)
+* [Documentation](https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.6/docs/index.html)
 * [Installation](#installation)
 * [Examples](#examples)
 

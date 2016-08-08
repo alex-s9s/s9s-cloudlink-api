@@ -121,6 +121,20 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Deletes an instance/list of instances
+         * @param instanceIds
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'deleteInstance',
+        value: function deleteInstance(instanceIds) {
+            return _CloudlinkHttp2.default.request(this.config, 'deleteInstance', {
+                instanceIds: instanceIds
+            });
+        }
+
+        /**
          * Returns the status of an instance (Virtual machine)
          * @param {string|number} instanceId The id of an instance
          * @returns {Promise}
@@ -261,13 +275,21 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
         /**
          * Returns a list of subnets
+         * @param ids
+         * @param filters
          * @returns {Promise}
          */
 
     }, {
         key: 'listSubNets',
         value: function listSubNets() {
-            return _CloudlinkHttp2.default.request(this.config, 'listSubNets', {});
+            var ids = arguments.length <= 0 || arguments[0] === undefined ? [] : arguments[0];
+            var filters = arguments.length <= 1 || arguments[1] === undefined ? [] : arguments[1];
+
+            return _CloudlinkHttp2.default.request(this.config, 'listSubNets', {
+                ids: ids,
+                filters: filters
+            });
         }
 
         /**

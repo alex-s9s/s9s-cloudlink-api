@@ -390,6 +390,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/cloudlinkapi.js~cloudlinkapi#deleteinstance",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-deleteInstance",
+    "src/CloudlinkApi.js~CloudlinkApi#deleteInstance",
+    "method"
+  ],
+  [
     "src/cloudlinkapi.js~cloudlinkapi#deletekey",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-deleteKey",
     "src/CloudlinkApi.js~CloudlinkApi#deleteKey",
