@@ -307,6 +307,56 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
                 vpcId: vpcId
             });
         }
+
+        /**
+         * Creates a new security group under a vpcId
+         * @param vpcId
+         * @param name
+         * @param description
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'addSecurityGroup',
+        value: function addSecurityGroup(vpcId, name, description) {
+            return _CloudlinkHttp2.default.request(this.config, 'addSecurityGroup', {
+                vpcId: vpcId,
+                name: name,
+                description: description
+            });
+        }
+
+        /**
+         * Creates a set of inbound security group rules
+         * @param groupId
+         * @param rules
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'addSecurityGroupInboundRules',
+        value: function addSecurityGroupInboundRules(groupId, rules) {
+            return _CloudlinkHttp2.default.request(this.config, 'addSecurityGroupInboundRules', {
+                groupId: groupId,
+                rules: rules
+            });
+        }
+
+        /**
+         * Creates a set of outbound security group rules
+         * @param groupId
+         * @param rules
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'addSecurityGroupOutboundRules',
+        value: function addSecurityGroupOutboundRules(groupId, rules) {
+            return _CloudlinkHttp2.default.request(this.config, 'addSecurityGroupOutboundRules', {
+                groupId: groupId,
+                rules: rules
+            });
+        }
     }]);
 
     return CloudlinkApi;

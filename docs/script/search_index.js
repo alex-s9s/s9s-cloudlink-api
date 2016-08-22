@@ -366,6 +366,24 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/cloudlinkapi.js~cloudlinkapi#addsecuritygroup",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addSecurityGroup",
+    "src/CloudlinkApi.js~CloudlinkApi#addSecurityGroup",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi#addsecuritygroupinboundrules",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addSecurityGroupInboundRules",
+    "src/CloudlinkApi.js~CloudlinkApi#addSecurityGroupInboundRules",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi#addsecuritygroupoutboundrules",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addSecurityGroupOutboundRules",
+    "src/CloudlinkApi.js~CloudlinkApi#addSecurityGroupOutboundRules",
+    "method"
+  ],
+  [
     "src/cloudlinkapi.js~cloudlinkapi#addsubnet",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addSubNet",
     "src/CloudlinkApi.js~CloudlinkApi#addSubNet",

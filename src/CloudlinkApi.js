@@ -239,4 +239,45 @@ export class CloudlinkApi {
         });
     }
 
+    /**
+     * Creates a new security group under a vpcId
+     * @param vpcId
+     * @param name
+     * @param description
+     * @returns {Promise}
+     */
+    addSecurityGroup(vpcId, name, description) {
+        return CloudlinkHttp.request(this.config, 'addSecurityGroup', {
+            vpcId,
+            name,
+            description
+        });
+    }
+
+    /**
+     * Creates a set of inbound security group rules
+     * @param groupId
+     * @param rules
+     * @returns {Promise}
+     */
+    addSecurityGroupInboundRules(groupId, rules) {
+        return CloudlinkHttp.request(this.config, 'addSecurityGroupInboundRules', {
+            groupId,
+            rules
+        });
+    }
+
+    /**
+     * Creates a set of outbound security group rules
+     * @param groupId
+     * @param rules
+     * @returns {Promise}
+     */
+    addSecurityGroupOutboundRules(groupId, rules) {
+        return CloudlinkHttp.request(this.config, 'addSecurityGroupOutboundRules', {
+            groupId,
+            rules
+        });
+    }
+
 }
