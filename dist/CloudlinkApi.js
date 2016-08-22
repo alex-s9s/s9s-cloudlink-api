@@ -104,11 +104,12 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
          * @param {string} size Diskspace size
          * @param {string} sshKeys SSH key to deploy to the new instance/s
          * @param {number|string} [subnet] Subnet id
+         * @param {Array} [securityGroups] List of security groups ids
          */
 
     }, {
         key: 'addInstance',
-        value: function addInstance(names, region, image, disk, size, sshKeys, subnet) {
+        value: function addInstance(names, region, image, disk, size, sshKeys, subnet, securityGroups) {
             return _CloudlinkHttp2.default.request(this.config, 'addInstance', {
                 names: names,
                 region: region,
@@ -116,7 +117,8 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
                 disk: disk,
                 size: size,
                 subnet: subnet,
-                sshKeys: sshKeys
+                sshKeys: sshKeys,
+                securityGroups: securityGroups
             });
         }
 
