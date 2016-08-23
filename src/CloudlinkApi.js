@@ -323,7 +323,7 @@ export class CloudlinkApi {
      * @returns {Promise}
      */
     attachInternetGateway(vpcId, gatewayId) {
-        return CloudlinkHttp.request(this.config, '', {
+        return CloudlinkHttp.request(this.config, 'attachInternetGateway', {
             vpcId,
             gatewayId
         });

@@ -413,7 +413,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
     }, {
         key: 'attachInternetGateway',
         value: function attachInternetGateway(vpcId, gatewayId) {
-            return _CloudlinkHttp2.default.request(this.config, '', {
+            return _CloudlinkHttp2.default.request(this.config, 'attachInternetGateway', {
                 vpcId: vpcId,
                 gatewayId: gatewayId
             });
