@@ -391,6 +391,33 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
                 rules: rules
             });
         }
+
+        /**
+         * Creates a new internet gateway
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'addInternetGateway',
+        value: function addInternetGateway() {
+            return _CloudlinkHttp2.default.request(this.config, 'addInternetGateway', {});
+        }
+
+        /**
+         * Attaches internet gateway to VPC
+         * @param vpcId
+         * @param gatewayId
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'attachInternetGateway',
+        value: function attachInternetGateway(vpcId, gatewayId) {
+            return _CloudlinkHttp2.default.request(this.config, '', {
+                vpcId: vpcId,
+                gatewayId: gatewayId
+            });
+        }
     }]);
 
     return CloudlinkApi;

@@ -11559,12 +11559,760 @@
                   }
                 }
               ],
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n     * Creates a new internet gateway\n     * @returns {Promise}\n     ",
+                  "range": [
+                    8079,
+                    8154
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 311,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 314,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": false
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "addInternetGateway",
+                "range": [
+                  8159,
+                  8177
+                ],
+                "loc": {
+                  "start": {
+                    "line": 315,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 315,
+                    "column": 22
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "CloudlinkHttp",
+                            "range": [
+                              8197,
+                              8210
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 316,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 316,
+                                "column": 28
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "request",
+                            "range": [
+                              8211,
+                              8218
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 316,
+                                "column": 29
+                              },
+                              "end": {
+                                "line": 316,
+                                "column": 36
+                              }
+                            }
+                          },
+                          "range": [
+                            8197,
+                            8218
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 316,
+                              "column": 15
+                            },
+                            "end": {
+                              "line": 316,
+                              "column": 36
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "ThisExpression",
+                              "range": [
+                                8219,
+                                8223
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 316,
+                                  "column": 37
+                                },
+                                "end": {
+                                  "line": 316,
+                                  "column": 41
+                                }
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "config",
+                              "range": [
+                                8224,
+                                8230
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 316,
+                                  "column": 42
+                                },
+                                "end": {
+                                  "line": 316,
+                                  "column": 48
+                                }
+                              }
+                            },
+                            "range": [
+                              8219,
+                              8230
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 316,
+                                "column": 37
+                              },
+                              "end": {
+                                "line": 316,
+                                "column": 48
+                              }
+                            }
+                          },
+                          {
+                            "type": "Literal",
+                            "value": "addInternetGateway",
+                            "raw": "'addInternetGateway'",
+                            "range": [
+                              8232,
+                              8252
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 316,
+                                "column": 50
+                              },
+                              "end": {
+                                "line": 316,
+                                "column": 70
+                              }
+                            }
+                          },
+                          {
+                            "type": "ObjectExpression",
+                            "properties": [],
+                            "range": [
+                              8254,
+                              8256
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 316,
+                                "column": 72
+                              },
+                              "end": {
+                                "line": 316,
+                                "column": 74
+                              }
+                            }
+                          }
+                        ],
+                        "range": [
+                          8197,
+                          8257
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 316,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 316,
+                            "column": 75
+                          }
+                        }
+                      },
+                      "range": [
+                        8190,
+                        8258
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 316,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 316,
+                          "column": 76
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    8180,
+                    8264
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 315,
+                      "column": 25
+                    },
+                    "end": {
+                      "line": 317,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  8177,
+                  8264
+                ],
+                "loc": {
+                  "start": {
+                    "line": 315,
+                    "column": 22
+                  },
+                  "end": {
+                    "line": 317,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "method",
+              "computed": false,
+              "range": [
+                8159,
+                8264
+              ],
+              "loc": {
+                "start": {
+                  "line": 315,
+                  "column": 4
+                },
+                "end": {
+                  "line": 317,
+                  "column": 5
+                }
+              },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n     * Creates a new internet gateway\n     * @returns {Promise}\n     ",
+                  "range": [
+                    8079,
+                    8154
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 311,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 314,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n     * Attaches internet gateway to VPC\n     * @param vpcId\n     * @param gatewayId\n     * @returns {Promise}\n     ",
+                  "range": [
+                    8270,
+                    8391
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 319,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 324,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": false
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "attachInternetGateway",
+                "range": [
+                  8396,
+                  8417
+                ],
+                "loc": {
+                  "start": {
+                    "line": 325,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 325,
+                    "column": 25
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "vpcId",
+                    "range": [
+                      8418,
+                      8423
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 325,
+                        "column": 26
+                      },
+                      "end": {
+                        "line": 325,
+                        "column": 31
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "gatewayId",
+                    "range": [
+                      8425,
+                      8434
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 325,
+                        "column": 33
+                      },
+                      "end": {
+                        "line": 325,
+                        "column": 42
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "CloudlinkHttp",
+                            "range": [
+                              8453,
+                              8466
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 326,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 326,
+                                "column": 28
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "request",
+                            "range": [
+                              8467,
+                              8474
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 326,
+                                "column": 29
+                              },
+                              "end": {
+                                "line": 326,
+                                "column": 36
+                              }
+                            }
+                          },
+                          "range": [
+                            8453,
+                            8474
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 326,
+                              "column": 15
+                            },
+                            "end": {
+                              "line": 326,
+                              "column": 36
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "ThisExpression",
+                              "range": [
+                                8475,
+                                8479
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 326,
+                                  "column": 37
+                                },
+                                "end": {
+                                  "line": 326,
+                                  "column": 41
+                                }
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "config",
+                              "range": [
+                                8480,
+                                8486
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 326,
+                                  "column": 42
+                                },
+                                "end": {
+                                  "line": 326,
+                                  "column": 48
+                                }
+                              }
+                            },
+                            "range": [
+                              8475,
+                              8486
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 326,
+                                "column": 37
+                              },
+                              "end": {
+                                "line": 326,
+                                "column": 48
+                              }
+                            }
+                          },
+                          {
+                            "type": "Literal",
+                            "value": "",
+                            "raw": "''",
+                            "range": [
+                              8488,
+                              8490
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 326,
+                                "column": 50
+                              },
+                              "end": {
+                                "line": 326,
+                                "column": 52
+                              }
+                            }
+                          },
+                          {
+                            "type": "ObjectExpression",
+                            "properties": [
+                              {
+                                "type": "Property",
+                                "key": {
+                                  "type": "Identifier",
+                                  "name": "vpcId",
+                                  "range": [
+                                    8506,
+                                    8511
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 327,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 327,
+                                      "column": 17
+                                    }
+                                  }
+                                },
+                                "value": {
+                                  "type": "Identifier",
+                                  "name": "vpcId",
+                                  "range": [
+                                    8506,
+                                    8511
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 327,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 327,
+                                      "column": 17
+                                    }
+                                  }
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true,
+                                "computed": false,
+                                "range": [
+                                  8506,
+                                  8511
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 327,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 327,
+                                    "column": 17
+                                  }
+                                }
+                              },
+                              {
+                                "type": "Property",
+                                "key": {
+                                  "type": "Identifier",
+                                  "name": "gatewayId",
+                                  "range": [
+                                    8525,
+                                    8534
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 328,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 328,
+                                      "column": 21
+                                    }
+                                  }
+                                },
+                                "value": {
+                                  "type": "Identifier",
+                                  "name": "gatewayId",
+                                  "range": [
+                                    8525,
+                                    8534
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 328,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 328,
+                                      "column": 21
+                                    }
+                                  }
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true,
+                                "computed": false,
+                                "range": [
+                                  8525,
+                                  8534
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 328,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 328,
+                                    "column": 21
+                                  }
+                                }
+                              }
+                            ],
+                            "range": [
+                              8492,
+                              8544
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 326,
+                                "column": 54
+                              },
+                              "end": {
+                                "line": 329,
+                                "column": 9
+                              }
+                            }
+                          }
+                        ],
+                        "range": [
+                          8453,
+                          8545
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 326,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 329,
+                            "column": 10
+                          }
+                        }
+                      },
+                      "range": [
+                        8446,
+                        8546
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 326,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 329,
+                          "column": 11
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    8436,
+                    8552
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 325,
+                      "column": 44
+                    },
+                    "end": {
+                      "line": 330,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  8417,
+                  8552
+                ],
+                "loc": {
+                  "start": {
+                    "line": 325,
+                    "column": 25
+                  },
+                  "end": {
+                    "line": 330,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "method",
+              "computed": false,
+              "range": [
+                8396,
+                8552
+              ],
+              "loc": {
+                "start": {
+                  "line": 325,
+                  "column": 4
+                },
+                "end": {
+                  "line": 330,
+                  "column": 5
+                }
+              },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n     * Attaches internet gateway to VPC\n     * @param vpcId\n     * @param gatewayId\n     * @returns {Promise}\n     ",
+                  "range": [
+                    8270,
+                    8391
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 319,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 324,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
               "static": false
             }
           ],
           "range": [
             274,
-            8076
+            8555
           ],
           "loc": {
             "start": {
@@ -11572,14 +12320,14 @@
               "column": 26
             },
             "end": {
-              "line": 311,
+              "line": 332,
               "column": 1
             }
           }
         },
         "range": [
           255,
-          8076
+          8555
         ],
         "loc": {
           "start": {
@@ -11587,7 +12335,7 @@
             "column": 7
           },
           "end": {
-            "line": 311,
+            "line": 332,
             "column": 1
           }
         },
@@ -11617,7 +12365,7 @@
       "source": null,
       "range": [
         248,
-        8076
+        8555
       ],
       "loc": {
         "start": {
@@ -11625,7 +12373,7 @@
           "column": 0
         },
         "end": {
-          "line": 311,
+          "line": 332,
           "column": 1
         }
       },
@@ -11654,7 +12402,7 @@
   "sourceType": "module",
   "range": [
     0,
-    8076
+    8555
   ],
   "loc": {
     "start": {
@@ -11662,7 +12410,7 @@
       "column": 0
     },
     "end": {
-      "line": 311,
+      "line": 332,
       "column": 1
     }
   },
@@ -12113,6 +12861,42 @@
         },
         "end": {
           "line": 303,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n     * Creates a new internet gateway\n     * @returns {Promise}\n     ",
+      "range": [
+        8079,
+        8154
+      ],
+      "loc": {
+        "start": {
+          "line": 311,
+          "column": 4
+        },
+        "end": {
+          "line": 314,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n     * Attaches internet gateway to VPC\n     * @param vpcId\n     * @param gatewayId\n     * @returns {Promise}\n     ",
+      "range": [
+        8270,
+        8391
+      ],
+      "loc": {
+        "start": {
+          "line": 319,
+          "column": 4
+        },
+        "end": {
+          "line": 324,
           "column": 7
         }
       }

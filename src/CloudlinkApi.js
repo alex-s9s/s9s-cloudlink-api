@@ -308,4 +308,25 @@ export class CloudlinkApi {
         });
     }
 
+    /**
+     * Creates a new internet gateway
+     * @returns {Promise}
+     */
+    addInternetGateway() {
+        return CloudlinkHttp.request(this.config, 'addInternetGateway', {});
+    }
+
+    /**
+     * Attaches internet gateway to VPC
+     * @param vpcId
+     * @param gatewayId
+     * @returns {Promise}
+     */
+    attachInternetGateway(vpcId, gatewayId) {
+        return CloudlinkHttp.request(this.config, '', {
+            vpcId,
+            gatewayId
+        });
+    }
+
 }

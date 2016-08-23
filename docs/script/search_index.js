@@ -360,6 +360,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/cloudlinkapi.js~cloudlinkapi#addinternetgateway",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addInternetGateway",
+    "src/CloudlinkApi.js~CloudlinkApi#addInternetGateway",
+    "method"
+  ],
+  [
     "src/cloudlinkapi.js~cloudlinkapi#addkey",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addKey",
     "src/CloudlinkApi.js~CloudlinkApi#addKey",
@@ -399,6 +405,12 @@ window.esdocSearchIndex = [
     "src/cloudlinkapi.js~cloudlinkapi#addvpcattribute",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addVpcAttribute",
     "src/CloudlinkApi.js~CloudlinkApi#addVpcAttribute",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi#attachinternetgateway",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-attachInternetGateway",
+    "src/CloudlinkApi.js~CloudlinkApi#attachInternetGateway",
     "method"
   ],
   [
