@@ -216,6 +216,32 @@ export class CloudlinkApi {
     }
 
     /**
+     * Sets/adds vpc attribute
+     * @param vpcId
+     * @param attributes
+     * @returns {Promise}
+     */
+    addVpcAttribute(vpcId, attributes) {
+        return CloudlinkHttp.request(this.config, 'addVpcAttribute', {
+            vpcId,
+            attributes
+        });
+    }
+
+    /**
+     * Returns vpc attribute value
+     * @param vpcId
+     * @param attribute
+     * @returns {Promise}
+     */
+    getVpcAttribute(vpcId, attribute) {
+        return CloudlinkHttp.request(this.config, 'getVpcAttribute', {
+            vpcId,
+            attribute
+        });
+    }
+
+    /**
      * Returns a list of subnets
      * @param ids
      * @param filters

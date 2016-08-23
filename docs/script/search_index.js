@@ -396,6 +396,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/cloudlinkapi.js~cloudlinkapi#addvpcattribute",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addVpcAttribute",
+    "src/CloudlinkApi.js~CloudlinkApi#addVpcAttribute",
+    "method"
+  ],
+  [
     "src/cloudlinkapi.js~cloudlinkapi#config",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-member-config",
     "src/CloudlinkApi.js~CloudlinkApi#config",
@@ -423,6 +429,12 @@ window.esdocSearchIndex = [
     "src/cloudlinkapi.js~cloudlinkapi#getinstancestatus",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-getInstanceStatus",
     "src/CloudlinkApi.js~CloudlinkApi#getInstanceStatus",
+    "method"
+  ],
+  [
+    "src/cloudlinkapi.js~cloudlinkapi#getvpcattribute",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-getVpcAttribute",
+    "src/CloudlinkApi.js~CloudlinkApi#getVpcAttribute",
     "method"
   ],
   [

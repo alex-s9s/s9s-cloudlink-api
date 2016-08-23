@@ -276,6 +276,38 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Sets/adds vpc attribute
+         * @param vpcId
+         * @param attributes
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'addVpcAttribute',
+        value: function addVpcAttribute(vpcId, attributes) {
+            return _CloudlinkHttp2.default.request(this.config, 'addVpcAttribute', {
+                vpcId: vpcId,
+                attributes: attributes
+            });
+        }
+
+        /**
+         * Returns vpc attribute value
+         * @param vpcId
+         * @param attribute
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'getVpcAttribute',
+        value: function getVpcAttribute(vpcId, attribute) {
+            return _CloudlinkHttp2.default.request(this.config, 'getVpcAttribute', {
+                vpcId: vpcId,
+                attribute: attribute
+            });
+        }
+
+        /**
          * Returns a list of subnets
          * @param ids
          * @param filters
