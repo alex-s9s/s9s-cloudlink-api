@@ -418,6 +418,20 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
                 gatewayId: gatewayId
             });
         }
+
+        /**
+         * Lists all routes tables, may apply filters
+         * @param filters
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'listRouteTables',
+        value: function listRouteTables(filters) {
+            return _CloudlinkHttp2.default.request(this.config, 'listRouteTables', {
+                filters: filters || {}
+            });
+        }
     }]);
 
     return CloudlinkApi;

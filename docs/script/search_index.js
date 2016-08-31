@@ -474,6 +474,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/cloudlinkapi.js~cloudlinkapi#listroutetables",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-listRouteTables",
+    "src/CloudlinkApi.js~CloudlinkApi#listRouteTables",
+    "method"
+  ],
+  [
     "src/cloudlinkapi.js~cloudlinkapi#listsizes",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-listSizes",
     "src/CloudlinkApi.js~CloudlinkApi#listSizes",

@@ -329,4 +329,15 @@ export class CloudlinkApi {
         });
     }
 
+    /**
+     * Lists all routes tables, may apply filters
+     * @param filters
+     * @returns {Promise}
+     */
+    listRouteTables(filters) {
+        return CloudlinkHttp.request(this.config, 'listRouteTables', {
+            filters: filters || {}
+        });
+    }
+
 }
