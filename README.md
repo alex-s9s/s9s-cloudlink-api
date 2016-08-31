@@ -56,4 +56,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [travis-image]: https://travis-ci.org/simon-s9/s9s-cloudlink-api.svg?branch=master
 [travis-url]: https://travis-ci.org/simon-s9/s9s-cloudlink-api
 [document-image]: https://rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.13/docs/badge.svg
+[document-image]: https://rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.13/docs/badge.svg
 [document-url]: https://github.com/simon-s9/s9s-cloudlink-api/releases
