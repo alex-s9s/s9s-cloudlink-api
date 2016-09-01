@@ -343,6 +343,22 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         }
 
         /**
+         * Sets "assignPublicIp" property for a subNet
+         * @param subNetId
+         * @param assignPublicIp
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'setSubNetAttribute',
+        value: function setSubNetAttribute(subNetId, assignPublicIp) {
+            return _CloudlinkHttp2.default.request(this.config, 'setSubNetAttribute', {
+                subNetId: subNetId,
+                assignPublicIp: assignPublicIp
+            });
+        }
+
+        /**
          * Creates a new security group under a vpcId
          * @param vpcId
          * @param name

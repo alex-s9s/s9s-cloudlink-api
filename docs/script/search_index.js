@@ -504,6 +504,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/cloudlinkapi.js~cloudlinkapi#setsubnetattribute",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-setSubNetAttribute",
+    "src/CloudlinkApi.js~CloudlinkApi#setSubNetAttribute",
+    "method"
+  ],
+  [
     "src/cloudlinkapi.js~cloudlinkapi.supportedclouds",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#static-get-supportedClouds",
     "src/CloudlinkApi.js~CloudlinkApi.supportedClouds",

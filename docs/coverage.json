@@ -1,11 +1,11 @@
 {
-  "coverage": "96.66%",
-  "expectCount": 30,
-  "actualCount": 29,
+  "coverage": "96.77%",
+  "expectCount": 31,
+  "actualCount": 30,
   "files": {
     "src/CloudlinkApi.js": {
-      "expectCount": 27,
-      "actualCount": 26,
+      "expectCount": 28,
+      "actualCount": 27,
       "undocumentLines": [
         35
       ]

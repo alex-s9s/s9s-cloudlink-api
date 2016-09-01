@@ -310,6 +310,19 @@ export class CloudlinkApi {
     }
 
     /**
+     * Sets &quot;assignPublicIp&quot; property for a subNet
+     * @param subNetId
+     * @param assignPublicIp
+     * @returns {Promise}
+     */
+    setSubNetAttribute(subNetId, assignPublicIp) {
+        return CloudlinkHttp.request(this.config, &apos;setSubNetAttribute&apos;, {
+            subNetId,
+            assignPublicIp
+        });
+    }
+
+    /**
      * Creates a new security group under a vpcId
      * @param vpcId
      * @param name
