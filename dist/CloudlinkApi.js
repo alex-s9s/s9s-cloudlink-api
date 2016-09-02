@@ -132,7 +132,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
         key: 'deleteInstance',
         value: function deleteInstance(instanceIds) {
             return _CloudlinkHttp2.default.request(this.config, 'deleteInstance', {
-                instanceIds: instanceIds
+                ids: instanceIds
             });
         }
 

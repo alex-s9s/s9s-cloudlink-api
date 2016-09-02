@@ -4323,10 +4323,10 @@
                                 "type": "Property",
                                 "key": {
                                   "type": "Identifier",
-                                  "name": "instanceIds",
+                                  "name": "ids",
                                   "range": [
                                     3197,
-                                    3208
+                                    3200
                                   ],
                                   "loc": {
                                     "start": {
@@ -4335,7 +4335,7 @@
                                     },
                                     "end": {
                                       "line": 110,
-                                      "column": 23
+                                      "column": 15
                                     }
                                   }
                                 },
@@ -4343,27 +4343,27 @@
                                   "type": "Identifier",
                                   "name": "instanceIds",
                                   "range": [
-                                    3197,
-                                    3208
+                                    3202,
+                                    3213
                                   ],
                                   "loc": {
                                     "start": {
                                       "line": 110,
-                                      "column": 12
+                                      "column": 17
                                     },
                                     "end": {
                                       "line": 110,
-                                      "column": 23
+                                      "column": 28
                                     }
                                   }
                                 },
                                 "kind": "init",
                                 "method": false,
-                                "shorthand": true,
+                                "shorthand": false,
                                 "computed": false,
                                 "range": [
                                   3197,
-                                  3208
+                                  3213
                                 ],
                                 "loc": {
                                   "start": {
@@ -4372,14 +4372,14 @@
                                   },
                                   "end": {
                                     "line": 110,
-                                    "column": 23
+                                    "column": 28
                                   }
                                 }
                               }
                             ],
                             "range": [
                               3183,
-                              3218
+                              3223
                             ],
                             "loc": {
                               "start": {
@@ -4395,7 +4395,7 @@
                         ],
                         "range": [
                           3130,
-                          3219
+                          3224
                         ],
                         "loc": {
                           "start": {
@@ -4410,7 +4410,7 @@
                       },
                       "range": [
                         3123,
-                        3220
+                        3225
                       ],
                       "loc": {
                         "start": {
@@ -4426,7 +4426,7 @@
                   ],
                   "range": [
                     3113,
-                    3226
+                    3231
                   ],
                   "loc": {
                     "start": {
@@ -4443,7 +4443,7 @@
                 "expression": false,
                 "range": [
                   3099,
-                  3226
+                  3231
                 ],
                 "loc": {
                   "start": {
@@ -4460,7 +4460,7 @@
               "computed": false,
               "range": [
                 3085,
-                3226
+                3231
               ],
               "loc": {
                 "start": {
@@ -4497,8 +4497,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns the status of an instance (Virtual machine)\n     * @param {string|number} instanceId The id of an instance\n     * @returns {Promise}\n     ",
                   "range": [
-                    3232,
-                    3391
+                    3237,
+                    3396
                   ],
                   "loc": {
                     "start": {
@@ -4520,8 +4520,8 @@
                 "type": "Identifier",
                 "name": "getInstanceStatus",
                 "range": [
-                  3396,
-                  3413
+                  3401,
+                  3418
                 ],
                 "loc": {
                   "start": {
@@ -4542,8 +4542,8 @@
                     "type": "Identifier",
                     "name": "instanceId",
                     "range": [
-                      3414,
-                      3424
+                      3419,
+                      3429
                     ],
                     "loc": {
                       "start": {
@@ -4571,8 +4571,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              3443,
-                              3456
+                              3448,
+                              3461
                             ],
                             "loc": {
                               "start": {
@@ -4589,8 +4589,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              3457,
-                              3464
+                              3462,
+                              3469
                             ],
                             "loc": {
                               "start": {
@@ -4604,8 +4604,8 @@
                             }
                           },
                           "range": [
-                            3443,
-                            3464
+                            3448,
+                            3469
                           ],
                           "loc": {
                             "start": {
@@ -4625,8 +4625,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                3465,
-                                3469
+                                3470,
+                                3474
                               ],
                               "loc": {
                                 "start": {
@@ -4643,8 +4643,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                3470,
-                                3476
+                                3475,
+                                3481
                               ],
                               "loc": {
                                 "start": {
@@ -4658,8 +4658,8 @@
                               }
                             },
                             "range": [
-                              3465,
-                              3476
+                              3470,
+                              3481
                             ],
                             "loc": {
                               "start": {
@@ -4677,8 +4677,8 @@
                             "value": "getInstanceStatus",
                             "raw": "'getInstanceStatus'",
                             "range": [
-                              3478,
-                              3497
+                              3483,
+                              3502
                             ],
                             "loc": {
                               "start": {
@@ -4700,8 +4700,8 @@
                                   "type": "Identifier",
                                   "name": "instanceId",
                                   "range": [
-                                    3513,
-                                    3523
+                                    3518,
+                                    3528
                                   ],
                                   "loc": {
                                     "start": {
@@ -4718,8 +4718,8 @@
                                   "type": "Identifier",
                                   "name": "instanceId",
                                   "range": [
-                                    3513,
-                                    3523
+                                    3518,
+                                    3528
                                   ],
                                   "loc": {
                                     "start": {
@@ -4737,8 +4737,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  3513,
-                                  3523
+                                  3518,
+                                  3528
                                 ],
                                 "loc": {
                                   "start": {
@@ -4753,8 +4753,8 @@
                               }
                             ],
                             "range": [
-                              3499,
-                              3533
+                              3504,
+                              3538
                             ],
                             "loc": {
                               "start": {
@@ -4769,8 +4769,8 @@
                           }
                         ],
                         "range": [
-                          3443,
-                          3534
+                          3448,
+                          3539
                         ],
                         "loc": {
                           "start": {
@@ -4784,8 +4784,8 @@
                         }
                       },
                       "range": [
-                        3436,
-                        3535
+                        3441,
+                        3540
                       ],
                       "loc": {
                         "start": {
@@ -4800,8 +4800,8 @@
                     }
                   ],
                   "range": [
-                    3426,
-                    3541
+                    3431,
+                    3546
                   ],
                   "loc": {
                     "start": {
@@ -4817,8 +4817,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  3413,
-                  3541
+                  3418,
+                  3546
                 ],
                 "loc": {
                   "start": {
@@ -4834,8 +4834,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                3396,
-                3541
+                3401,
+                3546
               ],
               "loc": {
                 "start": {
@@ -4852,8 +4852,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns the status of an instance (Virtual machine)\n     * @param {string|number} instanceId The id of an instance\n     * @returns {Promise}\n     ",
                   "range": [
-                    3232,
-                    3391
+                    3237,
+                    3396
                   ],
                   "loc": {
                     "start": {
@@ -4872,8 +4872,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of regions available on cloud provider\n     * @returns {Promise}\n     ",
                   "range": [
-                    3547,
-                    3645
+                    3552,
+                    3650
                   ],
                   "loc": {
                     "start": {
@@ -4895,8 +4895,8 @@
                 "type": "Identifier",
                 "name": "listRegions",
                 "range": [
-                  3650,
-                  3661
+                  3655,
+                  3666
                 ],
                 "loc": {
                   "start": {
@@ -4927,8 +4927,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              3681,
-                              3694
+                              3686,
+                              3699
                             ],
                             "loc": {
                               "start": {
@@ -4945,8 +4945,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              3695,
-                              3702
+                              3700,
+                              3707
                             ],
                             "loc": {
                               "start": {
@@ -4960,8 +4960,8 @@
                             }
                           },
                           "range": [
-                            3681,
-                            3702
+                            3686,
+                            3707
                           ],
                           "loc": {
                             "start": {
@@ -4981,8 +4981,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                3703,
-                                3707
+                                3708,
+                                3712
                               ],
                               "loc": {
                                 "start": {
@@ -4999,8 +4999,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                3708,
-                                3714
+                                3713,
+                                3719
                               ],
                               "loc": {
                                 "start": {
@@ -5014,8 +5014,8 @@
                               }
                             },
                             "range": [
-                              3703,
-                              3714
+                              3708,
+                              3719
                             ],
                             "loc": {
                               "start": {
@@ -5033,8 +5033,8 @@
                             "value": "listRegions",
                             "raw": "'listRegions'",
                             "range": [
-                              3716,
-                              3729
+                              3721,
+                              3734
                             ],
                             "loc": {
                               "start": {
@@ -5051,8 +5051,8 @@
                             "type": "ObjectExpression",
                             "properties": [],
                             "range": [
-                              3731,
-                              3733
+                              3736,
+                              3738
                             ],
                             "loc": {
                               "start": {
@@ -5067,8 +5067,8 @@
                           }
                         ],
                         "range": [
-                          3681,
-                          3734
+                          3686,
+                          3739
                         ],
                         "loc": {
                           "start": {
@@ -5082,8 +5082,8 @@
                         }
                       },
                       "range": [
-                        3674,
-                        3735
+                        3679,
+                        3740
                       ],
                       "loc": {
                         "start": {
@@ -5098,8 +5098,8 @@
                     }
                   ],
                   "range": [
-                    3664,
-                    3741
+                    3669,
+                    3746
                   ],
                   "loc": {
                     "start": {
@@ -5115,8 +5115,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  3661,
-                  3741
+                  3666,
+                  3746
                 ],
                 "loc": {
                   "start": {
@@ -5132,8 +5132,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                3650,
-                3741
+                3655,
+                3746
               ],
               "loc": {
                 "start": {
@@ -5150,8 +5150,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of regions available on cloud provider\n     * @returns {Promise}\n     ",
                   "range": [
-                    3547,
-                    3645
+                    3552,
+                    3650
                   ],
                   "loc": {
                     "start": {
@@ -5170,8 +5170,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of sizes available on cloud provider\n     * @returns {Promise}\n     ",
                   "range": [
-                    3747,
-                    3843
+                    3752,
+                    3848
                   ],
                   "loc": {
                     "start": {
@@ -5193,8 +5193,8 @@
                 "type": "Identifier",
                 "name": "listSizes",
                 "range": [
-                  3848,
-                  3857
+                  3853,
+                  3862
                 ],
                 "loc": {
                   "start": {
@@ -5225,8 +5225,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              3877,
-                              3890
+                              3882,
+                              3895
                             ],
                             "loc": {
                               "start": {
@@ -5243,8 +5243,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              3891,
-                              3898
+                              3896,
+                              3903
                             ],
                             "loc": {
                               "start": {
@@ -5258,8 +5258,8 @@
                             }
                           },
                           "range": [
-                            3877,
-                            3898
+                            3882,
+                            3903
                           ],
                           "loc": {
                             "start": {
@@ -5279,8 +5279,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                3899,
-                                3903
+                                3904,
+                                3908
                               ],
                               "loc": {
                                 "start": {
@@ -5297,8 +5297,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                3904,
-                                3910
+                                3909,
+                                3915
                               ],
                               "loc": {
                                 "start": {
@@ -5312,8 +5312,8 @@
                               }
                             },
                             "range": [
-                              3899,
-                              3910
+                              3904,
+                              3915
                             ],
                             "loc": {
                               "start": {
@@ -5331,8 +5331,8 @@
                             "value": "listSizes",
                             "raw": "'listSizes'",
                             "range": [
-                              3912,
-                              3923
+                              3917,
+                              3928
                             ],
                             "loc": {
                               "start": {
@@ -5349,8 +5349,8 @@
                             "type": "ObjectExpression",
                             "properties": [],
                             "range": [
-                              3925,
-                              3927
+                              3930,
+                              3932
                             ],
                             "loc": {
                               "start": {
@@ -5365,8 +5365,8 @@
                           }
                         ],
                         "range": [
-                          3877,
-                          3928
+                          3882,
+                          3933
                         ],
                         "loc": {
                           "start": {
@@ -5380,8 +5380,8 @@
                         }
                       },
                       "range": [
-                        3870,
-                        3929
+                        3875,
+                        3934
                       ],
                       "loc": {
                         "start": {
@@ -5396,8 +5396,8 @@
                     }
                   ],
                   "range": [
-                    3860,
-                    3935
+                    3865,
+                    3940
                   ],
                   "loc": {
                     "start": {
@@ -5413,8 +5413,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  3857,
-                  3935
+                  3862,
+                  3940
                 ],
                 "loc": {
                   "start": {
@@ -5430,8 +5430,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                3848,
-                3935
+                3853,
+                3940
               ],
               "loc": {
                 "start": {
@@ -5448,8 +5448,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of sizes available on cloud provider\n     * @returns {Promise}\n     ",
                   "range": [
-                    3747,
-                    3843
+                    3752,
+                    3848
                   ],
                   "loc": {
                     "start": {
@@ -5468,8 +5468,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of distributions available on cloud provider\n     * @param {{}} filters Filters object\n     * @returns {Promise}\n     ",
                   "range": [
-                    3941,
-                    4087
+                    3946,
+                    4092
                   ],
                   "loc": {
                     "start": {
@@ -5491,8 +5491,8 @@
                 "type": "Identifier",
                 "name": "listDistributions",
                 "range": [
-                  4092,
-                  4109
+                  4097,
+                  4114
                 ],
                 "loc": {
                   "start": {
@@ -5515,8 +5515,8 @@
                       "type": "Identifier",
                       "name": "filters",
                       "range": [
-                        4110,
-                        4117
+                        4115,
+                        4122
                       ],
                       "loc": {
                         "start": {
@@ -5533,8 +5533,8 @@
                       "type": "ObjectExpression",
                       "properties": [],
                       "range": [
-                        4120,
-                        4122
+                        4125,
+                        4127
                       ],
                       "loc": {
                         "start": {
@@ -5548,8 +5548,8 @@
                       }
                     },
                     "range": [
-                      4110,
-                      4122
+                      4115,
+                      4127
                     ],
                     "loc": {
                       "start": {
@@ -5577,8 +5577,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              4141,
-                              4154
+                              4146,
+                              4159
                             ],
                             "loc": {
                               "start": {
@@ -5595,8 +5595,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              4155,
-                              4162
+                              4160,
+                              4167
                             ],
                             "loc": {
                               "start": {
@@ -5610,8 +5610,8 @@
                             }
                           },
                           "range": [
-                            4141,
-                            4162
+                            4146,
+                            4167
                           ],
                           "loc": {
                             "start": {
@@ -5631,8 +5631,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                4163,
-                                4167
+                                4168,
+                                4172
                               ],
                               "loc": {
                                 "start": {
@@ -5649,8 +5649,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                4168,
-                                4174
+                                4173,
+                                4179
                               ],
                               "loc": {
                                 "start": {
@@ -5664,8 +5664,8 @@
                               }
                             },
                             "range": [
-                              4163,
-                              4174
+                              4168,
+                              4179
                             ],
                             "loc": {
                               "start": {
@@ -5683,8 +5683,8 @@
                             "value": "listDistributions",
                             "raw": "'listDistributions'",
                             "range": [
-                              4176,
-                              4195
+                              4181,
+                              4200
                             ],
                             "loc": {
                               "start": {
@@ -5706,8 +5706,8 @@
                                   "type": "Identifier",
                                   "name": "filters",
                                   "range": [
-                                    4211,
-                                    4218
+                                    4216,
+                                    4223
                                   ],
                                   "loc": {
                                     "start": {
@@ -5724,8 +5724,8 @@
                                   "type": "Identifier",
                                   "name": "filters",
                                   "range": [
-                                    4211,
-                                    4218
+                                    4216,
+                                    4223
                                   ],
                                   "loc": {
                                     "start": {
@@ -5743,8 +5743,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  4211,
-                                  4218
+                                  4216,
+                                  4223
                                 ],
                                 "loc": {
                                   "start": {
@@ -5759,8 +5759,8 @@
                               }
                             ],
                             "range": [
-                              4197,
-                              4228
+                              4202,
+                              4233
                             ],
                             "loc": {
                               "start": {
@@ -5775,8 +5775,8 @@
                           }
                         ],
                         "range": [
-                          4141,
-                          4229
+                          4146,
+                          4234
                         ],
                         "loc": {
                           "start": {
@@ -5790,8 +5790,8 @@
                         }
                       },
                       "range": [
-                        4134,
-                        4230
+                        4139,
+                        4235
                       ],
                       "loc": {
                         "start": {
@@ -5806,8 +5806,8 @@
                     }
                   ],
                   "range": [
-                    4124,
-                    4236
+                    4129,
+                    4241
                   ],
                   "loc": {
                     "start": {
@@ -5823,8 +5823,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  4109,
-                  4236
+                  4114,
+                  4241
                 ],
                 "loc": {
                   "start": {
@@ -5840,8 +5840,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                4092,
-                4236
+                4097,
+                4241
               ],
               "loc": {
                 "start": {
@@ -5858,8 +5858,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of distributions available on cloud provider\n     * @param {{}} filters Filters object\n     * @returns {Promise}\n     ",
                   "range": [
-                    3941,
-                    4087
+                    3946,
+                    4092
                   ],
                   "loc": {
                     "start": {
@@ -5878,8 +5878,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of volumes (Virtual/disks)\n     * @returns {Promise}\n     ",
                   "range": [
-                    4242,
-                    4328
+                    4247,
+                    4333
                   ],
                   "loc": {
                     "start": {
@@ -5901,8 +5901,8 @@
                 "type": "Identifier",
                 "name": "listVolumes",
                 "range": [
-                  4333,
-                  4344
+                  4338,
+                  4349
                 ],
                 "loc": {
                   "start": {
@@ -5933,8 +5933,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              4364,
-                              4377
+                              4369,
+                              4382
                             ],
                             "loc": {
                               "start": {
@@ -5951,8 +5951,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              4378,
-                              4385
+                              4383,
+                              4390
                             ],
                             "loc": {
                               "start": {
@@ -5966,8 +5966,8 @@
                             }
                           },
                           "range": [
-                            4364,
-                            4385
+                            4369,
+                            4390
                           ],
                           "loc": {
                             "start": {
@@ -5987,8 +5987,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                4386,
-                                4390
+                                4391,
+                                4395
                               ],
                               "loc": {
                                 "start": {
@@ -6005,8 +6005,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                4391,
-                                4397
+                                4396,
+                                4402
                               ],
                               "loc": {
                                 "start": {
@@ -6020,8 +6020,8 @@
                               }
                             },
                             "range": [
-                              4386,
-                              4397
+                              4391,
+                              4402
                             ],
                             "loc": {
                               "start": {
@@ -6039,8 +6039,8 @@
                             "value": "listVolumes",
                             "raw": "'listVolumes'",
                             "range": [
-                              4399,
-                              4412
+                              4404,
+                              4417
                             ],
                             "loc": {
                               "start": {
@@ -6057,8 +6057,8 @@
                             "type": "ObjectExpression",
                             "properties": [],
                             "range": [
-                              4414,
-                              4416
+                              4419,
+                              4421
                             ],
                             "loc": {
                               "start": {
@@ -6073,8 +6073,8 @@
                           }
                         ],
                         "range": [
-                          4364,
-                          4417
+                          4369,
+                          4422
                         ],
                         "loc": {
                           "start": {
@@ -6088,8 +6088,8 @@
                         }
                       },
                       "range": [
-                        4357,
-                        4418
+                        4362,
+                        4423
                       ],
                       "loc": {
                         "start": {
@@ -6104,8 +6104,8 @@
                     }
                   ],
                   "range": [
-                    4347,
-                    4424
+                    4352,
+                    4429
                   ],
                   "loc": {
                     "start": {
@@ -6121,8 +6121,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  4344,
-                  4424
+                  4349,
+                  4429
                 ],
                 "loc": {
                   "start": {
@@ -6138,8 +6138,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                4333,
-                4424
+                4338,
+                4429
               ],
               "loc": {
                 "start": {
@@ -6156,8 +6156,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of volumes (Virtual/disks)\n     * @returns {Promise}\n     ",
                   "range": [
-                    4242,
-                    4328
+                    4247,
+                    4333
                   ],
                   "loc": {
                     "start": {
@@ -6176,8 +6176,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of SSH keys registered on cloud provider\n     * @returns {Promise}\n     ",
                   "range": [
-                    4430,
-                    4530
+                    4435,
+                    4535
                   ],
                   "loc": {
                     "start": {
@@ -6199,8 +6199,8 @@
                 "type": "Identifier",
                 "name": "listKeys",
                 "range": [
-                  4535,
-                  4543
+                  4540,
+                  4548
                 ],
                 "loc": {
                   "start": {
@@ -6231,8 +6231,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              4563,
-                              4576
+                              4568,
+                              4581
                             ],
                             "loc": {
                               "start": {
@@ -6249,8 +6249,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              4577,
-                              4584
+                              4582,
+                              4589
                             ],
                             "loc": {
                               "start": {
@@ -6264,8 +6264,8 @@
                             }
                           },
                           "range": [
-                            4563,
-                            4584
+                            4568,
+                            4589
                           ],
                           "loc": {
                             "start": {
@@ -6285,8 +6285,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                4585,
-                                4589
+                                4590,
+                                4594
                               ],
                               "loc": {
                                 "start": {
@@ -6303,8 +6303,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                4590,
-                                4596
+                                4595,
+                                4601
                               ],
                               "loc": {
                                 "start": {
@@ -6318,8 +6318,8 @@
                               }
                             },
                             "range": [
-                              4585,
-                              4596
+                              4590,
+                              4601
                             ],
                             "loc": {
                               "start": {
@@ -6337,8 +6337,8 @@
                             "value": "listKeys",
                             "raw": "'listKeys'",
                             "range": [
-                              4598,
-                              4608
+                              4603,
+                              4613
                             ],
                             "loc": {
                               "start": {
@@ -6355,8 +6355,8 @@
                             "type": "ObjectExpression",
                             "properties": [],
                             "range": [
-                              4610,
-                              4612
+                              4615,
+                              4617
                             ],
                             "loc": {
                               "start": {
@@ -6371,8 +6371,8 @@
                           }
                         ],
                         "range": [
-                          4563,
-                          4613
+                          4568,
+                          4618
                         ],
                         "loc": {
                           "start": {
@@ -6386,8 +6386,8 @@
                         }
                       },
                       "range": [
-                        4556,
-                        4614
+                        4561,
+                        4619
                       ],
                       "loc": {
                         "start": {
@@ -6402,8 +6402,8 @@
                     }
                   ],
                   "range": [
-                    4546,
-                    4620
+                    4551,
+                    4625
                   ],
                   "loc": {
                     "start": {
@@ -6419,8 +6419,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  4543,
-                  4620
+                  4548,
+                  4625
                 ],
                 "loc": {
                   "start": {
@@ -6436,8 +6436,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                4535,
-                4620
+                4540,
+                4625
               ],
               "loc": {
                 "start": {
@@ -6454,8 +6454,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of SSH keys registered on cloud provider\n     * @returns {Promise}\n     ",
                   "range": [
-                    4430,
-                    4530
+                    4435,
+                    4535
                   ],
                   "loc": {
                     "start": {
@@ -6474,8 +6474,8 @@
                   "type": "Block",
                   "value": "*\n     * Registers a new public key on cloud provider\n     * @param {string} name Name of the new key\n     * @param {string} publicKey Public key contents\n     * @returns {Promise}\n     ",
                   "range": [
-                    4626,
-                    4816
+                    4631,
+                    4821
                   ],
                   "loc": {
                     "start": {
@@ -6497,8 +6497,8 @@
                 "type": "Identifier",
                 "name": "addKey",
                 "range": [
-                  4821,
-                  4827
+                  4826,
+                  4832
                 ],
                 "loc": {
                   "start": {
@@ -6519,8 +6519,8 @@
                     "type": "Identifier",
                     "name": "name",
                     "range": [
-                      4828,
-                      4832
+                      4833,
+                      4837
                     ],
                     "loc": {
                       "start": {
@@ -6537,8 +6537,8 @@
                     "type": "Identifier",
                     "name": "publicKey",
                     "range": [
-                      4834,
-                      4843
+                      4839,
+                      4848
                     ],
                     "loc": {
                       "start": {
@@ -6566,8 +6566,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              4862,
-                              4875
+                              4867,
+                              4880
                             ],
                             "loc": {
                               "start": {
@@ -6584,8 +6584,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              4876,
-                              4883
+                              4881,
+                              4888
                             ],
                             "loc": {
                               "start": {
@@ -6599,8 +6599,8 @@
                             }
                           },
                           "range": [
-                            4862,
-                            4883
+                            4867,
+                            4888
                           ],
                           "loc": {
                             "start": {
@@ -6620,8 +6620,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                4884,
-                                4888
+                                4889,
+                                4893
                               ],
                               "loc": {
                                 "start": {
@@ -6638,8 +6638,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                4889,
-                                4895
+                                4894,
+                                4900
                               ],
                               "loc": {
                                 "start": {
@@ -6653,8 +6653,8 @@
                               }
                             },
                             "range": [
-                              4884,
-                              4895
+                              4889,
+                              4900
                             ],
                             "loc": {
                               "start": {
@@ -6672,8 +6672,8 @@
                             "value": "addKey",
                             "raw": "'addKey'",
                             "range": [
-                              4897,
-                              4905
+                              4902,
+                              4910
                             ],
                             "loc": {
                               "start": {
@@ -6695,8 +6695,8 @@
                                   "type": "Identifier",
                                   "name": "name",
                                   "range": [
-                                    4921,
-                                    4925
+                                    4926,
+                                    4930
                                   ],
                                   "loc": {
                                     "start": {
@@ -6713,8 +6713,8 @@
                                   "type": "Identifier",
                                   "name": "name",
                                   "range": [
-                                    4921,
-                                    4925
+                                    4926,
+                                    4930
                                   ],
                                   "loc": {
                                     "start": {
@@ -6732,8 +6732,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  4921,
-                                  4925
+                                  4926,
+                                  4930
                                 ],
                                 "loc": {
                                   "start": {
@@ -6752,8 +6752,8 @@
                                   "type": "Identifier",
                                   "name": "publicKey",
                                   "range": [
-                                    4939,
-                                    4948
+                                    4944,
+                                    4953
                                   ],
                                   "loc": {
                                     "start": {
@@ -6770,8 +6770,8 @@
                                   "type": "Identifier",
                                   "name": "publicKey",
                                   "range": [
-                                    4939,
-                                    4948
+                                    4944,
+                                    4953
                                   ],
                                   "loc": {
                                     "start": {
@@ -6789,8 +6789,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  4939,
-                                  4948
+                                  4944,
+                                  4953
                                 ],
                                 "loc": {
                                   "start": {
@@ -6805,8 +6805,8 @@
                               }
                             ],
                             "range": [
-                              4907,
-                              4958
+                              4912,
+                              4963
                             ],
                             "loc": {
                               "start": {
@@ -6821,8 +6821,8 @@
                           }
                         ],
                         "range": [
-                          4862,
-                          4959
+                          4867,
+                          4964
                         ],
                         "loc": {
                           "start": {
@@ -6836,8 +6836,8 @@
                         }
                       },
                       "range": [
-                        4855,
-                        4960
+                        4860,
+                        4965
                       ],
                       "loc": {
                         "start": {
@@ -6852,8 +6852,8 @@
                     }
                   ],
                   "range": [
-                    4845,
-                    4966
+                    4850,
+                    4971
                   ],
                   "loc": {
                     "start": {
@@ -6869,8 +6869,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  4827,
-                  4966
+                  4832,
+                  4971
                 ],
                 "loc": {
                   "start": {
@@ -6886,8 +6886,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                4821,
-                4966
+                4826,
+                4971
               ],
               "loc": {
                 "start": {
@@ -6904,8 +6904,8 @@
                   "type": "Block",
                   "value": "*\n     * Registers a new public key on cloud provider\n     * @param {string} name Name of the new key\n     * @param {string} publicKey Public key contents\n     * @returns {Promise}\n     ",
                   "range": [
-                    4626,
-                    4816
+                    4631,
+                    4821
                   ],
                   "loc": {
                     "start": {
@@ -6924,8 +6924,8 @@
                   "type": "Block",
                   "value": "*\n     * Deletes a key from cloud provider\n     * @param {string|number} id Key name/id\n     * @returns {Promise}\n     ",
                   "range": [
-                    4972,
-                    5095
+                    4977,
+                    5100
                   ],
                   "loc": {
                     "start": {
@@ -6947,8 +6947,8 @@
                 "type": "Identifier",
                 "name": "deleteKey",
                 "range": [
-                  5100,
-                  5109
+                  5105,
+                  5114
                 ],
                 "loc": {
                   "start": {
@@ -6969,8 +6969,8 @@
                     "type": "Identifier",
                     "name": "id",
                     "range": [
-                      5110,
-                      5112
+                      5115,
+                      5117
                     ],
                     "loc": {
                       "start": {
@@ -6998,8 +6998,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              5131,
-                              5144
+                              5136,
+                              5149
                             ],
                             "loc": {
                               "start": {
@@ -7016,8 +7016,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              5145,
-                              5152
+                              5150,
+                              5157
                             ],
                             "loc": {
                               "start": {
@@ -7031,8 +7031,8 @@
                             }
                           },
                           "range": [
-                            5131,
-                            5152
+                            5136,
+                            5157
                           ],
                           "loc": {
                             "start": {
@@ -7052,8 +7052,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                5153,
-                                5157
+                                5158,
+                                5162
                               ],
                               "loc": {
                                 "start": {
@@ -7070,8 +7070,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                5158,
-                                5164
+                                5163,
+                                5169
                               ],
                               "loc": {
                                 "start": {
@@ -7085,8 +7085,8 @@
                               }
                             },
                             "range": [
-                              5153,
-                              5164
+                              5158,
+                              5169
                             ],
                             "loc": {
                               "start": {
@@ -7104,8 +7104,8 @@
                             "value": "deleteKey",
                             "raw": "'deleteKey'",
                             "range": [
-                              5166,
-                              5177
+                              5171,
+                              5182
                             ],
                             "loc": {
                               "start": {
@@ -7127,8 +7127,8 @@
                                   "type": "Identifier",
                                   "name": "id",
                                   "range": [
-                                    5193,
-                                    5195
+                                    5198,
+                                    5200
                                   ],
                                   "loc": {
                                     "start": {
@@ -7145,8 +7145,8 @@
                                   "type": "Identifier",
                                   "name": "id",
                                   "range": [
-                                    5193,
-                                    5195
+                                    5198,
+                                    5200
                                   ],
                                   "loc": {
                                     "start": {
@@ -7164,8 +7164,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  5193,
-                                  5195
+                                  5198,
+                                  5200
                                 ],
                                 "loc": {
                                   "start": {
@@ -7180,8 +7180,8 @@
                               }
                             ],
                             "range": [
-                              5179,
-                              5205
+                              5184,
+                              5210
                             ],
                             "loc": {
                               "start": {
@@ -7196,8 +7196,8 @@
                           }
                         ],
                         "range": [
-                          5131,
-                          5206
+                          5136,
+                          5211
                         ],
                         "loc": {
                           "start": {
@@ -7211,8 +7211,8 @@
                         }
                       },
                       "range": [
-                        5124,
-                        5207
+                        5129,
+                        5212
                       ],
                       "loc": {
                         "start": {
@@ -7227,8 +7227,8 @@
                     }
                   ],
                   "range": [
-                    5114,
-                    5213
+                    5119,
+                    5218
                   ],
                   "loc": {
                     "start": {
@@ -7244,8 +7244,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  5109,
-                  5213
+                  5114,
+                  5218
                 ],
                 "loc": {
                   "start": {
@@ -7261,8 +7261,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                5100,
-                5213
+                5105,
+                5218
               ],
               "loc": {
                 "start": {
@@ -7279,8 +7279,8 @@
                   "type": "Block",
                   "value": "*\n     * Deletes a key from cloud provider\n     * @param {string|number} id Key name/id\n     * @returns {Promise}\n     ",
                   "range": [
-                    4972,
-                    5095
+                    4977,
+                    5100
                   ],
                   "loc": {
                     "start": {
@@ -7299,8 +7299,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of VPCs (Virtual private network)\n     * @param {{}} filters Filters object\n     * @param {Array} ids Ids list\n     * @returns {Promise}\n     ",
                   "range": [
-                    5219,
-                    5389
+                    5224,
+                    5394
                   ],
                   "loc": {
                     "start": {
@@ -7322,8 +7322,8 @@
                 "type": "Identifier",
                 "name": "listVpcs",
                 "range": [
-                  5394,
-                  5402
+                  5399,
+                  5407
                 ],
                 "loc": {
                   "start": {
@@ -7346,8 +7346,8 @@
                       "type": "Identifier",
                       "name": "filters",
                       "range": [
-                        5403,
-                        5410
+                        5408,
+                        5415
                       ],
                       "loc": {
                         "start": {
@@ -7364,8 +7364,8 @@
                       "type": "ObjectExpression",
                       "properties": [],
                       "range": [
-                        5413,
-                        5415
+                        5418,
+                        5420
                       ],
                       "loc": {
                         "start": {
@@ -7379,8 +7379,8 @@
                       }
                     },
                     "range": [
-                      5403,
-                      5415
+                      5408,
+                      5420
                     ],
                     "loc": {
                       "start": {
@@ -7399,8 +7399,8 @@
                       "type": "Identifier",
                       "name": "ids",
                       "range": [
-                        5417,
-                        5420
+                        5422,
+                        5425
                       ],
                       "loc": {
                         "start": {
@@ -7417,8 +7417,8 @@
                       "type": "ArrayExpression",
                       "elements": [],
                       "range": [
-                        5423,
-                        5425
+                        5428,
+                        5430
                       ],
                       "loc": {
                         "start": {
@@ -7432,8 +7432,8 @@
                       }
                     },
                     "range": [
-                      5417,
-                      5425
+                      5422,
+                      5430
                     ],
                     "loc": {
                       "start": {
@@ -7461,8 +7461,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              5444,
-                              5457
+                              5449,
+                              5462
                             ],
                             "loc": {
                               "start": {
@@ -7479,8 +7479,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              5458,
-                              5465
+                              5463,
+                              5470
                             ],
                             "loc": {
                               "start": {
@@ -7494,8 +7494,8 @@
                             }
                           },
                           "range": [
-                            5444,
-                            5465
+                            5449,
+                            5470
                           ],
                           "loc": {
                             "start": {
@@ -7515,8 +7515,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                5466,
-                                5470
+                                5471,
+                                5475
                               ],
                               "loc": {
                                 "start": {
@@ -7533,8 +7533,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                5471,
-                                5477
+                                5476,
+                                5482
                               ],
                               "loc": {
                                 "start": {
@@ -7548,8 +7548,8 @@
                               }
                             },
                             "range": [
-                              5466,
-                              5477
+                              5471,
+                              5482
                             ],
                             "loc": {
                               "start": {
@@ -7567,8 +7567,8 @@
                             "value": "listVpcs",
                             "raw": "'listVpcs'",
                             "range": [
-                              5479,
-                              5489
+                              5484,
+                              5494
                             ],
                             "loc": {
                               "start": {
@@ -7590,8 +7590,8 @@
                                   "type": "Identifier",
                                   "name": "filters",
                                   "range": [
-                                    5505,
-                                    5512
+                                    5510,
+                                    5517
                                   ],
                                   "loc": {
                                     "start": {
@@ -7608,8 +7608,8 @@
                                   "type": "Identifier",
                                   "name": "filters",
                                   "range": [
-                                    5505,
-                                    5512
+                                    5510,
+                                    5517
                                   ],
                                   "loc": {
                                     "start": {
@@ -7627,8 +7627,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  5505,
-                                  5512
+                                  5510,
+                                  5517
                                 ],
                                 "loc": {
                                   "start": {
@@ -7647,8 +7647,8 @@
                                   "type": "Identifier",
                                   "name": "ids",
                                   "range": [
-                                    5526,
-                                    5529
+                                    5531,
+                                    5534
                                   ],
                                   "loc": {
                                     "start": {
@@ -7665,8 +7665,8 @@
                                   "type": "Identifier",
                                   "name": "ids",
                                   "range": [
-                                    5526,
-                                    5529
+                                    5531,
+                                    5534
                                   ],
                                   "loc": {
                                     "start": {
@@ -7684,8 +7684,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  5526,
-                                  5529
+                                  5531,
+                                  5534
                                 ],
                                 "loc": {
                                   "start": {
@@ -7700,8 +7700,8 @@
                               }
                             ],
                             "range": [
-                              5491,
-                              5539
+                              5496,
+                              5544
                             ],
                             "loc": {
                               "start": {
@@ -7716,8 +7716,8 @@
                           }
                         ],
                         "range": [
-                          5444,
-                          5540
+                          5449,
+                          5545
                         ],
                         "loc": {
                           "start": {
@@ -7731,8 +7731,8 @@
                         }
                       },
                       "range": [
-                        5437,
-                        5541
+                        5442,
+                        5546
                       ],
                       "loc": {
                         "start": {
@@ -7747,8 +7747,8 @@
                     }
                   ],
                   "range": [
-                    5427,
-                    5547
+                    5432,
+                    5552
                   ],
                   "loc": {
                     "start": {
@@ -7764,8 +7764,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  5402,
-                  5547
+                  5407,
+                  5552
                 ],
                 "loc": {
                   "start": {
@@ -7781,8 +7781,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                5394,
-                5547
+                5399,
+                5552
               ],
               "loc": {
                 "start": {
@@ -7799,8 +7799,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of VPCs (Virtual private network)\n     * @param {{}} filters Filters object\n     * @param {Array} ids Ids list\n     * @returns {Promise}\n     ",
                   "range": [
-                    5219,
-                    5389
+                    5224,
+                    5394
                   ],
                   "loc": {
                     "start": {
@@ -7819,8 +7819,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a new VPC (Virtual private network)\n     * @param cidr CIDR block, network range\n     * @param tenancy Tenancy default/dedicated/host\n     * @returns {Promise}\n     ",
                   "range": [
-                    5553,
-                    5739
+                    5558,
+                    5744
                   ],
                   "loc": {
                     "start": {
@@ -7842,8 +7842,8 @@
                 "type": "Identifier",
                 "name": "addVpc",
                 "range": [
-                  5744,
-                  5750
+                  5749,
+                  5755
                 ],
                 "loc": {
                   "start": {
@@ -7864,8 +7864,8 @@
                     "type": "Identifier",
                     "name": "cidr",
                     "range": [
-                      5751,
-                      5755
+                      5756,
+                      5760
                     ],
                     "loc": {
                       "start": {
@@ -7882,8 +7882,8 @@
                     "type": "Identifier",
                     "name": "tenancy",
                     "range": [
-                      5757,
-                      5764
+                      5762,
+                      5769
                     ],
                     "loc": {
                       "start": {
@@ -7911,8 +7911,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              5783,
-                              5796
+                              5788,
+                              5801
                             ],
                             "loc": {
                               "start": {
@@ -7929,8 +7929,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              5797,
-                              5804
+                              5802,
+                              5809
                             ],
                             "loc": {
                               "start": {
@@ -7944,8 +7944,8 @@
                             }
                           },
                           "range": [
-                            5783,
-                            5804
+                            5788,
+                            5809
                           ],
                           "loc": {
                             "start": {
@@ -7965,8 +7965,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                5805,
-                                5809
+                                5810,
+                                5814
                               ],
                               "loc": {
                                 "start": {
@@ -7983,8 +7983,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                5810,
-                                5816
+                                5815,
+                                5821
                               ],
                               "loc": {
                                 "start": {
@@ -7998,8 +7998,8 @@
                               }
                             },
                             "range": [
-                              5805,
-                              5816
+                              5810,
+                              5821
                             ],
                             "loc": {
                               "start": {
@@ -8017,8 +8017,8 @@
                             "value": "addVpc",
                             "raw": "'addVpc'",
                             "range": [
-                              5818,
-                              5826
+                              5823,
+                              5831
                             ],
                             "loc": {
                               "start": {
@@ -8040,8 +8040,8 @@
                                   "type": "Identifier",
                                   "name": "cidr",
                                   "range": [
-                                    5842,
-                                    5846
+                                    5847,
+                                    5851
                                   ],
                                   "loc": {
                                     "start": {
@@ -8058,8 +8058,8 @@
                                   "type": "Identifier",
                                   "name": "cidr",
                                   "range": [
-                                    5842,
-                                    5846
+                                    5847,
+                                    5851
                                   ],
                                   "loc": {
                                     "start": {
@@ -8077,8 +8077,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  5842,
-                                  5846
+                                  5847,
+                                  5851
                                 ],
                                 "loc": {
                                   "start": {
@@ -8097,8 +8097,8 @@
                                   "type": "Identifier",
                                   "name": "tenancy",
                                   "range": [
-                                    5860,
-                                    5867
+                                    5865,
+                                    5872
                                   ],
                                   "loc": {
                                     "start": {
@@ -8115,8 +8115,8 @@
                                   "type": "Identifier",
                                   "name": "tenancy",
                                   "range": [
-                                    5860,
-                                    5867
+                                    5865,
+                                    5872
                                   ],
                                   "loc": {
                                     "start": {
@@ -8134,8 +8134,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  5860,
-                                  5867
+                                  5865,
+                                  5872
                                 ],
                                 "loc": {
                                   "start": {
@@ -8150,8 +8150,8 @@
                               }
                             ],
                             "range": [
-                              5828,
-                              5877
+                              5833,
+                              5882
                             ],
                             "loc": {
                               "start": {
@@ -8166,8 +8166,8 @@
                           }
                         ],
                         "range": [
-                          5783,
-                          5878
+                          5788,
+                          5883
                         ],
                         "loc": {
                           "start": {
@@ -8181,8 +8181,8 @@
                         }
                       },
                       "range": [
-                        5776,
-                        5879
+                        5781,
+                        5884
                       ],
                       "loc": {
                         "start": {
@@ -8197,8 +8197,8 @@
                     }
                   ],
                   "range": [
-                    5766,
-                    5885
+                    5771,
+                    5890
                   ],
                   "loc": {
                     "start": {
@@ -8214,8 +8214,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  5750,
-                  5885
+                  5755,
+                  5890
                 ],
                 "loc": {
                   "start": {
@@ -8231,8 +8231,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                5744,
-                5885
+                5749,
+                5890
               ],
               "loc": {
                 "start": {
@@ -8249,8 +8249,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a new VPC (Virtual private network)\n     * @param cidr CIDR block, network range\n     * @param tenancy Tenancy default/dedicated/host\n     * @returns {Promise}\n     ",
                   "range": [
-                    5553,
-                    5739
+                    5558,
+                    5744
                   ],
                   "loc": {
                     "start": {
@@ -8269,8 +8269,8 @@
                   "type": "Block",
                   "value": "*\n     * Sets/adds vpc attribute\n     * @param vpcId\n     * @param attributes\n     * @returns {Promise}\n     ",
                   "range": [
-                    5891,
-                    6004
+                    5896,
+                    6009
                   ],
                   "loc": {
                     "start": {
@@ -8292,8 +8292,8 @@
                 "type": "Identifier",
                 "name": "addVpcAttribute",
                 "range": [
-                  6009,
-                  6024
+                  6014,
+                  6029
                 ],
                 "loc": {
                   "start": {
@@ -8314,8 +8314,8 @@
                     "type": "Identifier",
                     "name": "vpcId",
                     "range": [
-                      6025,
-                      6030
+                      6030,
+                      6035
                     ],
                     "loc": {
                       "start": {
@@ -8332,8 +8332,8 @@
                     "type": "Identifier",
                     "name": "attributes",
                     "range": [
-                      6032,
-                      6042
+                      6037,
+                      6047
                     ],
                     "loc": {
                       "start": {
@@ -8361,8 +8361,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              6061,
-                              6074
+                              6066,
+                              6079
                             ],
                             "loc": {
                               "start": {
@@ -8379,8 +8379,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              6075,
-                              6082
+                              6080,
+                              6087
                             ],
                             "loc": {
                               "start": {
@@ -8394,8 +8394,8 @@
                             }
                           },
                           "range": [
-                            6061,
-                            6082
+                            6066,
+                            6087
                           ],
                           "loc": {
                             "start": {
@@ -8415,8 +8415,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                6083,
-                                6087
+                                6088,
+                                6092
                               ],
                               "loc": {
                                 "start": {
@@ -8433,8 +8433,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                6088,
-                                6094
+                                6093,
+                                6099
                               ],
                               "loc": {
                                 "start": {
@@ -8448,8 +8448,8 @@
                               }
                             },
                             "range": [
-                              6083,
-                              6094
+                              6088,
+                              6099
                             ],
                             "loc": {
                               "start": {
@@ -8467,8 +8467,8 @@
                             "value": "addVpcAttribute",
                             "raw": "'addVpcAttribute'",
                             "range": [
-                              6096,
-                              6113
+                              6101,
+                              6118
                             ],
                             "loc": {
                               "start": {
@@ -8490,8 +8490,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    6129,
-                                    6134
+                                    6134,
+                                    6139
                                   ],
                                   "loc": {
                                     "start": {
@@ -8508,8 +8508,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    6129,
-                                    6134
+                                    6134,
+                                    6139
                                   ],
                                   "loc": {
                                     "start": {
@@ -8527,8 +8527,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  6129,
-                                  6134
+                                  6134,
+                                  6139
                                 ],
                                 "loc": {
                                   "start": {
@@ -8547,8 +8547,8 @@
                                   "type": "Identifier",
                                   "name": "attributes",
                                   "range": [
-                                    6148,
-                                    6158
+                                    6153,
+                                    6163
                                   ],
                                   "loc": {
                                     "start": {
@@ -8565,8 +8565,8 @@
                                   "type": "Identifier",
                                   "name": "attributes",
                                   "range": [
-                                    6148,
-                                    6158
+                                    6153,
+                                    6163
                                   ],
                                   "loc": {
                                     "start": {
@@ -8584,8 +8584,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  6148,
-                                  6158
+                                  6153,
+                                  6163
                                 ],
                                 "loc": {
                                   "start": {
@@ -8600,8 +8600,8 @@
                               }
                             ],
                             "range": [
-                              6115,
-                              6168
+                              6120,
+                              6173
                             ],
                             "loc": {
                               "start": {
@@ -8616,8 +8616,8 @@
                           }
                         ],
                         "range": [
-                          6061,
-                          6169
+                          6066,
+                          6174
                         ],
                         "loc": {
                           "start": {
@@ -8631,8 +8631,8 @@
                         }
                       },
                       "range": [
-                        6054,
-                        6170
+                        6059,
+                        6175
                       ],
                       "loc": {
                         "start": {
@@ -8647,8 +8647,8 @@
                     }
                   ],
                   "range": [
-                    6044,
-                    6176
+                    6049,
+                    6181
                   ],
                   "loc": {
                     "start": {
@@ -8664,8 +8664,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  6024,
-                  6176
+                  6029,
+                  6181
                 ],
                 "loc": {
                   "start": {
@@ -8681,8 +8681,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                6009,
-                6176
+                6014,
+                6181
               ],
               "loc": {
                 "start": {
@@ -8699,8 +8699,8 @@
                   "type": "Block",
                   "value": "*\n     * Sets/adds vpc attribute\n     * @param vpcId\n     * @param attributes\n     * @returns {Promise}\n     ",
                   "range": [
-                    5891,
-                    6004
+                    5896,
+                    6009
                   ],
                   "loc": {
                     "start": {
@@ -8719,8 +8719,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns vpc attribute value\n     * @param vpcId\n     * @param attribute\n     * @returns {Promise}\n     ",
                   "range": [
-                    6182,
-                    6298
+                    6187,
+                    6303
                   ],
                   "loc": {
                     "start": {
@@ -8742,8 +8742,8 @@
                 "type": "Identifier",
                 "name": "getVpcAttribute",
                 "range": [
-                  6303,
-                  6318
+                  6308,
+                  6323
                 ],
                 "loc": {
                   "start": {
@@ -8764,8 +8764,8 @@
                     "type": "Identifier",
                     "name": "vpcId",
                     "range": [
-                      6319,
-                      6324
+                      6324,
+                      6329
                     ],
                     "loc": {
                       "start": {
@@ -8782,8 +8782,8 @@
                     "type": "Identifier",
                     "name": "attribute",
                     "range": [
-                      6326,
-                      6335
+                      6331,
+                      6340
                     ],
                     "loc": {
                       "start": {
@@ -8811,8 +8811,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              6354,
-                              6367
+                              6359,
+                              6372
                             ],
                             "loc": {
                               "start": {
@@ -8829,8 +8829,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              6368,
-                              6375
+                              6373,
+                              6380
                             ],
                             "loc": {
                               "start": {
@@ -8844,8 +8844,8 @@
                             }
                           },
                           "range": [
-                            6354,
-                            6375
+                            6359,
+                            6380
                           ],
                           "loc": {
                             "start": {
@@ -8865,8 +8865,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                6376,
-                                6380
+                                6381,
+                                6385
                               ],
                               "loc": {
                                 "start": {
@@ -8883,8 +8883,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                6381,
-                                6387
+                                6386,
+                                6392
                               ],
                               "loc": {
                                 "start": {
@@ -8898,8 +8898,8 @@
                               }
                             },
                             "range": [
-                              6376,
-                              6387
+                              6381,
+                              6392
                             ],
                             "loc": {
                               "start": {
@@ -8917,8 +8917,8 @@
                             "value": "getVpcAttribute",
                             "raw": "'getVpcAttribute'",
                             "range": [
-                              6389,
-                              6406
+                              6394,
+                              6411
                             ],
                             "loc": {
                               "start": {
@@ -8940,8 +8940,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    6422,
-                                    6427
+                                    6427,
+                                    6432
                                   ],
                                   "loc": {
                                     "start": {
@@ -8958,8 +8958,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    6422,
-                                    6427
+                                    6427,
+                                    6432
                                   ],
                                   "loc": {
                                     "start": {
@@ -8977,8 +8977,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  6422,
-                                  6427
+                                  6427,
+                                  6432
                                 ],
                                 "loc": {
                                   "start": {
@@ -8997,8 +8997,8 @@
                                   "type": "Identifier",
                                   "name": "attribute",
                                   "range": [
-                                    6441,
-                                    6450
+                                    6446,
+                                    6455
                                   ],
                                   "loc": {
                                     "start": {
@@ -9015,8 +9015,8 @@
                                   "type": "Identifier",
                                   "name": "attribute",
                                   "range": [
-                                    6441,
-                                    6450
+                                    6446,
+                                    6455
                                   ],
                                   "loc": {
                                     "start": {
@@ -9034,8 +9034,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  6441,
-                                  6450
+                                  6446,
+                                  6455
                                 ],
                                 "loc": {
                                   "start": {
@@ -9050,8 +9050,8 @@
                               }
                             ],
                             "range": [
-                              6408,
-                              6460
+                              6413,
+                              6465
                             ],
                             "loc": {
                               "start": {
@@ -9066,8 +9066,8 @@
                           }
                         ],
                         "range": [
-                          6354,
-                          6461
+                          6359,
+                          6466
                         ],
                         "loc": {
                           "start": {
@@ -9081,8 +9081,8 @@
                         }
                       },
                       "range": [
-                        6347,
-                        6462
+                        6352,
+                        6467
                       ],
                       "loc": {
                         "start": {
@@ -9097,8 +9097,8 @@
                     }
                   ],
                   "range": [
-                    6337,
-                    6468
+                    6342,
+                    6473
                   ],
                   "loc": {
                     "start": {
@@ -9114,8 +9114,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  6318,
-                  6468
+                  6323,
+                  6473
                 ],
                 "loc": {
                   "start": {
@@ -9131,8 +9131,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                6303,
-                6468
+                6308,
+                6473
               ],
               "loc": {
                 "start": {
@@ -9149,8 +9149,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns vpc attribute value\n     * @param vpcId\n     * @param attribute\n     * @returns {Promise}\n     ",
                   "range": [
-                    6182,
-                    6298
+                    6187,
+                    6303
                   ],
                   "loc": {
                     "start": {
@@ -9169,8 +9169,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of subnets\n     * @param ids\n     * @param filters\n     * @returns {Promise}\n     ",
                   "range": [
-                    6474,
-                    6584
+                    6479,
+                    6589
                   ],
                   "loc": {
                     "start": {
@@ -9192,8 +9192,8 @@
                 "type": "Identifier",
                 "name": "listSubNets",
                 "range": [
-                  6589,
-                  6600
+                  6594,
+                  6605
                 ],
                 "loc": {
                   "start": {
@@ -9216,8 +9216,8 @@
                       "type": "Identifier",
                       "name": "ids",
                       "range": [
-                        6601,
-                        6604
+                        6606,
+                        6609
                       ],
                       "loc": {
                         "start": {
@@ -9234,8 +9234,8 @@
                       "type": "ArrayExpression",
                       "elements": [],
                       "range": [
-                        6607,
-                        6609
+                        6612,
+                        6614
                       ],
                       "loc": {
                         "start": {
@@ -9249,8 +9249,8 @@
                       }
                     },
                     "range": [
-                      6601,
-                      6609
+                      6606,
+                      6614
                     ],
                     "loc": {
                       "start": {
@@ -9269,8 +9269,8 @@
                       "type": "Identifier",
                       "name": "filters",
                       "range": [
-                        6611,
-                        6618
+                        6616,
+                        6623
                       ],
                       "loc": {
                         "start": {
@@ -9287,8 +9287,8 @@
                       "type": "ArrayExpression",
                       "elements": [],
                       "range": [
-                        6621,
-                        6623
+                        6626,
+                        6628
                       ],
                       "loc": {
                         "start": {
@@ -9302,8 +9302,8 @@
                       }
                     },
                     "range": [
-                      6611,
-                      6623
+                      6616,
+                      6628
                     ],
                     "loc": {
                       "start": {
@@ -9331,8 +9331,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              6642,
-                              6655
+                              6647,
+                              6660
                             ],
                             "loc": {
                               "start": {
@@ -9349,8 +9349,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              6656,
-                              6663
+                              6661,
+                              6668
                             ],
                             "loc": {
                               "start": {
@@ -9364,8 +9364,8 @@
                             }
                           },
                           "range": [
-                            6642,
-                            6663
+                            6647,
+                            6668
                           ],
                           "loc": {
                             "start": {
@@ -9385,8 +9385,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                6664,
-                                6668
+                                6669,
+                                6673
                               ],
                               "loc": {
                                 "start": {
@@ -9403,8 +9403,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                6669,
-                                6675
+                                6674,
+                                6680
                               ],
                               "loc": {
                                 "start": {
@@ -9418,8 +9418,8 @@
                               }
                             },
                             "range": [
-                              6664,
-                              6675
+                              6669,
+                              6680
                             ],
                             "loc": {
                               "start": {
@@ -9437,8 +9437,8 @@
                             "value": "listSubNets",
                             "raw": "'listSubNets'",
                             "range": [
-                              6677,
-                              6690
+                              6682,
+                              6695
                             ],
                             "loc": {
                               "start": {
@@ -9460,8 +9460,8 @@
                                   "type": "Identifier",
                                   "name": "ids",
                                   "range": [
-                                    6706,
-                                    6709
+                                    6711,
+                                    6714
                                   ],
                                   "loc": {
                                     "start": {
@@ -9478,8 +9478,8 @@
                                   "type": "Identifier",
                                   "name": "ids",
                                   "range": [
-                                    6706,
-                                    6709
+                                    6711,
+                                    6714
                                   ],
                                   "loc": {
                                     "start": {
@@ -9497,8 +9497,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  6706,
-                                  6709
+                                  6711,
+                                  6714
                                 ],
                                 "loc": {
                                   "start": {
@@ -9517,8 +9517,8 @@
                                   "type": "Identifier",
                                   "name": "filters",
                                   "range": [
-                                    6723,
-                                    6730
+                                    6728,
+                                    6735
                                   ],
                                   "loc": {
                                     "start": {
@@ -9535,8 +9535,8 @@
                                   "type": "Identifier",
                                   "name": "filters",
                                   "range": [
-                                    6723,
-                                    6730
+                                    6728,
+                                    6735
                                   ],
                                   "loc": {
                                     "start": {
@@ -9554,8 +9554,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  6723,
-                                  6730
+                                  6728,
+                                  6735
                                 ],
                                 "loc": {
                                   "start": {
@@ -9570,8 +9570,8 @@
                               }
                             ],
                             "range": [
-                              6692,
-                              6740
+                              6697,
+                              6745
                             ],
                             "loc": {
                               "start": {
@@ -9586,8 +9586,8 @@
                           }
                         ],
                         "range": [
-                          6642,
-                          6741
+                          6647,
+                          6746
                         ],
                         "loc": {
                           "start": {
@@ -9601,8 +9601,8 @@
                         }
                       },
                       "range": [
-                        6635,
-                        6742
+                        6640,
+                        6747
                       ],
                       "loc": {
                         "start": {
@@ -9617,8 +9617,8 @@
                     }
                   ],
                   "range": [
-                    6625,
-                    6748
+                    6630,
+                    6753
                   ],
                   "loc": {
                     "start": {
@@ -9634,8 +9634,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  6600,
-                  6748
+                  6605,
+                  6753
                 ],
                 "loc": {
                   "start": {
@@ -9651,8 +9651,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                6589,
-                6748
+                6594,
+                6753
               ],
               "loc": {
                 "start": {
@@ -9669,8 +9669,8 @@
                   "type": "Block",
                   "value": "*\n     * Returns a list of subnets\n     * @param ids\n     * @param filters\n     * @returns {Promise}\n     ",
                   "range": [
-                    6474,
-                    6584
+                    6479,
+                    6589
                   ],
                   "loc": {
                     "start": {
@@ -9689,8 +9689,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a new subnet within a VPC\n     * @param cidr CIDR block, network range\n     * @param vpcId VPC id\n     * @returns {Promise}\n     ",
                   "range": [
-                    6754,
-                    6904
+                    6759,
+                    6909
                   ],
                   "loc": {
                     "start": {
@@ -9712,8 +9712,8 @@
                 "type": "Identifier",
                 "name": "addSubNet",
                 "range": [
-                  6909,
-                  6918
+                  6914,
+                  6923
                 ],
                 "loc": {
                   "start": {
@@ -9734,8 +9734,8 @@
                     "type": "Identifier",
                     "name": "cidr",
                     "range": [
-                      6919,
-                      6923
+                      6924,
+                      6928
                     ],
                     "loc": {
                       "start": {
@@ -9752,8 +9752,8 @@
                     "type": "Identifier",
                     "name": "vpcId",
                     "range": [
-                      6925,
-                      6930
+                      6930,
+                      6935
                     ],
                     "loc": {
                       "start": {
@@ -9781,8 +9781,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              6949,
-                              6962
+                              6954,
+                              6967
                             ],
                             "loc": {
                               "start": {
@@ -9799,8 +9799,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              6963,
-                              6970
+                              6968,
+                              6975
                             ],
                             "loc": {
                               "start": {
@@ -9814,8 +9814,8 @@
                             }
                           },
                           "range": [
-                            6949,
-                            6970
+                            6954,
+                            6975
                           ],
                           "loc": {
                             "start": {
@@ -9835,8 +9835,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                6971,
-                                6975
+                                6976,
+                                6980
                               ],
                               "loc": {
                                 "start": {
@@ -9853,8 +9853,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                6976,
-                                6982
+                                6981,
+                                6987
                               ],
                               "loc": {
                                 "start": {
@@ -9868,8 +9868,8 @@
                               }
                             },
                             "range": [
-                              6971,
-                              6982
+                              6976,
+                              6987
                             ],
                             "loc": {
                               "start": {
@@ -9887,8 +9887,8 @@
                             "value": "addSubNet",
                             "raw": "'addSubNet'",
                             "range": [
-                              6984,
-                              6995
+                              6989,
+                              7000
                             ],
                             "loc": {
                               "start": {
@@ -9910,8 +9910,8 @@
                                   "type": "Identifier",
                                   "name": "cidr",
                                   "range": [
-                                    7011,
-                                    7015
+                                    7016,
+                                    7020
                                   ],
                                   "loc": {
                                     "start": {
@@ -9928,8 +9928,8 @@
                                   "type": "Identifier",
                                   "name": "cidr",
                                   "range": [
-                                    7011,
-                                    7015
+                                    7016,
+                                    7020
                                   ],
                                   "loc": {
                                     "start": {
@@ -9947,8 +9947,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  7011,
-                                  7015
+                                  7016,
+                                  7020
                                 ],
                                 "loc": {
                                   "start": {
@@ -9967,8 +9967,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    7029,
-                                    7034
+                                    7034,
+                                    7039
                                   ],
                                   "loc": {
                                     "start": {
@@ -9985,8 +9985,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    7029,
-                                    7034
+                                    7034,
+                                    7039
                                   ],
                                   "loc": {
                                     "start": {
@@ -10004,8 +10004,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  7029,
-                                  7034
+                                  7034,
+                                  7039
                                 ],
                                 "loc": {
                                   "start": {
@@ -10020,8 +10020,8 @@
                               }
                             ],
                             "range": [
-                              6997,
-                              7044
+                              7002,
+                              7049
                             ],
                             "loc": {
                               "start": {
@@ -10036,8 +10036,8 @@
                           }
                         ],
                         "range": [
-                          6949,
-                          7045
+                          6954,
+                          7050
                         ],
                         "loc": {
                           "start": {
@@ -10051,8 +10051,8 @@
                         }
                       },
                       "range": [
-                        6942,
-                        7046
+                        6947,
+                        7051
                       ],
                       "loc": {
                         "start": {
@@ -10067,8 +10067,8 @@
                     }
                   ],
                   "range": [
-                    6932,
-                    7052
+                    6937,
+                    7057
                   ],
                   "loc": {
                     "start": {
@@ -10084,8 +10084,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  6918,
-                  7052
+                  6923,
+                  7057
                 ],
                 "loc": {
                   "start": {
@@ -10101,8 +10101,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                6909,
-                7052
+                6914,
+                7057
               ],
               "loc": {
                 "start": {
@@ -10119,8 +10119,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a new subnet within a VPC\n     * @param cidr CIDR block, network range\n     * @param vpcId VPC id\n     * @returns {Promise}\n     ",
                   "range": [
-                    6754,
-                    6904
+                    6759,
+                    6909
                   ],
                   "loc": {
                     "start": {
@@ -10139,8 +10139,8 @@
                   "type": "Block",
                   "value": "*\n     * Sets \"assignPublicIp\" property for a subNet\n     * @param subNetId\n     * @param assignPublicIp\n     * @returns {Promise}\n     ",
                   "range": [
-                    7058,
-                    7198
+                    7063,
+                    7203
                   ],
                   "loc": {
                     "start": {
@@ -10162,8 +10162,8 @@
                 "type": "Identifier",
                 "name": "setSubNetAttribute",
                 "range": [
-                  7203,
-                  7221
+                  7208,
+                  7226
                 ],
                 "loc": {
                   "start": {
@@ -10184,8 +10184,8 @@
                     "type": "Identifier",
                     "name": "subNetId",
                     "range": [
-                      7222,
-                      7230
+                      7227,
+                      7235
                     ],
                     "loc": {
                       "start": {
@@ -10202,8 +10202,8 @@
                     "type": "Identifier",
                     "name": "assignPublicIp",
                     "range": [
-                      7232,
-                      7246
+                      7237,
+                      7251
                     ],
                     "loc": {
                       "start": {
@@ -10231,8 +10231,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              7265,
-                              7278
+                              7270,
+                              7283
                             ],
                             "loc": {
                               "start": {
@@ -10249,8 +10249,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              7279,
-                              7286
+                              7284,
+                              7291
                             ],
                             "loc": {
                               "start": {
@@ -10264,8 +10264,8 @@
                             }
                           },
                           "range": [
-                            7265,
-                            7286
+                            7270,
+                            7291
                           ],
                           "loc": {
                             "start": {
@@ -10285,8 +10285,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                7287,
-                                7291
+                                7292,
+                                7296
                               ],
                               "loc": {
                                 "start": {
@@ -10303,8 +10303,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                7292,
-                                7298
+                                7297,
+                                7303
                               ],
                               "loc": {
                                 "start": {
@@ -10318,8 +10318,8 @@
                               }
                             },
                             "range": [
-                              7287,
-                              7298
+                              7292,
+                              7303
                             ],
                             "loc": {
                               "start": {
@@ -10337,8 +10337,8 @@
                             "value": "setSubNetAttribute",
                             "raw": "'setSubNetAttribute'",
                             "range": [
-                              7300,
-                              7320
+                              7305,
+                              7325
                             ],
                             "loc": {
                               "start": {
@@ -10360,8 +10360,8 @@
                                   "type": "Identifier",
                                   "name": "subNetId",
                                   "range": [
-                                    7336,
-                                    7344
+                                    7341,
+                                    7349
                                   ],
                                   "loc": {
                                     "start": {
@@ -10378,8 +10378,8 @@
                                   "type": "Identifier",
                                   "name": "subNetId",
                                   "range": [
-                                    7336,
-                                    7344
+                                    7341,
+                                    7349
                                   ],
                                   "loc": {
                                     "start": {
@@ -10397,8 +10397,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  7336,
-                                  7344
+                                  7341,
+                                  7349
                                 ],
                                 "loc": {
                                   "start": {
@@ -10417,8 +10417,8 @@
                                   "type": "Identifier",
                                   "name": "assignPublicIp",
                                   "range": [
-                                    7358,
-                                    7372
+                                    7363,
+                                    7377
                                   ],
                                   "loc": {
                                     "start": {
@@ -10435,8 +10435,8 @@
                                   "type": "Identifier",
                                   "name": "assignPublicIp",
                                   "range": [
-                                    7358,
-                                    7372
+                                    7363,
+                                    7377
                                   ],
                                   "loc": {
                                     "start": {
@@ -10454,8 +10454,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  7358,
-                                  7372
+                                  7363,
+                                  7377
                                 ],
                                 "loc": {
                                   "start": {
@@ -10470,8 +10470,8 @@
                               }
                             ],
                             "range": [
-                              7322,
-                              7382
+                              7327,
+                              7387
                             ],
                             "loc": {
                               "start": {
@@ -10486,8 +10486,8 @@
                           }
                         ],
                         "range": [
-                          7265,
-                          7383
+                          7270,
+                          7388
                         ],
                         "loc": {
                           "start": {
@@ -10501,8 +10501,8 @@
                         }
                       },
                       "range": [
-                        7258,
-                        7384
+                        7263,
+                        7389
                       ],
                       "loc": {
                         "start": {
@@ -10517,8 +10517,8 @@
                     }
                   ],
                   "range": [
-                    7248,
-                    7390
+                    7253,
+                    7395
                   ],
                   "loc": {
                     "start": {
@@ -10534,8 +10534,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  7221,
-                  7390
+                  7226,
+                  7395
                 ],
                 "loc": {
                   "start": {
@@ -10551,8 +10551,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                7203,
-                7390
+                7208,
+                7395
               ],
               "loc": {
                 "start": {
@@ -10569,8 +10569,8 @@
                   "type": "Block",
                   "value": "*\n     * Sets \"assignPublicIp\" property for a subNet\n     * @param subNetId\n     * @param assignPublicIp\n     * @returns {Promise}\n     ",
                   "range": [
-                    7058,
-                    7198
+                    7063,
+                    7203
                   ],
                   "loc": {
                     "start": {
@@ -10589,8 +10589,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a new security group under a vpcId\n     * @param vpcId\n     * @param name\n     * @param description\n     * @returns {Promise}\n     ",
                   "range": [
-                    7396,
-                    7548
+                    7401,
+                    7553
                   ],
                   "loc": {
                     "start": {
@@ -10612,8 +10612,8 @@
                 "type": "Identifier",
                 "name": "addSecurityGroup",
                 "range": [
-                  7553,
-                  7569
+                  7558,
+                  7574
                 ],
                 "loc": {
                   "start": {
@@ -10634,8 +10634,8 @@
                     "type": "Identifier",
                     "name": "vpcId",
                     "range": [
-                      7570,
-                      7575
+                      7575,
+                      7580
                     ],
                     "loc": {
                       "start": {
@@ -10652,8 +10652,8 @@
                     "type": "Identifier",
                     "name": "name",
                     "range": [
-                      7577,
-                      7581
+                      7582,
+                      7586
                     ],
                     "loc": {
                       "start": {
@@ -10670,8 +10670,8 @@
                     "type": "Identifier",
                     "name": "description",
                     "range": [
-                      7583,
-                      7594
+                      7588,
+                      7599
                     ],
                     "loc": {
                       "start": {
@@ -10699,8 +10699,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              7613,
-                              7626
+                              7618,
+                              7631
                             ],
                             "loc": {
                               "start": {
@@ -10717,8 +10717,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              7627,
-                              7634
+                              7632,
+                              7639
                             ],
                             "loc": {
                               "start": {
@@ -10732,8 +10732,8 @@
                             }
                           },
                           "range": [
-                            7613,
-                            7634
+                            7618,
+                            7639
                           ],
                           "loc": {
                             "start": {
@@ -10753,8 +10753,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                7635,
-                                7639
+                                7640,
+                                7644
                               ],
                               "loc": {
                                 "start": {
@@ -10771,8 +10771,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                7640,
-                                7646
+                                7645,
+                                7651
                               ],
                               "loc": {
                                 "start": {
@@ -10786,8 +10786,8 @@
                               }
                             },
                             "range": [
-                              7635,
-                              7646
+                              7640,
+                              7651
                             ],
                             "loc": {
                               "start": {
@@ -10805,8 +10805,8 @@
                             "value": "addSecurityGroup",
                             "raw": "'addSecurityGroup'",
                             "range": [
-                              7648,
-                              7666
+                              7653,
+                              7671
                             ],
                             "loc": {
                               "start": {
@@ -10828,8 +10828,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    7682,
-                                    7687
+                                    7687,
+                                    7692
                                   ],
                                   "loc": {
                                     "start": {
@@ -10846,8 +10846,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    7682,
-                                    7687
+                                    7687,
+                                    7692
                                   ],
                                   "loc": {
                                     "start": {
@@ -10865,8 +10865,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  7682,
-                                  7687
+                                  7687,
+                                  7692
                                 ],
                                 "loc": {
                                   "start": {
@@ -10885,8 +10885,8 @@
                                   "type": "Identifier",
                                   "name": "name",
                                   "range": [
-                                    7701,
-                                    7705
+                                    7706,
+                                    7710
                                   ],
                                   "loc": {
                                     "start": {
@@ -10903,8 +10903,8 @@
                                   "type": "Identifier",
                                   "name": "name",
                                   "range": [
-                                    7701,
-                                    7705
+                                    7706,
+                                    7710
                                   ],
                                   "loc": {
                                     "start": {
@@ -10922,8 +10922,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  7701,
-                                  7705
+                                  7706,
+                                  7710
                                 ],
                                 "loc": {
                                   "start": {
@@ -10942,8 +10942,8 @@
                                   "type": "Identifier",
                                   "name": "description",
                                   "range": [
-                                    7719,
-                                    7730
+                                    7724,
+                                    7735
                                   ],
                                   "loc": {
                                     "start": {
@@ -10960,8 +10960,8 @@
                                   "type": "Identifier",
                                   "name": "description",
                                   "range": [
-                                    7719,
-                                    7730
+                                    7724,
+                                    7735
                                   ],
                                   "loc": {
                                     "start": {
@@ -10979,8 +10979,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  7719,
-                                  7730
+                                  7724,
+                                  7735
                                 ],
                                 "loc": {
                                   "start": {
@@ -10995,8 +10995,8 @@
                               }
                             ],
                             "range": [
-                              7668,
-                              7740
+                              7673,
+                              7745
                             ],
                             "loc": {
                               "start": {
@@ -11011,8 +11011,8 @@
                           }
                         ],
                         "range": [
-                          7613,
-                          7741
+                          7618,
+                          7746
                         ],
                         "loc": {
                           "start": {
@@ -11026,8 +11026,8 @@
                         }
                       },
                       "range": [
-                        7606,
-                        7742
+                        7611,
+                        7747
                       ],
                       "loc": {
                         "start": {
@@ -11042,8 +11042,8 @@
                     }
                   ],
                   "range": [
-                    7596,
-                    7748
+                    7601,
+                    7753
                   ],
                   "loc": {
                     "start": {
@@ -11059,8 +11059,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  7569,
-                  7748
+                  7574,
+                  7753
                 ],
                 "loc": {
                   "start": {
@@ -11076,8 +11076,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                7553,
-                7748
+                7558,
+                7753
               ],
               "loc": {
                 "start": {
@@ -11094,8 +11094,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a new security group under a vpcId\n     * @param vpcId\n     * @param name\n     * @param description\n     * @returns {Promise}\n     ",
                   "range": [
-                    7396,
-                    7548
+                    7401,
+                    7553
                   ],
                   "loc": {
                     "start": {
@@ -11114,8 +11114,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a set of inbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     ",
                   "range": [
-                    7754,
-                    7886
+                    7759,
+                    7891
                   ],
                   "loc": {
                     "start": {
@@ -11137,8 +11137,8 @@
                 "type": "Identifier",
                 "name": "addSecurityGroupInboundRules",
                 "range": [
-                  7891,
-                  7919
+                  7896,
+                  7924
                 ],
                 "loc": {
                   "start": {
@@ -11159,8 +11159,8 @@
                     "type": "Identifier",
                     "name": "groupId",
                     "range": [
-                      7920,
-                      7927
+                      7925,
+                      7932
                     ],
                     "loc": {
                       "start": {
@@ -11177,8 +11177,8 @@
                     "type": "Identifier",
                     "name": "rules",
                     "range": [
-                      7929,
-                      7934
+                      7934,
+                      7939
                     ],
                     "loc": {
                       "start": {
@@ -11206,8 +11206,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              7953,
-                              7966
+                              7958,
+                              7971
                             ],
                             "loc": {
                               "start": {
@@ -11224,8 +11224,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              7967,
-                              7974
+                              7972,
+                              7979
                             ],
                             "loc": {
                               "start": {
@@ -11239,8 +11239,8 @@
                             }
                           },
                           "range": [
-                            7953,
-                            7974
+                            7958,
+                            7979
                           ],
                           "loc": {
                             "start": {
@@ -11260,8 +11260,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                7975,
-                                7979
+                                7980,
+                                7984
                               ],
                               "loc": {
                                 "start": {
@@ -11278,8 +11278,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                7980,
-                                7986
+                                7985,
+                                7991
                               ],
                               "loc": {
                                 "start": {
@@ -11293,8 +11293,8 @@
                               }
                             },
                             "range": [
-                              7975,
-                              7986
+                              7980,
+                              7991
                             ],
                             "loc": {
                               "start": {
@@ -11312,8 +11312,8 @@
                             "value": "addSecurityGroupInboundRules",
                             "raw": "'addSecurityGroupInboundRules'",
                             "range": [
-                              7988,
-                              8018
+                              7993,
+                              8023
                             ],
                             "loc": {
                               "start": {
@@ -11335,8 +11335,8 @@
                                   "type": "Identifier",
                                   "name": "groupId",
                                   "range": [
-                                    8034,
-                                    8041
+                                    8039,
+                                    8046
                                   ],
                                   "loc": {
                                     "start": {
@@ -11353,8 +11353,8 @@
                                   "type": "Identifier",
                                   "name": "groupId",
                                   "range": [
-                                    8034,
-                                    8041
+                                    8039,
+                                    8046
                                   ],
                                   "loc": {
                                     "start": {
@@ -11372,8 +11372,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  8034,
-                                  8041
+                                  8039,
+                                  8046
                                 ],
                                 "loc": {
                                   "start": {
@@ -11392,8 +11392,8 @@
                                   "type": "Identifier",
                                   "name": "rules",
                                   "range": [
-                                    8055,
-                                    8060
+                                    8060,
+                                    8065
                                   ],
                                   "loc": {
                                     "start": {
@@ -11410,8 +11410,8 @@
                                   "type": "Identifier",
                                   "name": "rules",
                                   "range": [
-                                    8055,
-                                    8060
+                                    8060,
+                                    8065
                                   ],
                                   "loc": {
                                     "start": {
@@ -11429,8 +11429,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  8055,
-                                  8060
+                                  8060,
+                                  8065
                                 ],
                                 "loc": {
                                   "start": {
@@ -11445,8 +11445,8 @@
                               }
                             ],
                             "range": [
-                              8020,
-                              8070
+                              8025,
+                              8075
                             ],
                             "loc": {
                               "start": {
@@ -11461,8 +11461,8 @@
                           }
                         ],
                         "range": [
-                          7953,
-                          8071
+                          7958,
+                          8076
                         ],
                         "loc": {
                           "start": {
@@ -11476,8 +11476,8 @@
                         }
                       },
                       "range": [
-                        7946,
-                        8072
+                        7951,
+                        8077
                       ],
                       "loc": {
                         "start": {
@@ -11492,8 +11492,8 @@
                     }
                   ],
                   "range": [
-                    7936,
-                    8078
+                    7941,
+                    8083
                   ],
                   "loc": {
                     "start": {
@@ -11509,8 +11509,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  7919,
-                  8078
+                  7924,
+                  8083
                 ],
                 "loc": {
                   "start": {
@@ -11526,8 +11526,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                7891,
-                8078
+                7896,
+                8083
               ],
               "loc": {
                 "start": {
@@ -11544,8 +11544,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a set of inbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     ",
                   "range": [
-                    7754,
-                    7886
+                    7759,
+                    7891
                   ],
                   "loc": {
                     "start": {
@@ -11564,8 +11564,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a set of outbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     ",
                   "range": [
-                    8084,
-                    8217
+                    8089,
+                    8222
                   ],
                   "loc": {
                     "start": {
@@ -11587,8 +11587,8 @@
                 "type": "Identifier",
                 "name": "addSecurityGroupOutboundRules",
                 "range": [
-                  8222,
-                  8251
+                  8227,
+                  8256
                 ],
                 "loc": {
                   "start": {
@@ -11609,8 +11609,8 @@
                     "type": "Identifier",
                     "name": "groupId",
                     "range": [
-                      8252,
-                      8259
+                      8257,
+                      8264
                     ],
                     "loc": {
                       "start": {
@@ -11627,8 +11627,8 @@
                     "type": "Identifier",
                     "name": "rules",
                     "range": [
-                      8261,
-                      8266
+                      8266,
+                      8271
                     ],
                     "loc": {
                       "start": {
@@ -11656,8 +11656,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              8285,
-                              8298
+                              8290,
+                              8303
                             ],
                             "loc": {
                               "start": {
@@ -11674,8 +11674,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              8299,
-                              8306
+                              8304,
+                              8311
                             ],
                             "loc": {
                               "start": {
@@ -11689,8 +11689,8 @@
                             }
                           },
                           "range": [
-                            8285,
-                            8306
+                            8290,
+                            8311
                           ],
                           "loc": {
                             "start": {
@@ -11710,8 +11710,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                8307,
-                                8311
+                                8312,
+                                8316
                               ],
                               "loc": {
                                 "start": {
@@ -11728,8 +11728,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                8312,
-                                8318
+                                8317,
+                                8323
                               ],
                               "loc": {
                                 "start": {
@@ -11743,8 +11743,8 @@
                               }
                             },
                             "range": [
-                              8307,
-                              8318
+                              8312,
+                              8323
                             ],
                             "loc": {
                               "start": {
@@ -11762,8 +11762,8 @@
                             "value": "addSecurityGroupOutboundRules",
                             "raw": "'addSecurityGroupOutboundRules'",
                             "range": [
-                              8320,
-                              8351
+                              8325,
+                              8356
                             ],
                             "loc": {
                               "start": {
@@ -11785,8 +11785,8 @@
                                   "type": "Identifier",
                                   "name": "groupId",
                                   "range": [
-                                    8367,
-                                    8374
+                                    8372,
+                                    8379
                                   ],
                                   "loc": {
                                     "start": {
@@ -11803,8 +11803,8 @@
                                   "type": "Identifier",
                                   "name": "groupId",
                                   "range": [
-                                    8367,
-                                    8374
+                                    8372,
+                                    8379
                                   ],
                                   "loc": {
                                     "start": {
@@ -11822,8 +11822,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  8367,
-                                  8374
+                                  8372,
+                                  8379
                                 ],
                                 "loc": {
                                   "start": {
@@ -11842,8 +11842,8 @@
                                   "type": "Identifier",
                                   "name": "rules",
                                   "range": [
-                                    8388,
-                                    8393
+                                    8393,
+                                    8398
                                   ],
                                   "loc": {
                                     "start": {
@@ -11860,8 +11860,8 @@
                                   "type": "Identifier",
                                   "name": "rules",
                                   "range": [
-                                    8388,
-                                    8393
+                                    8393,
+                                    8398
                                   ],
                                   "loc": {
                                     "start": {
@@ -11879,8 +11879,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  8388,
-                                  8393
+                                  8393,
+                                  8398
                                 ],
                                 "loc": {
                                   "start": {
@@ -11895,8 +11895,8 @@
                               }
                             ],
                             "range": [
-                              8353,
-                              8403
+                              8358,
+                              8408
                             ],
                             "loc": {
                               "start": {
@@ -11911,8 +11911,8 @@
                           }
                         ],
                         "range": [
-                          8285,
-                          8404
+                          8290,
+                          8409
                         ],
                         "loc": {
                           "start": {
@@ -11926,8 +11926,8 @@
                         }
                       },
                       "range": [
-                        8278,
-                        8405
+                        8283,
+                        8410
                       ],
                       "loc": {
                         "start": {
@@ -11942,8 +11942,8 @@
                     }
                   ],
                   "range": [
-                    8268,
-                    8411
+                    8273,
+                    8416
                   ],
                   "loc": {
                     "start": {
@@ -11959,8 +11959,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  8251,
-                  8411
+                  8256,
+                  8416
                 ],
                 "loc": {
                   "start": {
@@ -11976,8 +11976,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                8222,
-                8411
+                8227,
+                8416
               ],
               "loc": {
                 "start": {
@@ -11994,8 +11994,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a set of outbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     ",
                   "range": [
-                    8084,
-                    8217
+                    8089,
+                    8222
                   ],
                   "loc": {
                     "start": {
@@ -12014,8 +12014,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a new internet gateway\n     * @returns {Promise}\n     ",
                   "range": [
-                    8417,
-                    8492
+                    8422,
+                    8497
                   ],
                   "loc": {
                     "start": {
@@ -12037,8 +12037,8 @@
                 "type": "Identifier",
                 "name": "addInternetGateway",
                 "range": [
-                  8497,
-                  8515
+                  8502,
+                  8520
                 ],
                 "loc": {
                   "start": {
@@ -12069,8 +12069,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              8535,
-                              8548
+                              8540,
+                              8553
                             ],
                             "loc": {
                               "start": {
@@ -12087,8 +12087,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              8549,
-                              8556
+                              8554,
+                              8561
                             ],
                             "loc": {
                               "start": {
@@ -12102,8 +12102,8 @@
                             }
                           },
                           "range": [
-                            8535,
-                            8556
+                            8540,
+                            8561
                           ],
                           "loc": {
                             "start": {
@@ -12123,8 +12123,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                8557,
-                                8561
+                                8562,
+                                8566
                               ],
                               "loc": {
                                 "start": {
@@ -12141,8 +12141,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                8562,
-                                8568
+                                8567,
+                                8573
                               ],
                               "loc": {
                                 "start": {
@@ -12156,8 +12156,8 @@
                               }
                             },
                             "range": [
-                              8557,
-                              8568
+                              8562,
+                              8573
                             ],
                             "loc": {
                               "start": {
@@ -12175,8 +12175,8 @@
                             "value": "addInternetGateway",
                             "raw": "'addInternetGateway'",
                             "range": [
-                              8570,
-                              8590
+                              8575,
+                              8595
                             ],
                             "loc": {
                               "start": {
@@ -12193,8 +12193,8 @@
                             "type": "ObjectExpression",
                             "properties": [],
                             "range": [
-                              8592,
-                              8594
+                              8597,
+                              8599
                             ],
                             "loc": {
                               "start": {
@@ -12209,8 +12209,8 @@
                           }
                         ],
                         "range": [
-                          8535,
-                          8595
+                          8540,
+                          8600
                         ],
                         "loc": {
                           "start": {
@@ -12224,8 +12224,8 @@
                         }
                       },
                       "range": [
-                        8528,
-                        8596
+                        8533,
+                        8601
                       ],
                       "loc": {
                         "start": {
@@ -12240,8 +12240,8 @@
                     }
                   ],
                   "range": [
-                    8518,
-                    8602
+                    8523,
+                    8607
                   ],
                   "loc": {
                     "start": {
@@ -12257,8 +12257,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  8515,
-                  8602
+                  8520,
+                  8607
                 ],
                 "loc": {
                   "start": {
@@ -12274,8 +12274,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                8497,
-                8602
+                8502,
+                8607
               ],
               "loc": {
                 "start": {
@@ -12292,8 +12292,8 @@
                   "type": "Block",
                   "value": "*\n     * Creates a new internet gateway\n     * @returns {Promise}\n     ",
                   "range": [
-                    8417,
-                    8492
+                    8422,
+                    8497
                   ],
                   "loc": {
                     "start": {
@@ -12312,8 +12312,8 @@
                   "type": "Block",
                   "value": "*\n     * Attaches internet gateway to VPC\n     * @param vpcId\n     * @param gatewayId\n     * @returns {Promise}\n     ",
                   "range": [
-                    8608,
-                    8729
+                    8613,
+                    8734
                   ],
                   "loc": {
                     "start": {
@@ -12335,8 +12335,8 @@
                 "type": "Identifier",
                 "name": "attachInternetGateway",
                 "range": [
-                  8734,
-                  8755
+                  8739,
+                  8760
                 ],
                 "loc": {
                   "start": {
@@ -12357,8 +12357,8 @@
                     "type": "Identifier",
                     "name": "vpcId",
                     "range": [
-                      8756,
-                      8761
+                      8761,
+                      8766
                     ],
                     "loc": {
                       "start": {
@@ -12375,8 +12375,8 @@
                     "type": "Identifier",
                     "name": "gatewayId",
                     "range": [
-                      8763,
-                      8772
+                      8768,
+                      8777
                     ],
                     "loc": {
                       "start": {
@@ -12404,8 +12404,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              8791,
-                              8804
+                              8796,
+                              8809
                             ],
                             "loc": {
                               "start": {
@@ -12422,8 +12422,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              8805,
-                              8812
+                              8810,
+                              8817
                             ],
                             "loc": {
                               "start": {
@@ -12437,8 +12437,8 @@
                             }
                           },
                           "range": [
-                            8791,
-                            8812
+                            8796,
+                            8817
                           ],
                           "loc": {
                             "start": {
@@ -12458,8 +12458,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                8813,
-                                8817
+                                8818,
+                                8822
                               ],
                               "loc": {
                                 "start": {
@@ -12476,8 +12476,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                8818,
-                                8824
+                                8823,
+                                8829
                               ],
                               "loc": {
                                 "start": {
@@ -12491,8 +12491,8 @@
                               }
                             },
                             "range": [
-                              8813,
-                              8824
+                              8818,
+                              8829
                             ],
                             "loc": {
                               "start": {
@@ -12510,8 +12510,8 @@
                             "value": "attachInternetGateway",
                             "raw": "'attachInternetGateway'",
                             "range": [
-                              8826,
-                              8849
+                              8831,
+                              8854
                             ],
                             "loc": {
                               "start": {
@@ -12533,8 +12533,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    8865,
-                                    8870
+                                    8870,
+                                    8875
                                   ],
                                   "loc": {
                                     "start": {
@@ -12551,8 +12551,8 @@
                                   "type": "Identifier",
                                   "name": "vpcId",
                                   "range": [
-                                    8865,
-                                    8870
+                                    8870,
+                                    8875
                                   ],
                                   "loc": {
                                     "start": {
@@ -12570,8 +12570,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  8865,
-                                  8870
+                                  8870,
+                                  8875
                                 ],
                                 "loc": {
                                   "start": {
@@ -12590,8 +12590,8 @@
                                   "type": "Identifier",
                                   "name": "gatewayId",
                                   "range": [
-                                    8884,
-                                    8893
+                                    8889,
+                                    8898
                                   ],
                                   "loc": {
                                     "start": {
@@ -12608,8 +12608,8 @@
                                   "type": "Identifier",
                                   "name": "gatewayId",
                                   "range": [
-                                    8884,
-                                    8893
+                                    8889,
+                                    8898
                                   ],
                                   "loc": {
                                     "start": {
@@ -12627,8 +12627,8 @@
                                 "shorthand": true,
                                 "computed": false,
                                 "range": [
-                                  8884,
-                                  8893
+                                  8889,
+                                  8898
                                 ],
                                 "loc": {
                                   "start": {
@@ -12643,8 +12643,8 @@
                               }
                             ],
                             "range": [
-                              8851,
-                              8903
+                              8856,
+                              8908
                             ],
                             "loc": {
                               "start": {
@@ -12659,8 +12659,8 @@
                           }
                         ],
                         "range": [
-                          8791,
-                          8904
+                          8796,
+                          8909
                         ],
                         "loc": {
                           "start": {
@@ -12674,8 +12674,8 @@
                         }
                       },
                       "range": [
-                        8784,
-                        8905
+                        8789,
+                        8910
                       ],
                       "loc": {
                         "start": {
@@ -12690,8 +12690,8 @@
                     }
                   ],
                   "range": [
-                    8774,
-                    8911
+                    8779,
+                    8916
                   ],
                   "loc": {
                     "start": {
@@ -12707,8 +12707,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  8755,
-                  8911
+                  8760,
+                  8916
                 ],
                 "loc": {
                   "start": {
@@ -12724,8 +12724,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                8734,
-                8911
+                8739,
+                8916
               ],
               "loc": {
                 "start": {
@@ -12742,8 +12742,8 @@
                   "type": "Block",
                   "value": "*\n     * Attaches internet gateway to VPC\n     * @param vpcId\n     * @param gatewayId\n     * @returns {Promise}\n     ",
                   "range": [
-                    8608,
-                    8729
+                    8613,
+                    8734
                   ],
                   "loc": {
                     "start": {
@@ -12762,8 +12762,8 @@
                   "type": "Block",
                   "value": "*\n     * Lists all routes tables, may apply filters\n     * @param filters\n     * @returns {Promise}\n     ",
                   "range": [
-                    8917,
-                    9026
+                    8922,
+                    9031
                   ],
                   "loc": {
                     "start": {
@@ -12785,8 +12785,8 @@
                 "type": "Identifier",
                 "name": "listRouteTables",
                 "range": [
-                  9031,
-                  9046
+                  9036,
+                  9051
                 ],
                 "loc": {
                   "start": {
@@ -12807,8 +12807,8 @@
                     "type": "Identifier",
                     "name": "filters",
                     "range": [
-                      9047,
-                      9054
+                      9052,
+                      9059
                     ],
                     "loc": {
                       "start": {
@@ -12836,8 +12836,8 @@
                             "type": "Identifier",
                             "name": "CloudlinkHttp",
                             "range": [
-                              9073,
-                              9086
+                              9078,
+                              9091
                             ],
                             "loc": {
                               "start": {
@@ -12854,8 +12854,8 @@
                             "type": "Identifier",
                             "name": "request",
                             "range": [
-                              9087,
-                              9094
+                              9092,
+                              9099
                             ],
                             "loc": {
                               "start": {
@@ -12869,8 +12869,8 @@
                             }
                           },
                           "range": [
-                            9073,
-                            9094
+                            9078,
+                            9099
                           ],
                           "loc": {
                             "start": {
@@ -12890,8 +12890,8 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                9095,
-                                9099
+                                9100,
+                                9104
                               ],
                               "loc": {
                                 "start": {
@@ -12908,8 +12908,8 @@
                               "type": "Identifier",
                               "name": "config",
                               "range": [
-                                9100,
-                                9106
+                                9105,
+                                9111
                               ],
                               "loc": {
                                 "start": {
@@ -12923,8 +12923,8 @@
                               }
                             },
                             "range": [
-                              9095,
-                              9106
+                              9100,
+                              9111
                             ],
                             "loc": {
                               "start": {
@@ -12942,8 +12942,8 @@
                             "value": "listRouteTables",
                             "raw": "'listRouteTables'",
                             "range": [
-                              9108,
-                              9125
+                              9113,
+                              9130
                             ],
                             "loc": {
                               "start": {
@@ -12965,8 +12965,8 @@
                                   "type": "Identifier",
                                   "name": "filters",
                                   "range": [
-                                    9141,
-                                    9148
+                                    9146,
+                                    9153
                                   ],
                                   "loc": {
                                     "start": {
@@ -12986,8 +12986,8 @@
                                     "type": "Identifier",
                                     "name": "filters",
                                     "range": [
-                                      9150,
-                                      9157
+                                      9155,
+                                      9162
                                     ],
                                     "loc": {
                                       "start": {
@@ -13004,8 +13004,8 @@
                                     "type": "ObjectExpression",
                                     "properties": [],
                                     "range": [
-                                      9161,
-                                      9163
+                                      9166,
+                                      9168
                                     ],
                                     "loc": {
                                       "start": {
@@ -13019,8 +13019,8 @@
                                     }
                                   },
                                   "range": [
-                                    9150,
-                                    9163
+                                    9155,
+                                    9168
                                   ],
                                   "loc": {
                                     "start": {
@@ -13038,8 +13038,8 @@
                                 "shorthand": false,
                                 "computed": false,
                                 "range": [
-                                  9141,
-                                  9163
+                                  9146,
+                                  9168
                                 ],
                                 "loc": {
                                   "start": {
@@ -13054,8 +13054,8 @@
                               }
                             ],
                             "range": [
-                              9127,
-                              9173
+                              9132,
+                              9178
                             ],
                             "loc": {
                               "start": {
@@ -13070,8 +13070,8 @@
                           }
                         ],
                         "range": [
-                          9073,
-                          9174
+                          9078,
+                          9179
                         ],
                         "loc": {
                           "start": {
@@ -13085,8 +13085,8 @@
                         }
                       },
                       "range": [
-                        9066,
-                        9175
+                        9071,
+                        9180
                       ],
                       "loc": {
                         "start": {
@@ -13101,8 +13101,8 @@
                     }
                   ],
                   "range": [
-                    9056,
-                    9181
+                    9061,
+                    9186
                   ],
                   "loc": {
                     "start": {
@@ -13118,8 +13118,8 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  9046,
-                  9181
+                  9051,
+                  9186
                 ],
                 "loc": {
                   "start": {
@@ -13135,8 +13135,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                9031,
-                9181
+                9036,
+                9186
               ],
               "loc": {
                 "start": {
@@ -13153,8 +13153,8 @@
                   "type": "Block",
                   "value": "*\n     * Lists all routes tables, may apply filters\n     * @param filters\n     * @returns {Promise}\n     ",
                   "range": [
-                    8917,
-                    9026
+                    8922,
+                    9031
                   ],
                   "loc": {
                     "start": {
@@ -13173,7 +13173,7 @@
           ],
           "range": [
             274,
-            9184
+            9189
           ],
           "loc": {
             "start": {
@@ -13188,7 +13188,7 @@
         },
         "range": [
           255,
-          9184
+          9189
         ],
         "loc": {
           "start": {
@@ -13226,7 +13226,7 @@
       "source": null,
       "range": [
         248,
-        9184
+        9189
       ],
       "loc": {
         "start": {
@@ -13263,7 +13263,7 @@
   "sourceType": "module",
   "range": [
     0,
-    9184
+    9189
   ],
   "loc": {
     "start": {
@@ -13424,8 +13424,8 @@
       "type": "Block",
       "value": "*\n     * Returns the status of an instance (Virtual machine)\n     * @param {string|number} instanceId The id of an instance\n     * @returns {Promise}\n     ",
       "range": [
-        3232,
-        3391
+        3237,
+        3396
       ],
       "loc": {
         "start": {
@@ -13442,8 +13442,8 @@
       "type": "Block",
       "value": "*\n     * Returns a list of regions available on cloud provider\n     * @returns {Promise}\n     ",
       "range": [
-        3547,
-        3645
+        3552,
+        3650
       ],
       "loc": {
         "start": {
@@ -13460,8 +13460,8 @@
       "type": "Block",
       "value": "*\n     * Returns a list of sizes available on cloud provider\n     * @returns {Promise}\n     ",
       "range": [
-        3747,
-        3843
+        3752,
+        3848
       ],
       "loc": {
         "start": {
@@ -13478,8 +13478,8 @@
       "type": "Block",
       "value": "*\n     * Returns a list of distributions available on cloud provider\n     * @param {{}} filters Filters object\n     * @returns {Promise}\n     ",
       "range": [
-        3941,
-        4087
+        3946,
+        4092
       ],
       "loc": {
         "start": {
@@ -13496,8 +13496,8 @@
       "type": "Block",
       "value": "*\n     * Returns a list of volumes (Virtual/disks)\n     * @returns {Promise}\n     ",
       "range": [
-        4242,
-        4328
+        4247,
+        4333
       ],
       "loc": {
         "start": {
@@ -13514,8 +13514,8 @@
       "type": "Block",
       "value": "*\n     * Returns a list of SSH keys registered on cloud provider\n     * @returns {Promise}\n     ",
       "range": [
-        4430,
-        4530
+        4435,
+        4535
       ],
       "loc": {
         "start": {
@@ -13532,8 +13532,8 @@
       "type": "Block",
       "value": "*\n     * Registers a new public key on cloud provider\n     * @param {string} name Name of the new key\n     * @param {string} publicKey Public key contents\n     * @returns {Promise}\n     ",
       "range": [
-        4626,
-        4816
+        4631,
+        4821
       ],
       "loc": {
         "start": {
@@ -13550,8 +13550,8 @@
       "type": "Block",
       "value": "*\n     * Deletes a key from cloud provider\n     * @param {string|number} id Key name/id\n     * @returns {Promise}\n     ",
       "range": [
-        4972,
-        5095
+        4977,
+        5100
       ],
       "loc": {
         "start": {
@@ -13568,8 +13568,8 @@
       "type": "Block",
       "value": "*\n     * Returns a list of VPCs (Virtual private network)\n     * @param {{}} filters Filters object\n     * @param {Array} ids Ids list\n     * @returns {Promise}\n     ",
       "range": [
-        5219,
-        5389
+        5224,
+        5394
       ],
       "loc": {
         "start": {
@@ -13586,8 +13586,8 @@
       "type": "Block",
       "value": "*\n     * Creates a new VPC (Virtual private network)\n     * @param cidr CIDR block, network range\n     * @param tenancy Tenancy default/dedicated/host\n     * @returns {Promise}\n     ",
       "range": [
-        5553,
-        5739
+        5558,
+        5744
       ],
       "loc": {
         "start": {
@@ -13604,8 +13604,8 @@
       "type": "Block",
       "value": "*\n     * Sets/adds vpc attribute\n     * @param vpcId\n     * @param attributes\n     * @returns {Promise}\n     ",
       "range": [
-        5891,
-        6004
+        5896,
+        6009
       ],
       "loc": {
         "start": {
@@ -13622,8 +13622,8 @@
       "type": "Block",
       "value": "*\n     * Returns vpc attribute value\n     * @param vpcId\n     * @param attribute\n     * @returns {Promise}\n     ",
       "range": [
-        6182,
-        6298
+        6187,
+        6303
       ],
       "loc": {
         "start": {
@@ -13640,8 +13640,8 @@
       "type": "Block",
       "value": "*\n     * Returns a list of subnets\n     * @param ids\n     * @param filters\n     * @returns {Promise}\n     ",
       "range": [
-        6474,
-        6584
+        6479,
+        6589
       ],
       "loc": {
         "start": {
@@ -13658,8 +13658,8 @@
       "type": "Block",
       "value": "*\n     * Creates a new subnet within a VPC\n     * @param cidr CIDR block, network range\n     * @param vpcId VPC id\n     * @returns {Promise}\n     ",
       "range": [
-        6754,
-        6904
+        6759,
+        6909
       ],
       "loc": {
         "start": {
@@ -13676,8 +13676,8 @@
       "type": "Block",
       "value": "*\n     * Sets \"assignPublicIp\" property for a subNet\n     * @param subNetId\n     * @param assignPublicIp\n     * @returns {Promise}\n     ",
       "range": [
-        7058,
-        7198
+        7063,
+        7203
       ],
       "loc": {
         "start": {
@@ -13694,8 +13694,8 @@
       "type": "Block",
       "value": "*\n     * Creates a new security group under a vpcId\n     * @param vpcId\n     * @param name\n     * @param description\n     * @returns {Promise}\n     ",
       "range": [
-        7396,
-        7548
+        7401,
+        7553
       ],
       "loc": {
         "start": {
@@ -13712,8 +13712,8 @@
       "type": "Block",
       "value": "*\n     * Creates a set of inbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     ",
       "range": [
-        7754,
-        7886
+        7759,
+        7891
       ],
       "loc": {
         "start": {
@@ -13730,8 +13730,8 @@
       "type": "Block",
       "value": "*\n     * Creates a set of outbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     ",
       "range": [
-        8084,
-        8217
+        8089,
+        8222
       ],
       "loc": {
         "start": {
@@ -13748,8 +13748,8 @@
       "type": "Block",
       "value": "*\n     * Creates a new internet gateway\n     * @returns {Promise}\n     ",
       "range": [
-        8417,
-        8492
+        8422,
+        8497
       ],
       "loc": {
         "start": {
@@ -13766,8 +13766,8 @@
       "type": "Block",
       "value": "*\n     * Attaches internet gateway to VPC\n     * @param vpcId\n     * @param gatewayId\n     * @returns {Promise}\n     ",
       "range": [
-        8608,
-        8729
+        8613,
+        8734
       ],
       "loc": {
         "start": {
@@ -13784,8 +13784,8 @@
       "type": "Block",
       "value": "*\n     * Lists all routes tables, may apply filters\n     * @param filters\n     * @returns {Promise}\n     ",
       "range": [
-        8917,
-        9026
+        8922,
+        9031
       ],
       "loc": {
         "start": {

@@ -107,7 +107,7 @@ export class CloudlinkApi {
      */
     deleteInstance(instanceIds) {
         return CloudlinkHttp.request(this.config, 'deleteInstance', {
-            instanceIds
+            ids: instanceIds
         });
     }
 
