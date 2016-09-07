@@ -6,7 +6,7 @@ An API to make requests to [CloudLink](https://github.com/simon-s9/s9s-cloudlink
   [![Build][travis-image]][travis-url]
   [![Documentation][document-image]][document-url]
 
-* [Documentation](https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.15/docs/index.html)
+* [Documentation](https://cdn.rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.16/docs/index.html)
 * [Installation](#installation)
 * [Examples](#examples)
 
@@ -55,5 +55,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [npm-url]: https://npmjs.org/package/s9s-cloudlink-api
 [travis-image]: https://travis-ci.org/simon-s9/s9s-cloudlink-api.svg?branch=master
 [travis-url]: https://travis-ci.org/simon-s9/s9s-cloudlink-api
-[document-image]: https://rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.15/docs/badge.svg
+[document-image]: https://rawgit.com/simon-s9/s9s-cloudlink-api/v1.0.16/docs/badge.svg
 [document-url]: https://github.com/simon-s9/s9s-cloudlink-api/releases

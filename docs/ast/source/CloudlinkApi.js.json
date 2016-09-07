@@ -13168,12 +13168,537 @@
                   }
                 }
               ],
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n     * Adds a new route to a routes table and links it to an Internet gateway\n     * @param routesTableId\n     * @param cidr\n     * @param gatewayId\n     * @returns {Promise}\n     ",
+                  "range": [
+                    9192,
+                    9378
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 356,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 362,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "static": false
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "addRoute",
+                "range": [
+                  9383,
+                  9391
+                ],
+                "loc": {
+                  "start": {
+                    "line": 363,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 363,
+                    "column": 12
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "routesTableId",
+                    "range": [
+                      9392,
+                      9405
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 363,
+                        "column": 13
+                      },
+                      "end": {
+                        "line": 363,
+                        "column": 26
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "cidr",
+                    "range": [
+                      9407,
+                      9411
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 363,
+                        "column": 28
+                      },
+                      "end": {
+                        "line": 363,
+                        "column": 32
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "gatewayId",
+                    "range": [
+                      9413,
+                      9422
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 363,
+                        "column": 34
+                      },
+                      "end": {
+                        "line": 363,
+                        "column": 43
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "CloudlinkHttp",
+                            "range": [
+                              9441,
+                              9454
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 364,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 364,
+                                "column": 28
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "request",
+                            "range": [
+                              9455,
+                              9462
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 364,
+                                "column": 29
+                              },
+                              "end": {
+                                "line": 364,
+                                "column": 36
+                              }
+                            }
+                          },
+                          "range": [
+                            9441,
+                            9462
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 364,
+                              "column": 15
+                            },
+                            "end": {
+                              "line": 364,
+                              "column": 36
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "ThisExpression",
+                              "range": [
+                                9463,
+                                9467
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 364,
+                                  "column": 37
+                                },
+                                "end": {
+                                  "line": 364,
+                                  "column": 41
+                                }
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "config",
+                              "range": [
+                                9468,
+                                9474
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 364,
+                                  "column": 42
+                                },
+                                "end": {
+                                  "line": 364,
+                                  "column": 48
+                                }
+                              }
+                            },
+                            "range": [
+                              9463,
+                              9474
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 364,
+                                "column": 37
+                              },
+                              "end": {
+                                "line": 364,
+                                "column": 48
+                              }
+                            }
+                          },
+                          {
+                            "type": "Literal",
+                            "value": "addRoute",
+                            "raw": "'addRoute'",
+                            "range": [
+                              9476,
+                              9486
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 364,
+                                "column": 50
+                              },
+                              "end": {
+                                "line": 364,
+                                "column": 60
+                              }
+                            }
+                          },
+                          {
+                            "type": "ObjectExpression",
+                            "properties": [
+                              {
+                                "type": "Property",
+                                "key": {
+                                  "type": "Identifier",
+                                  "name": "routesTableId",
+                                  "range": [
+                                    9502,
+                                    9515
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 365,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 365,
+                                      "column": 25
+                                    }
+                                  }
+                                },
+                                "value": {
+                                  "type": "Identifier",
+                                  "name": "routesTableId",
+                                  "range": [
+                                    9502,
+                                    9515
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 365,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 365,
+                                      "column": 25
+                                    }
+                                  }
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true,
+                                "computed": false,
+                                "range": [
+                                  9502,
+                                  9515
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 365,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 365,
+                                    "column": 25
+                                  }
+                                }
+                              },
+                              {
+                                "type": "Property",
+                                "key": {
+                                  "type": "Identifier",
+                                  "name": "cidr",
+                                  "range": [
+                                    9529,
+                                    9533
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 366,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 366,
+                                      "column": 16
+                                    }
+                                  }
+                                },
+                                "value": {
+                                  "type": "Identifier",
+                                  "name": "cidr",
+                                  "range": [
+                                    9529,
+                                    9533
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 366,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 366,
+                                      "column": 16
+                                    }
+                                  }
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true,
+                                "computed": false,
+                                "range": [
+                                  9529,
+                                  9533
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 366,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 366,
+                                    "column": 16
+                                  }
+                                }
+                              },
+                              {
+                                "type": "Property",
+                                "key": {
+                                  "type": "Identifier",
+                                  "name": "gatewayId",
+                                  "range": [
+                                    9547,
+                                    9556
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 367,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 367,
+                                      "column": 21
+                                    }
+                                  }
+                                },
+                                "value": {
+                                  "type": "Identifier",
+                                  "name": "gatewayId",
+                                  "range": [
+                                    9547,
+                                    9556
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "line": 367,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 367,
+                                      "column": 21
+                                    }
+                                  }
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": true,
+                                "computed": false,
+                                "range": [
+                                  9547,
+                                  9556
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "line": 367,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 367,
+                                    "column": 21
+                                  }
+                                }
+                              }
+                            ],
+                            "range": [
+                              9488,
+                              9566
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 364,
+                                "column": 62
+                              },
+                              "end": {
+                                "line": 368,
+                                "column": 9
+                              }
+                            }
+                          }
+                        ],
+                        "range": [
+                          9441,
+                          9567
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 364,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 368,
+                            "column": 10
+                          }
+                        }
+                      },
+                      "range": [
+                        9434,
+                        9568
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 364,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 368,
+                          "column": 11
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    9424,
+                    9574
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 363,
+                      "column": 45
+                    },
+                    "end": {
+                      "line": 369,
+                      "column": 5
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  9391,
+                  9574
+                ],
+                "loc": {
+                  "start": {
+                    "line": 363,
+                    "column": 12
+                  },
+                  "end": {
+                    "line": 369,
+                    "column": 5
+                  }
+                }
+              },
+              "kind": "method",
+              "computed": false,
+              "range": [
+                9383,
+                9574
+              ],
+              "loc": {
+                "start": {
+                  "line": 363,
+                  "column": 4
+                },
+                "end": {
+                  "line": 369,
+                  "column": 5
+                }
+              },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n     * Adds a new route to a routes table and links it to an Internet gateway\n     * @param routesTableId\n     * @param cidr\n     * @param gatewayId\n     * @returns {Promise}\n     ",
+                  "range": [
+                    9192,
+                    9378
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 356,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 362,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
               "static": false
             }
           ],
           "range": [
             274,
-            9189
+            9577
           ],
           "loc": {
             "start": {
@@ -13181,14 +13706,14 @@
               "column": 26
             },
             "end": {
-              "line": 356,
+              "line": 371,
               "column": 1
             }
           }
         },
         "range": [
           255,
-          9189
+          9577
         ],
         "loc": {
           "start": {
@@ -13196,7 +13721,7 @@
             "column": 7
           },
           "end": {
-            "line": 356,
+            "line": 371,
             "column": 1
           }
         },
@@ -13226,7 +13751,7 @@
       "source": null,
       "range": [
         248,
-        9189
+        9577
       ],
       "loc": {
         "start": {
@@ -13234,7 +13759,7 @@
           "column": 0
         },
         "end": {
-          "line": 356,
+          "line": 371,
           "column": 1
         }
       },
@@ -13263,7 +13788,7 @@
   "sourceType": "module",
   "range": [
     0,
-    9189
+    9577
   ],
   "loc": {
     "start": {
@@ -13271,7 +13796,7 @@
       "column": 0
     },
     "end": {
-      "line": 356,
+      "line": 371,
       "column": 1
     }
   },
@@ -13794,6 +14319,24 @@
         },
         "end": {
           "line": 349,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n     * Adds a new route to a routes table and links it to an Internet gateway\n     * @param routesTableId\n     * @param cidr\n     * @param gatewayId\n     * @returns {Promise}\n     ",
+      "range": [
+        9192,
+        9378
+      ],
+      "loc": {
+        "start": {
+          "line": 356,
+          "column": 4
+        },
+        "end": {
+          "line": 362,
           "column": 7
         }
       }

@@ -448,6 +448,24 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
                 filters: filters || {}
             });
         }
+
+        /**
+         * Adds a new route to a routes table and links it to an Internet gateway
+         * @param routesTableId
+         * @param cidr
+         * @param gatewayId
+         * @returns {Promise}
+         */
+
+    }, {
+        key: 'addRoute',
+        value: function addRoute(routesTableId, cidr, gatewayId) {
+            return _CloudlinkHttp2.default.request(this.config, 'addRoute', {
+                routesTableId: routesTableId,
+                cidr: cidr,
+                gatewayId: gatewayId
+            });
+        }
     }]);
 
     return CloudlinkApi;

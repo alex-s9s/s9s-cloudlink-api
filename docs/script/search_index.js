@@ -372,6 +372,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/cloudlinkapi.js~cloudlinkapi#addroute",
+    "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addRoute",
+    "src/CloudlinkApi.js~CloudlinkApi#addRoute",
+    "method"
+  ],
+  [
     "src/cloudlinkapi.js~cloudlinkapi#addsecuritygroup",
     "class/src/CloudlinkApi.js~CloudlinkApi.html#instance-method-addSecurityGroup",
     "src/CloudlinkApi.js~CloudlinkApi#addSecurityGroup",

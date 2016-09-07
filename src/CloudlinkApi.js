@@ -353,4 +353,19 @@ export class CloudlinkApi {
         });
     }
 
+    /**
+     * Adds a new route to a routes table and links it to an Internet gateway
+     * @param routesTableId
+     * @param cidr
+     * @param gatewayId
+     * @returns {Promise}
+     */
+    addRoute(routesTableId, cidr, gatewayId) {
+        return CloudlinkHttp.request(this.config, 'addRoute', {
+            routesTableId,
+            cidr,
+            gatewayId
+        });
+    }
+
 }
