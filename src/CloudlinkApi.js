@@ -204,12 +204,14 @@ export class CloudlinkApi {
 
     /**
      * Creates a new VPC (Virtual private network)
+     * @param name Vpc name
      * @param cidr CIDR block, network range
      * @param tenancy Tenancy default/dedicated/host
      * @returns {Promise}
      */
-    addVpc(cidr, tenancy) {
+    addVpc(name, cidr, tenancy) {
         return CloudlinkHttp.request(this.config, 'addVpc', {
+            name,
             cidr,
             tenancy
         });

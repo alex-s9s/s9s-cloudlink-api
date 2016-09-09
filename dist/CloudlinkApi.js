@@ -261,6 +261,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
         /**
          * Creates a new VPC (Virtual private network)
+         * @param name Vpc name
          * @param cidr CIDR block, network range
          * @param tenancy Tenancy default/dedicated/host
          * @returns {Promise}
@@ -268,8 +269,9 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
 
     }, {
         key: 'addVpc',
-        value: function addVpc(cidr, tenancy) {
+        value: function addVpc(name, cidr, tenancy) {
             return _CloudlinkHttp2.default.request(this.config, 'addVpc', {
+                name: name,
                 cidr: cidr,
                 tenancy: tenancy
             });
