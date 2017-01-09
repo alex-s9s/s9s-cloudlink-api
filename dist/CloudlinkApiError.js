@@ -16,14 +16,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  * @class CloudlinkApiError
  * @extends {Error}
  */
-
 var CloudlinkApiError = function (_Error) {
   _inherits(CloudlinkApiError, _Error);
 
   function CloudlinkApiError() {
     _classCallCheck(this, CloudlinkApiError);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(CloudlinkApiError).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CloudlinkApiError.__proto__ || Object.getPrototypeOf(CloudlinkApiError)).apply(this, arguments));
   }
 
   return CloudlinkApiError;

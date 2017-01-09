@@ -21,7 +21,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /**
  * CloudlinkHttp class
  */
-
 var CloudlinkHttp = function () {
     function CloudlinkHttp() {
         _classCallCheck(this, CloudlinkHttp);

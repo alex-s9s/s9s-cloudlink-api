@@ -27,7 +27,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  *  server: {host:string,port:number,secure:boolean}
  * }} config
  */
-
 var CloudlinkApi = exports.CloudlinkApi = function () {
     _createClass(CloudlinkApi, null, [{
         key: 'supportedClouds',
@@ -38,7 +37,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
          * @returns {string[]}
          */
         get: function get() {
-            return ['aws', 'digitalocean'];
+            return ['aws', 'digitalocean', 'gce'];
         }
 
         /**
@@ -89,7 +88,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
     _createClass(CloudlinkApi, [{
         key: 'listInstances',
         value: function listInstances() {
-            var ids = arguments.length <= 0 || arguments[0] === undefined ? [] : arguments[0];
+            var ids = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
 
             return _CloudlinkHttp2.default.request(this.config, 'listInstances', { ids: ids });
         }
@@ -181,7 +180,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
     }, {
         key: 'listDistributions',
         value: function listDistributions() {
-            var filters = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+            var filters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
             return _CloudlinkHttp2.default.request(this.config, 'listDistributions', {
                 filters: filters
@@ -250,8 +249,8 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
     }, {
         key: 'listVpcs',
         value: function listVpcs() {
-            var filters = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-            var ids = arguments.length <= 1 || arguments[1] === undefined ? [] : arguments[1];
+            var filters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+            var ids = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
 
             return _CloudlinkHttp2.default.request(this.config, 'listVpcs', {
                 filters: filters,
@@ -319,8 +318,8 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
     }, {
         key: 'listSubNets',
         value: function listSubNets() {
-            var ids = arguments.length <= 0 || arguments[0] === undefined ? [] : arguments[0];
-            var filters = arguments.length <= 1 || arguments[1] === undefined ? [] : arguments[1];
+            var ids = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+            var filters = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
 
             return _CloudlinkHttp2.default.request(this.config, 'listSubNets', {
                 ids: ids,

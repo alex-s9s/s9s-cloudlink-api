@@ -18,7 +18,8 @@ export class CloudlinkApi {
     static get supportedClouds() {
         return [
             'aws',
-            'digitalocean'
+            'digitalocean',
+            'gce'
         ];
     }
 
