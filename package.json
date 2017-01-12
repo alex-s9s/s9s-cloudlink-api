@@ -1,6 +1,6 @@
 {
   "name": "s9s-cloudlink-api",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "main": "api.js",
   "license": "MIT",
   "author": {
@@ -13,6 +13,8 @@
     "cloudlink",
     "digitalocean",
     "amazon",
+    "gce",
+    "google compute engine",
     "aws",
     "cloud"
   ],
