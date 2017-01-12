@@ -131,8 +131,9 @@ export class CloudlinkApi {
      * @param {Array} [securityGroups] List of security groups ids
      * @param {number|string} [vpc] Vpc id/address to provision to
      * @param {Array} [tags] Tags list
+     * @param {string} [sshUser] SSH user
      */
-    addInstance(names, region, image, disk, size, sshKeys, subnet, securityGroups, vpc, tags) {
+    addInstance(names, region, image, disk, size, sshKeys, subnet, securityGroups, vpc, tags, sshUser) {
         return CloudlinkHttp.request(this.config, &apos;addInstance&apos;, {
             names,
             region,
@@ -141,6 +142,7 @@ export class CloudlinkApi {
             size,
             subnet,
             sshKeys,
+            sshUser,
             securityGroups,
             vpc,
             tags

@@ -106,11 +106,12 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
          * @param {Array} [securityGroups] List of security groups ids
          * @param {number|string} [vpc] Vpc id/address to provision to
          * @param {Array} [tags] Tags list
+         * @param {string} [sshUser] SSH user
          */
 
     }, {
         key: 'addInstance',
-        value: function addInstance(names, region, image, disk, size, sshKeys, subnet, securityGroups, vpc, tags) {
+        value: function addInstance(names, region, image, disk, size, sshKeys, subnet, securityGroups, vpc, tags, sshUser) {
             return _CloudlinkHttp2.default.request(this.config, 'addInstance', {
                 names: names,
                 region: region,
@@ -119,6 +120,7 @@ var CloudlinkApi = exports.CloudlinkApi = function () {
                 size: size,
                 subnet: subnet,
                 sshKeys: sshKeys,
+                sshUser: sshUser,
                 securityGroups: securityGroups,
                 vpc: vpc,
                 tags: tags
