@@ -87,9 +87,10 @@ export class CloudlinkApi {
      * @param {string} sshKeys SSH key to deploy to the new instance/s
      * @param {number|string} [subnet] Subnet id
      * @param {Array} [securityGroups] List of security groups ids
-     * @param {number|string} vpc Vpc id/address to provision to
+     * @param {number|string} [vpc] Vpc id/address to provision to
+     * @param {Array} [tags] Tags list
      */
-    addInstance(names, region, image, disk, size, sshKeys, subnet, securityGroups, vpc) {
+    addInstance(names, region, image, disk, size, sshKeys, subnet, securityGroups, vpc, tags) {
         return CloudlinkHttp.request(this.config, 'addInstance', {
             names,
             region,
@@ -99,7 +100,8 @@ export class CloudlinkApi {
             subnet,
             sshKeys,
             securityGroups,
-            vpc
+            vpc,
+            tags
         });
     }
 
