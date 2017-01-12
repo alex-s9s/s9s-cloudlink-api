@@ -10,7 +10,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import CloudlinkApiError from './CloudlinkApiError';\nimport CloudlinkHttp from './CloudlinkHttp';\n\n/**\n * CloudlinkApi class\n * @property {{\n *  auth: object,\n *  cloud: string,\n *  server: {host:string,port:number,secure:boolean}\n * }} config\n */\nexport class CloudlinkApi {\n\n    /**\n     * A list of supported cloud (Cloud providers) codes\n     * @returns {string[]}\n     */\n    static get supportedClouds() {\n        return [\n            'aws',\n            'digitalocean',\n            'gce'\n        ];\n    }\n\n    /**\n     * CloudlinkApi constructor\n     * @param {{}} config Configurations object (must include \"auth\" and \"server\" properties)\n     * @throws {CloudlinkApiError}\n     */\n    constructor(config) {\n\n        /* eslint max-statements: [\"error\", 20] */\n        // noinspection JSValidateTypes\n\n        this.config = config || {};\n        if (!this.config.cloud) {\n            throw new CloudlinkApiError(\n                'Missing \"cloud\" definition in config'\n            );\n        }\n        if (CloudlinkApi.supportedClouds.indexOf(this.config.cloud) === -1) {\n            throw new CloudlinkApiError(\n                `\"${this.config.cloud}\" is not a supported cloud provider`\n            );\n        }\n        if (!this.config.server) {\n            throw new CloudlinkApiError(\n                'Missing \"server\" object in config'\n            );\n        }\n        if (!this.config.server.host) {\n            throw new CloudlinkApiError(\n                'Messing \"server.host\" in config'\n            );\n        }\n        if (!this.config.server.port) {\n            this.config.server.port = 80;\n        }\n        if (!this.config.server.secure) {\n            this.config.server.secure = false;\n        }\n        if (!this.config.auth) {\n            throw new CloudlinkApiError(\n                'Missing \"auth\" object in config'\n            );\n        }\n    }\n\n    /**\n     * Returns a list of instances (Virtual machines)\n     * @param {Array} [ids]\n     * @returns {Promise}\n     */\n    listInstances(ids = []) {\n        return CloudlinkHttp.request(this.config, 'listInstances', {ids});\n    }\n\n    /**\n     * Adds a new instance (Virtual machine)\n     * @returns {Promise}\n     * @param {Array} names New instance/s names\n     * @param {string} region Region to create the instance/s at\n     * @param {string} image Image/ami to create the instance/s from\n     * @param {number} disk Disk size in GB\n     * @param {string} size Diskspace size\n     * @param {string} sshKeys SSH key to deploy to the new instance/s\n     * @param {number|string} [subnet] Subnet id\n     * @param {Array} [securityGroups] List of security groups ids\n     * @param {number|string} vpc Vpc id/address to provision to\n     */\n    addInstance(names, region, image, disk, size, sshKeys, subnet, securityGroups, vpc) {\n        return CloudlinkHttp.request(this.config, 'addInstance', {\n            names,\n            region,\n            image,\n            disk,\n            size,\n            subnet,\n            sshKeys,\n            securityGroups,\n            vpc\n        });\n    }\n\n    /**\n     * Deletes an instance/list of instances\n     * @param instanceIds\n     * @returns {Promise}\n     */\n    deleteInstance(instanceIds) {\n        return CloudlinkHttp.request(this.config, 'deleteInstance', {\n            ids: instanceIds\n        });\n    }\n\n    /**\n     * Returns the status of an instance (Virtual machine)\n     * @param {string|number} instanceId The id of an instance\n     * @returns {Promise}\n     */\n    getInstanceStatus(instanceId) {\n        return CloudlinkHttp.request(this.config, 'getInstanceStatus', {\n            instanceId\n        });\n    }\n\n    /**\n     * Returns a list of regions available on cloud provider\n     * @returns {Promise}\n     */\n    listRegions() {\n        return CloudlinkHttp.request(this.config, 'listRegions', {});\n    }\n\n    /**\n     * Returns a list of sizes available on cloud provider\n     * @returns {Promise}\n     */\n    listSizes() {\n        return CloudlinkHttp.request(this.config, 'listSizes', {});\n    }\n\n    /**\n     * Returns a list of distributions available on cloud provider\n     * @param {{}} filters Filters object\n     * @returns {Promise}\n     */\n    listDistributions(filters = {}) {\n        return CloudlinkHttp.request(this.config, 'listDistributions', {\n            filters\n        });\n    }\n\n    /**\n     * Returns a list of volumes (Virtual/disks)\n     * @returns {Promise}\n     */\n    listVolumes() {\n        return CloudlinkHttp.request(this.config, 'listVolumes', {});\n    }\n\n    /**\n     * Returns a list of SSH keys registered on cloud provider\n     * @returns {Promise}\n     */\n    listKeys() {\n        return CloudlinkHttp.request(this.config, 'listKeys', {});\n    }\n\n    /**\n     * Registers a new public key on cloud provider\n     * @param {string} name Name of the new key\n     * @param {string} publicKey Public key contents\n     * @returns {Promise}\n     */\n    addKey(name, publicKey) {\n        return CloudlinkHttp.request(this.config, 'addKey', {\n            name,\n            publicKey\n        });\n    }\n\n    /**\n     * Deletes a key from cloud provider\n     * @param {string|number} id Key name/id\n     * @returns {Promise}\n     */\n    deleteKey(id) {\n        return CloudlinkHttp.request(this.config, 'deleteKey', {\n            id\n        });\n    }\n\n    /**\n     * Returns a list of VPCs (Virtual private network)\n     * @param {{}} filters Filters object\n     * @param {Array} ids Ids list\n     * @returns {Promise}\n     */\n    listVpcs(filters = {}, ids = []) {\n        return CloudlinkHttp.request(this.config, 'listVpcs', {\n            filters,\n            ids\n        });\n    }\n\n    /**\n     * Creates a new VPC (Virtual private network)\n     * @param name Vpc name\n     * @param cidr CIDR block, network range\n     * @param tenancy Tenancy default/dedicated/host\n     * @returns {Promise}\n     */\n    addVpc(name, cidr, tenancy) {\n        return CloudlinkHttp.request(this.config, 'addVpc', {\n            name,\n            cidr,\n            tenancy\n        });\n    }\n\n    /**\n     * Sets/adds vpc attribute\n     * @param vpcId\n     * @param attributes\n     * @returns {Promise}\n     */\n    addVpcAttribute(vpcId, attributes) {\n        return CloudlinkHttp.request(this.config, 'addVpcAttribute', {\n            vpcId,\n            attributes\n        });\n    }\n\n    /**\n     * Returns vpc attribute value\n     * @param vpcId\n     * @param attribute\n     * @returns {Promise}\n     */\n    getVpcAttribute(vpcId, attribute) {\n        return CloudlinkHttp.request(this.config, 'getVpcAttribute', {\n            vpcId,\n            attribute\n        });\n    }\n\n    /**\n     * Returns a list of subnets\n     * @param ids\n     * @param filters\n     * @returns {Promise}\n     */\n    listSubNets(ids = [], filters = []) {\n        return CloudlinkHttp.request(this.config, 'listSubNets', {\n            ids,\n            filters\n        });\n    }\n\n    /**\n     * Creates a new subnet within a VPC\n     * @param cidr CIDR block, network range\n     * @param vpcId VPC id\n     * @returns {Promise}\n     */\n    addSubNet(cidr, vpcId) {\n        return CloudlinkHttp.request(this.config, 'addSubNet', {\n            cidr,\n            vpcId\n        });\n    }\n\n    /**\n     * Sets \"assignPublicIp\" property for a subNet\n     * @param subNetId\n     * @param assignPublicIp\n     * @returns {Promise}\n     */\n    setSubNetAttribute(subNetId, assignPublicIp) {\n        return CloudlinkHttp.request(this.config, 'setSubNetAttribute', {\n            subNetId,\n            assignPublicIp\n        });\n    }\n\n    /**\n     * Creates a new security group under a vpcId\n     * @param vpcId\n     * @param name\n     * @param description\n     * @returns {Promise}\n     */\n    addSecurityGroup(vpcId, name, description) {\n        return CloudlinkHttp.request(this.config, 'addSecurityGroup', {\n            vpcId,\n            name,\n            description\n        });\n    }\n\n    /**\n     * Creates a set of inbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     */\n    addSecurityGroupInboundRules(groupId, rules) {\n        return CloudlinkHttp.request(this.config, 'addSecurityGroupInboundRules', {\n            groupId,\n            rules\n        });\n    }\n\n    /**\n     * Creates a set of outbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     */\n    addSecurityGroupOutboundRules(groupId, rules) {\n        return CloudlinkHttp.request(this.config, 'addSecurityGroupOutboundRules', {\n            groupId,\n            rules\n        });\n    }\n\n    /**\n     * Creates a new internet gateway\n     * @returns {Promise}\n     */\n    addInternetGateway() {\n        return CloudlinkHttp.request(this.config, 'addInternetGateway', {});\n    }\n\n    /**\n     * Attaches internet gateway to VPC\n     * @param vpcId\n     * @param gatewayId\n     * @returns {Promise}\n     */\n    attachInternetGateway(vpcId, gatewayId) {\n        return CloudlinkHttp.request(this.config, 'attachInternetGateway', {\n            vpcId,\n            gatewayId\n        });\n    }\n\n    /**\n     * Lists all routes tables, may apply filters\n     * @param filters\n     * @returns {Promise}\n     */\n    listRouteTables(filters) {\n        return CloudlinkHttp.request(this.config, 'listRouteTables', {\n            filters: filters || {}\n        });\n    }\n\n    /**\n     * Adds a new route to a routes table and links it to an Internet gateway\n     * @param routesTableId\n     * @param cidr\n     * @param gatewayId\n     * @returns {Promise}\n     */\n    addRoute(routesTableId, cidr, gatewayId) {\n        return CloudlinkHttp.request(this.config, 'addRoute', {\n            routesTableId,\n            cidr,\n            gatewayId\n        });\n    }\n\n}\n"
+    "content": "import CloudlinkApiError from './CloudlinkApiError';\nimport CloudlinkHttp from './CloudlinkHttp';\n\n/**\n * CloudlinkApi class\n * @property {{\n *  auth: object,\n *  cloud: string,\n *  server: {host:string,port:number,secure:boolean}\n * }} config\n */\nexport class CloudlinkApi {\n\n    /**\n     * A list of supported cloud (Cloud providers) codes\n     * @returns {string[]}\n     */\n    static get supportedClouds() {\n        return [\n            'aws',\n            'digitalocean',\n            'gce'\n        ];\n    }\n\n    /**\n     * CloudlinkApi constructor\n     * @param {{}} config Configurations object (must include \"auth\" and \"server\" properties)\n     * @throws {CloudlinkApiError}\n     */\n    constructor(config) {\n\n        /* eslint max-statements: [\"error\", 20] */\n        // noinspection JSValidateTypes\n\n        this.config = config || {};\n        if (!this.config.cloud) {\n            throw new CloudlinkApiError(\n                'Missing \"cloud\" definition in config'\n            );\n        }\n        if (CloudlinkApi.supportedClouds.indexOf(this.config.cloud) === -1) {\n            throw new CloudlinkApiError(\n                `\"${this.config.cloud}\" is not a supported cloud provider`\n            );\n        }\n        if (!this.config.server) {\n            throw new CloudlinkApiError(\n                'Missing \"server\" object in config'\n            );\n        }\n        if (!this.config.server.host) {\n            throw new CloudlinkApiError(\n                'Messing \"server.host\" in config'\n            );\n        }\n        if (!this.config.server.port) {\n            this.config.server.port = 80;\n        }\n        if (!this.config.server.secure) {\n            this.config.server.secure = false;\n        }\n        if (!this.config.auth) {\n            throw new CloudlinkApiError(\n                'Missing \"auth\" object in config'\n            );\n        }\n    }\n\n    /**\n     * Returns a list of instances (Virtual machines)\n     * @param {Array} [ids]\n     * @returns {Promise}\n     */\n    listInstances(ids = []) {\n        return CloudlinkHttp.request(this.config, 'listInstances', {ids});\n    }\n\n    /**\n     * Adds a new instance (Virtual machine)\n     * @returns {Promise}\n     * @param {Array} names New instance/s names\n     * @param {string} region Region to create the instance/s at\n     * @param {string} image Image/ami to create the instance/s from\n     * @param {number} disk Disk size in GB\n     * @param {string} size Diskspace size\n     * @param {string} sshKeys SSH key to deploy to the new instance/s\n     * @param {number|string} [subnet] Subnet id\n     * @param {Array} [securityGroups] List of security groups ids\n     * @param {number|string} [vpc] Vpc id/address to provision to\n     * @param {Array} [tags] Tags list\n     */\n    addInstance(names, region, image, disk, size, sshKeys, subnet, securityGroups, vpc, tags) {\n        return CloudlinkHttp.request(this.config, 'addInstance', {\n            names,\n            region,\n            image,\n            disk,\n            size,\n            subnet,\n            sshKeys,\n            securityGroups,\n            vpc,\n            tags\n        });\n    }\n\n    /**\n     * Deletes an instance/list of instances\n     * @param instanceIds\n     * @returns {Promise}\n     */\n    deleteInstance(instanceIds) {\n        return CloudlinkHttp.request(this.config, 'deleteInstance', {\n            ids: instanceIds\n        });\n    }\n\n    /**\n     * Returns the status of an instance (Virtual machine)\n     * @param {string|number} instanceId The id of an instance\n     * @returns {Promise}\n     */\n    getInstanceStatus(instanceId) {\n        return CloudlinkHttp.request(this.config, 'getInstanceStatus', {\n            instanceId\n        });\n    }\n\n    /**\n     * Returns a list of regions available on cloud provider\n     * @returns {Promise}\n     */\n    listRegions() {\n        return CloudlinkHttp.request(this.config, 'listRegions', {});\n    }\n\n    /**\n     * Returns a list of sizes available on cloud provider\n     * @returns {Promise}\n     */\n    listSizes() {\n        return CloudlinkHttp.request(this.config, 'listSizes', {});\n    }\n\n    /**\n     * Returns a list of distributions available on cloud provider\n     * @param {{}} filters Filters object\n     * @returns {Promise}\n     */\n    listDistributions(filters = {}) {\n        return CloudlinkHttp.request(this.config, 'listDistributions', {\n            filters\n        });\n    }\n\n    /**\n     * Returns a list of volumes (Virtual/disks)\n     * @returns {Promise}\n     */\n    listVolumes() {\n        return CloudlinkHttp.request(this.config, 'listVolumes', {});\n    }\n\n    /**\n     * Returns a list of SSH keys registered on cloud provider\n     * @returns {Promise}\n     */\n    listKeys() {\n        return CloudlinkHttp.request(this.config, 'listKeys', {});\n    }\n\n    /**\n     * Registers a new public key on cloud provider\n     * @param {string} name Name of the new key\n     * @param {string} publicKey Public key contents\n     * @returns {Promise}\n     */\n    addKey(name, publicKey) {\n        return CloudlinkHttp.request(this.config, 'addKey', {\n            name,\n            publicKey\n        });\n    }\n\n    /**\n     * Deletes a key from cloud provider\n     * @param {string|number} id Key name/id\n     * @returns {Promise}\n     */\n    deleteKey(id) {\n        return CloudlinkHttp.request(this.config, 'deleteKey', {\n            id\n        });\n    }\n\n    /**\n     * Returns a list of VPCs (Virtual private network)\n     * @param {{}} filters Filters object\n     * @param {Array} ids Ids list\n     * @returns {Promise}\n     */\n    listVpcs(filters = {}, ids = []) {\n        return CloudlinkHttp.request(this.config, 'listVpcs', {\n            filters,\n            ids\n        });\n    }\n\n    /**\n     * Creates a new VPC (Virtual private network)\n     * @param name Vpc name\n     * @param cidr CIDR block, network range\n     * @param tenancy Tenancy default/dedicated/host\n     * @returns {Promise}\n     */\n    addVpc(name, cidr, tenancy) {\n        return CloudlinkHttp.request(this.config, 'addVpc', {\n            name,\n            cidr,\n            tenancy\n        });\n    }\n\n    /**\n     * Sets/adds vpc attribute\n     * @param vpcId\n     * @param attributes\n     * @returns {Promise}\n     */\n    addVpcAttribute(vpcId, attributes) {\n        return CloudlinkHttp.request(this.config, 'addVpcAttribute', {\n            vpcId,\n            attributes\n        });\n    }\n\n    /**\n     * Returns vpc attribute value\n     * @param vpcId\n     * @param attribute\n     * @returns {Promise}\n     */\n    getVpcAttribute(vpcId, attribute) {\n        return CloudlinkHttp.request(this.config, 'getVpcAttribute', {\n            vpcId,\n            attribute\n        });\n    }\n\n    /**\n     * Returns a list of subnets\n     * @param ids\n     * @param filters\n     * @returns {Promise}\n     */\n    listSubNets(ids = [], filters = []) {\n        return CloudlinkHttp.request(this.config, 'listSubNets', {\n            ids,\n            filters\n        });\n    }\n\n    /**\n     * Creates a new subnet within a VPC\n     * @param cidr CIDR block, network range\n     * @param vpcId VPC id\n     * @returns {Promise}\n     */\n    addSubNet(cidr, vpcId) {\n        return CloudlinkHttp.request(this.config, 'addSubNet', {\n            cidr,\n            vpcId\n        });\n    }\n\n    /**\n     * Sets \"assignPublicIp\" property for a subNet\n     * @param subNetId\n     * @param assignPublicIp\n     * @returns {Promise}\n     */\n    setSubNetAttribute(subNetId, assignPublicIp) {\n        return CloudlinkHttp.request(this.config, 'setSubNetAttribute', {\n            subNetId,\n            assignPublicIp\n        });\n    }\n\n    /**\n     * Creates a new security group under a vpcId\n     * @param vpcId\n     * @param name\n     * @param description\n     * @returns {Promise}\n     */\n    addSecurityGroup(vpcId, name, description) {\n        return CloudlinkHttp.request(this.config, 'addSecurityGroup', {\n            vpcId,\n            name,\n            description\n        });\n    }\n\n    /**\n     * Creates a set of inbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     */\n    addSecurityGroupInboundRules(groupId, rules) {\n        return CloudlinkHttp.request(this.config, 'addSecurityGroupInboundRules', {\n            groupId,\n            rules\n        });\n    }\n\n    /**\n     * Creates a set of outbound security group rules\n     * @param groupId\n     * @param rules\n     * @returns {Promise}\n     */\n    addSecurityGroupOutboundRules(groupId, rules) {\n        return CloudlinkHttp.request(this.config, 'addSecurityGroupOutboundRules', {\n            groupId,\n            rules\n        });\n    }\n\n    /**\n     * Creates a new internet gateway\n     * @returns {Promise}\n     */\n    addInternetGateway() {\n        return CloudlinkHttp.request(this.config, 'addInternetGateway', {});\n    }\n\n    /**\n     * Attaches internet gateway to VPC\n     * @param vpcId\n     * @param gatewayId\n     * @returns {Promise}\n     */\n    attachInternetGateway(vpcId, gatewayId) {\n        return CloudlinkHttp.request(this.config, 'attachInternetGateway', {\n            vpcId,\n            gatewayId\n        });\n    }\n\n    /**\n     * Lists all routes tables, may apply filters\n     * @param filters\n     * @returns {Promise}\n     */\n    listRouteTables(filters) {\n        return CloudlinkHttp.request(this.config, 'listRouteTables', {\n            filters: filters || {}\n        });\n    }\n\n    /**\n     * Adds a new route to a routes table and links it to an Internet gateway\n     * @param routesTableId\n     * @param cidr\n     * @param gatewayId\n     * @returns {Promise}\n     */\n    addRoute(routesTableId, cidr, gatewayId) {\n        return CloudlinkHttp.request(this.config, 'addRoute', {\n            routesTableId,\n            cidr,\n            gatewayId\n        });\n    }\n\n}\n"
   },
   {
     "__docId__": 1,
@@ -172,7 +172,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addInstance",
     "access": null,
     "description": "Adds a new instance (Virtual machine)",
-    "lineNumber": 92,
+    "lineNumber": 93,
     "unknown": [
       {
         "tagName": "@returns",
@@ -268,9 +268,19 @@
           "string"
         ],
         "spread": false,
-        "optional": false,
+        "optional": true,
         "name": "vpc",
         "description": "Vpc id/address to provision to"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "tags",
+        "description": "Tags list"
       }
     ],
     "return": {
@@ -293,7 +303,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#deleteInstance",
     "access": null,
     "description": "Deletes an instance/list of instances",
-    "lineNumber": 111,
+    "lineNumber": 113,
     "unknown": [
       {
         "tagName": "@returns",
@@ -332,7 +342,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#getInstanceStatus",
     "access": null,
     "description": "Returns the status of an instance (Virtual machine)",
-    "lineNumber": 122,
+    "lineNumber": 124,
     "unknown": [
       {
         "tagName": "@returns",
@@ -372,7 +382,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#listRegions",
     "access": null,
     "description": "Returns a list of regions available on cloud provider",
-    "lineNumber": 132,
+    "lineNumber": 134,
     "unknown": [
       {
         "tagName": "@returns",
@@ -400,7 +410,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#listSizes",
     "access": null,
     "description": "Returns a list of sizes available on cloud provider",
-    "lineNumber": 140,
+    "lineNumber": 142,
     "unknown": [
       {
         "tagName": "@returns",
@@ -428,7 +438,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#listDistributions",
     "access": null,
     "description": "Returns a list of distributions available on cloud provider",
-    "lineNumber": 149,
+    "lineNumber": 151,
     "unknown": [
       {
         "tagName": "@returns",
@@ -467,7 +477,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#listVolumes",
     "access": null,
     "description": "Returns a list of volumes (Virtual/disks)",
-    "lineNumber": 159,
+    "lineNumber": 161,
     "unknown": [
       {
         "tagName": "@returns",
@@ -495,7 +505,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#listKeys",
     "access": null,
     "description": "Returns a list of SSH keys registered on cloud provider",
-    "lineNumber": 167,
+    "lineNumber": 169,
     "unknown": [
       {
         "tagName": "@returns",
@@ -523,7 +533,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addKey",
     "access": null,
     "description": "Registers a new public key on cloud provider",
-    "lineNumber": 177,
+    "lineNumber": 179,
     "unknown": [
       {
         "tagName": "@returns",
@@ -572,7 +582,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#deleteKey",
     "access": null,
     "description": "Deletes a key from cloud provider",
-    "lineNumber": 189,
+    "lineNumber": 191,
     "unknown": [
       {
         "tagName": "@returns",
@@ -612,7 +622,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#listVpcs",
     "access": null,
     "description": "Returns a list of VPCs (Virtual private network)",
-    "lineNumber": 201,
+    "lineNumber": 203,
     "unknown": [
       {
         "tagName": "@returns",
@@ -661,7 +671,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addVpc",
     "access": null,
     "description": "Creates a new VPC (Virtual private network)",
-    "lineNumber": 215,
+    "lineNumber": 217,
     "unknown": [
       {
         "tagName": "@returns",
@@ -720,7 +730,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addVpcAttribute",
     "access": null,
     "description": "Sets/adds vpc attribute",
-    "lineNumber": 229,
+    "lineNumber": 231,
     "unknown": [
       {
         "tagName": "@returns",
@@ -769,7 +779,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#getVpcAttribute",
     "access": null,
     "description": "Returns vpc attribute value",
-    "lineNumber": 242,
+    "lineNumber": 244,
     "unknown": [
       {
         "tagName": "@returns",
@@ -818,7 +828,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#listSubNets",
     "access": null,
     "description": "Returns a list of subnets",
-    "lineNumber": 255,
+    "lineNumber": 257,
     "unknown": [
       {
         "tagName": "@returns",
@@ -867,7 +877,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addSubNet",
     "access": null,
     "description": "Creates a new subnet within a VPC",
-    "lineNumber": 268,
+    "lineNumber": 270,
     "unknown": [
       {
         "tagName": "@returns",
@@ -916,7 +926,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#setSubNetAttribute",
     "access": null,
     "description": "Sets \"assignPublicIp\" property for a subNet",
-    "lineNumber": 281,
+    "lineNumber": 283,
     "unknown": [
       {
         "tagName": "@returns",
@@ -965,7 +975,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addSecurityGroup",
     "access": null,
     "description": "Creates a new security group under a vpcId",
-    "lineNumber": 295,
+    "lineNumber": 297,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1024,7 +1034,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addSecurityGroupInboundRules",
     "access": null,
     "description": "Creates a set of inbound security group rules",
-    "lineNumber": 309,
+    "lineNumber": 311,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1073,7 +1083,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addSecurityGroupOutboundRules",
     "access": null,
     "description": "Creates a set of outbound security group rules",
-    "lineNumber": 322,
+    "lineNumber": 324,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1122,7 +1132,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addInternetGateway",
     "access": null,
     "description": "Creates a new internet gateway",
-    "lineNumber": 333,
+    "lineNumber": 335,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1150,7 +1160,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#attachInternetGateway",
     "access": null,
     "description": "Attaches internet gateway to VPC",
-    "lineNumber": 343,
+    "lineNumber": 345,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1199,7 +1209,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#listRouteTables",
     "access": null,
     "description": "Lists all routes tables, may apply filters",
-    "lineNumber": 355,
+    "lineNumber": 357,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1238,7 +1248,7 @@
     "longname": "src/CloudlinkApi.js~CloudlinkApi#addRoute",
     "access": null,
     "description": "Adds a new route to a routes table and links it to an Internet gateway",
-    "lineNumber": 368,
+    "lineNumber": 370,
     "unknown": [
       {
         "tagName": "@returns",
